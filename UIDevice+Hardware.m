@@ -22,6 +22,19 @@
     return hardware;
 }
 
+/* This is another way of gtting the system info
+ * For this you have to #import <sys/utsname.h>
+ */
+ 
+/*
+NSString* machineName
+{
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    return [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+}
+*/
+
 - (Hardware)hardware
 {
     NSString *hardware = [self hardwareString];
