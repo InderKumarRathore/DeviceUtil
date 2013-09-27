@@ -19,6 +19,10 @@ typedef enum
     IPHONE_4S,
     IPHONE_5,
     IPHONE_5_CDMA_GSM,
+    IPHONE_5C,
+    IPHONE_5C_CDMA_GSM,
+    IPHONE_5S,
+    IPHONE_5S_CDMA_GSM,
     
     IPOD_TOUCH_1G,
     IPOD_TOUCH_2G,
