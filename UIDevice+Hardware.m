@@ -47,6 +47,10 @@ NSString* machineName
     if ([hardware isEqualToString:@"iPhone4,1"])    return IPHONE_4S;
     if ([hardware isEqualToString:@"iPhone5,1"])    return IPHONE_5;
     if ([hardware isEqualToString:@"iPhone5,2"])    return IPHONE_5_CDMA_GSM;
+    if ([hardware isEqualToString:@"iPhone5,3"])    return IPHONE_5C;
+    if ([hardware isEqualToString:@"iPhone5,4"])    return IPHONE_5C_CDMA_GSM;
+    if ([hardware isEqualToString:@"iPhone6,1"])    return IPHONE_5S;
+    if ([hardware isEqualToString:@"iPhone6,2"])    return IPHONE_5S_CDMA_GSM;
     
     if ([hardware isEqualToString:@"iPod1,1"])      return IPOD_TOUCH_1G;
     if ([hardware isEqualToString:@"iPod2,1"])      return IPOD_TOUCH_2G;
@@ -87,6 +91,10 @@ NSString* machineName
     if ([hardware isEqualToString:@"iPhone4,1"])    return @"iPhone 4S";
     if ([hardware isEqualToString:@"iPhone5,1"])    return @"iPhone 5";
     if ([hardware isEqualToString:@"iPhone5,2"])    return @"iPhone 5 (GSM+CDMA)";
+    if ([hardware isEqualToString:@"iPhone5,3"])    return @"iPhone 5c";
+    if ([hardware isEqualToString:@"iPhone5,4"])    return @"iPhone 5c (GSM+CDMA)";
+    if ([hardware isEqualToString:@"iPhone6,1"])    return @"iPhone 5s";
+    if ([hardware isEqualToString:@"iPhone6,2"])    return @"iPhone 5s (GSM+CDMA)";
     
     if ([hardware isEqualToString:@"iPod1,1"])      return @"iPod Touch (1 Gen)";
     if ([hardware isEqualToString:@"iPod2,1"])      return @"iPod Touch (2 Gen)";
