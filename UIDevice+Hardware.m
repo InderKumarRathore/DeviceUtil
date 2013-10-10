@@ -22,6 +22,50 @@
     return hardware;
 }
 
+- (float) hardwareState:(Hardware) hardware
+{
+    switch (hardware) {
+            
+        case IPHONE_2G: return 1; break;
+        case IPHONE_3G: return 2; break;
+        case IPHONE_3GS: return 3; break;
+        case IPHONE_4: return 4; break;
+        case IPHONE_4_CDMA: return 4; break;
+        case IPHONE_4S: return 5; break;
+        case IPHONE_5: return 6; break;
+        case IPHONE_5_CDMA_GSM: return 6; break;
+        case IPHONE_5C: return 6; break;
+        case IPHONE_5C_CDMA_GSM: return 6; break;
+        case IPHONE_5S: return 7; break;
+        case IPHONE_5S_CDMA_GSM: return 7; break;
+            
+        case IPOD_TOUCH_1G: return 1; break;
+        case IPOD_TOUCH_2G: return 2; break;
+        case IPOD_TOUCH_3G: return 2.5; break;
+        case IPOD_TOUCH_4G: return 3; break;
+        case IPOD_TOUCH_5G: return 6; break;
+            
+        case IPAD: return 2; break;
+        case IPAD_2: return 4; break;
+        case IPAD_2_CDMA: return 4; break;
+        case IPAD_2_WIFI: return 4; break;
+        case IPAD_3: return 5; break;
+        case IPAD_3_WIFI: return 5; break;
+        case IPAD_3_WIFI_CDMA: return 5; break;
+        case IPAD_3G: return 5; break;
+        case IPAD_4: return 6; break;
+        case IPAD_4_GSM_CDMA: return 6; break;
+        case IPAD_4_WIFI: return 6; break;
+        case IPAD_MINI: return 6; break;
+        case IPAD_MINI_WIFI: return 6; break;
+        case IPAD_MINI_WIFI_CDMA: return 6; break;
+            
+        case SIMULATOR: return 1000; break;
+        
+        default: return 0; break;
+    }
+}
+
 /* This is another way of gtting the system info
  * For this you have to #import <sys/utsname.h>
  */
@@ -124,5 +168,11 @@ NSString* machineName
     NSLog(@"This is a device which is not listed in this category. Please visit https://github.com/rathore619/UIDevice-Hardware and add a comment there.");
     NSLog(@"Your device harware string is:%@",hardware);
     return nil;
+}
+
+- (BOOL)isCurrentDeviceHardwareBetterThan:(Hardware) hardware
+{
+    int current = [self hardwareState:[self hardware]];
+    return (current > hardware);
 }
 @end

@@ -59,4 +59,7 @@ typedef enum
 
 /** This method returns the readable description of hardware string */
 - (NSString*)hardwareDescription;
+
+/**This method returns YES in case current device is better than the one given as parameter*/
+- (BOOL)isCurrentDeviceHardwareBetterThan:(Hardware) hardware;
 @end
