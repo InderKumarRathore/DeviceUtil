@@ -173,6 +173,7 @@ NSString* machineName
 - (BOOL)isCurrentDeviceHardwareBetterThan:(Hardware) hardware
 {
     int current = [self hardwareState:[self hardware]];
-    return (current > hardware);
+    int hardwareState = [self hardwareState:hardware];
+    return (current > hardwareState);
 }
 @end
