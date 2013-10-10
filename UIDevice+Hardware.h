@@ -10,9 +10,8 @@
 
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad)
 #define DEVICE_IOS_VERSION [[UIDevice currentDevice].systemVersion floatValue]
-#define DEVICE_IOS_VERSION_GREATER_THAN(c,o) ([c compare:o options:NSNumericSearch] == NSOrderedDescending)
 
-#define DEVICE_HARDWARE_BETTER_THAN(i) [self isCurrentDeviceHardwareBetterThan:i]
+#define DEVICE_HARDWARE_BETTER_THAN(i) [[UIDevice currentDevice] isCurrentDeviceHardwareBetterThan:i]
 
 typedef enum
 {
