@@ -7,6 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad)
+#define DEVICE_IOS_VERSION [[UIDevice currentDevice].systemVersion floatValue]
+
+#define DEVICE_HARDWARE_BETTER_THAN(i) [[UIDevice currentDevice] isCurrentDeviceHardwareBetterThan:i]
+
 typedef enum
 {
     NOT_AVAILABLE,
@@ -59,4 +65,7 @@ typedef enum
 
 /** This method returns the readable description of hardware string */
 - (NSString*)hardwareDescription;
+
+/**This method returns YES in case current device is better than the one given as parameter*/
+- (BOOL)isCurrentDeviceHardwareBetterThan:(Hardware) hardware;
 @end
