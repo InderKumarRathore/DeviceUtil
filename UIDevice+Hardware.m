@@ -165,8 +165,8 @@ NSString* machineName
     if ([hardware isEqualToString:@"i386"])         return @"Simulator";
     if ([hardware isEqualToString:@"x86_64"])       return @"Simulator";
     
-    NSLog(@"This is a device which is not listed in this category. Please visit https://github.com/rathore619/UIDevice-Hardware and add a comment there.");
-    NSLog(@"Your device harware string is: %@", hardware);
+    NSLog(@"This is a device which is not listed in this category. Please visit https://github.com/inderkumarrathore/UIDevice-Hardware and add a comment there.");
+    NSLog(@"Your device hardware string is: %@", hardware);
     return nil;
 }
 
