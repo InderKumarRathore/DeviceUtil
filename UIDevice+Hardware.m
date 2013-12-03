@@ -11,8 +11,7 @@
 #include <sys/sysctl.h>
 
 @implementation UIDevice (Hardware)
-- (NSString*)hardwareString
-{
+- (NSString*)hardwareString {
     size_t size = 100;
     char *hw_machine = malloc(size);
     int name[] = {CTL_HW,HW_MACHINE};
@@ -22,65 +21,20 @@
     return hardware;
 }
 
-- (float) hardwareState:(Hardware) hardware
-{
-    switch (hardware) {
-            
-        case IPHONE_2G: return 1; break;
-        case IPHONE_3G: return 2; break;
-        case IPHONE_3GS: return 3; break;
-        case IPHONE_4: return 4; break;
-        case IPHONE_4_CDMA: return 4; break;
-        case IPHONE_4S: return 5; break;
-        case IPHONE_5: return 6; break;
-        case IPHONE_5_CDMA_GSM: return 6; break;
-        case IPHONE_5C: return 6; break;
-        case IPHONE_5C_CDMA_GSM: return 6; break;
-        case IPHONE_5S: return 7; break;
-        case IPHONE_5S_CDMA_GSM: return 7; break;
-            
-        case IPOD_TOUCH_1G: return 1; break;
-        case IPOD_TOUCH_2G: return 2; break;
-        case IPOD_TOUCH_3G: return 2.5; break;
-        case IPOD_TOUCH_4G: return 3; break;
-        case IPOD_TOUCH_5G: return 6; break;
-            
-        case IPAD: return 2; break;
-        case IPAD_2: return 4; break;
-        case IPAD_2_CDMA: return 4; break;
-        case IPAD_2_WIFI: return 4; break;
-        case IPAD_3: return 5; break;
-        case IPAD_3_WIFI: return 5; break;
-        case IPAD_3_WIFI_CDMA: return 5; break;
-        case IPAD_3G: return 5; break;
-        case IPAD_4: return 6; break;
-        case IPAD_4_GSM_CDMA: return 6; break;
-        case IPAD_4_WIFI: return 6; break;
-        case IPAD_MINI: return 6; break;
-        case IPAD_MINI_WIFI: return 6; break;
-        case IPAD_MINI_WIFI_CDMA: return 6; break;
-            
-        case SIMULATOR: return 1000; break;
-        
-        default: return 0; break;
-    }
-}
-
 /* This is another way of gtting the system info
  * For this you have to #import <sys/utsname.h>
  */
- 
-/*
-NSString* machineName
-{
-    struct utsname systemInfo;
-    uname(&systemInfo);
-    return [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
-}
-*/
 
-- (Hardware)hardware
-{
+/*
+ NSString* machineName
+ {
+ struct utsname systemInfo;
+ uname(&systemInfo);
+ return [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+ }
+ */
+
+- (Hardware)hardware {
     NSString *hardware = [self hardwareString];
     if ([hardware isEqualToString:@"iPhone1,1"])    return IPHONE_2G;
     if ([hardware isEqualToString:@"iPhone1,2"])    return IPHONE_3G;
@@ -117,14 +71,18 @@ NSString* machineName
     if ([hardware isEqualToString:@"iPad3,4"])      return IPAD_4_WIFI;
     if ([hardware isEqualToString:@"iPad3,5"])      return IPAD_4;
     if ([hardware isEqualToString:@"iPad3,6"])      return IPAD_4_GSM_CDMA;
+    if ([hardware isEqualToString:@"iPad4,1"])      return IPAD_AIR_WIFI;
+    if ([hardware isEqualToString:@"iPad4,2"])      return IPAD_AIR_WIFI_CDMA;
+    if ([hardware isEqualToString:@"iPad4,4"])      return IPAD_MINI_RETINA_WIFI;
+    if ([hardware isEqualToString:@"iPad4,5"])      return IPAD_MINI_RETINA_WIFI_CDMA;
+    
     
     if ([hardware isEqualToString:@"i386"])         return SIMULATOR;
     if ([hardware isEqualToString:@"x86_64"])       return SIMULATOR;
     return NOT_AVAILABLE;
 }
 
-- (NSString*)hardwareDescription
-{
+- (NSString*)hardwareDescription {
     NSString *hardware = [self hardwareString];
     if ([hardware isEqualToString:@"iPhone1,1"])    return @"iPhone 2G";
     if ([hardware isEqualToString:@"iPhone1,2"])    return @"iPhone 3G";
@@ -161,19 +119,70 @@ NSString* machineName
     if ([hardware isEqualToString:@"iPad3,4"])      return @"iPad 4 (WiFi)";
     if ([hardware isEqualToString:@"iPad3,5"])      return @"iPad 4 (CDMA)";
     if ([hardware isEqualToString:@"iPad3,6"])      return @"iPad 4 (Global)";
-    
+    if ([hardware isEqualToString:@"iPad4,1"])      return @"iPad Air (WiFi)";
+    if ([hardware isEqualToString:@"iPad4,2"])      return @"iPad Air (WiFi+CDMA)";
+    if ([hardware isEqualToString:@"iPad4,4"])      return @"iPad Mini Retina (WiFi)";
+    if ([hardware isEqualToString:@"iPad4,5"])      return @"iPad Mini Retina (WiFi+CDMA)";
     if ([hardware isEqualToString:@"i386"])         return @"Simulator";
     if ([hardware isEqualToString:@"x86_64"])       return @"Simulator";
     
     NSLog(@"This is a device which is not listed in this category. Please visit https://github.com/inderkumarrathore/UIDevice-Hardware and add a comment there.");
     NSLog(@"Your device hardware string is: %@", hardware);
+    if ([hardware hasPrefix:@"iPhone"]) return @"iPhone";
+    if ([hardware hasPrefix:@"iPod"]) return @"iPod";
+    if ([hardware hasPrefix:@"iPad"]) return @"iPad";
     return nil;
 }
 
-- (BOOL)isCurrentDeviceHardwareBetterThan:(Hardware) hardware
-{
-    int current = [self hardwareState:[self hardware]];
-    int hardwareState = [self hardwareState:hardware];
-    return (current > hardwareState);
+
+- (float)hardwareNumber:(Hardware)hardware {
+    switch (hardware) {
+        case IPHONE_2G: return 1.1f;
+        case IPHONE_3G: return 1.2f;
+        case IPHONE_3GS: return 2.1f;
+        case IPHONE_4:    return 3.1f;
+        case IPHONE_4_CDMA:    return 3.3f;
+        case IPHONE_4S:    return 4.1f;
+        case IPHONE_5:    return 5.1f;
+        case IPHONE_5_CDMA_GSM:    return 5.2f;
+        case IPHONE_5C:    return 5.3f;
+        case IPHONE_5C_CDMA_GSM:    return 5.4f;
+        case IPHONE_5S:    return 6.1f;
+        case IPHONE_5S_CDMA_GSM:    return 6.2f;
+            
+        case IPOD_TOUCH_1G:    return 1.1f;
+        case IPOD_TOUCH_2G:    return 2.1f;
+        case IPOD_TOUCH_3G:    return 3.1f;
+        case IPOD_TOUCH_4G:    return 4.1f;
+        case IPOD_TOUCH_5G:    return 5.1f;
+            
+        case IPAD:    return 1.1f;
+        case IPAD_3G:    return 1.2f;
+        case IPAD_2_WIFI:    return 2.1f;
+        case IPAD_2:    return 2.2f;
+        case IPAD_2_CDMA:    return 2.3f;
+        case IPAD_MINI_WIFI:    return 2.5f;
+        case IPAD_MINI:    return 2.6f;
+        case IPAD_MINI_WIFI_CDMA:    return 2.7f;
+        case IPAD_3_WIFI:    return 3.1f;
+        case IPAD_3_WIFI_CDMA:    return 3.2f;
+        case IPAD_3:    return 3.3f;
+        case IPAD_4_WIFI:    return 3.4f;
+        case IPAD_4:    return 3.5f;
+        case IPAD_4_GSM_CDMA:    return 3.6f;
+        case IPAD_AIR_WIFI:    return 4.1f;
+        case IPAD_AIR_WIFI_CDMA:    return 4.2f;
+        case IPAD_MINI_RETINA_WIFI:    return 4.4f;
+        case IPAD_MINI_RETINA_WIFI_CDMA:    return 4.5f;
+            
+        case SIMULATOR:    return 100.0f;
+        case NOT_AVAILABLE:    return 200.0f;
+    }
+}
+
+- (BOOL)isCurrentDeviceHardwareBetterThan:(Hardware)hardware {
+    float otherHardware = [self hardwareNumber:hardware];
+    float currentHardware = [self hardwareNumber:[self hardware]];
+    return currentHardware >= otherHardware;
 }
 @end

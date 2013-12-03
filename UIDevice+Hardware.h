@@ -10,7 +10,6 @@
 
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad)
 #define DEVICE_IOS_VERSION [[UIDevice currentDevice].systemVersion floatValue]
-
 #define DEVICE_HARDWARE_BETTER_THAN(i) [[UIDevice currentDevice] isCurrentDeviceHardwareBetterThan:i]
 
 typedef enum
@@ -51,6 +50,11 @@ typedef enum
     IPAD_MINI,
     IPAD_MINI_WIFI,
     IPAD_MINI_WIFI_CDMA,
+    IPAD_MINI_RETINA_WIFI,
+    IPAD_MINI_RETINA_WIFI_CDMA,
+    
+    IPAD_AIR_WIFI,
+    IPAD_AIR_WIFI_CDMA,
     
     SIMULATOR
 } Hardware;
@@ -66,6 +70,6 @@ typedef enum
 /** This method returns the readable description of hardware string */
 - (NSString*)hardwareDescription;
 
-/**This method returns YES in case current device is better than the one given as parameter*/
-- (BOOL)isCurrentDeviceHardwareBetterThan:(Hardware) hardware;
+/** This method returns YES if the current device is better than the hardware passed */
+- (BOOL)isCurrentDeviceHardwareBetterThan:(Hardware)hardware;
 @end
