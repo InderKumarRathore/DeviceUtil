@@ -54,6 +54,7 @@ typedef enum
     IPAD_MINI_RETINA_WIFI_CDMA,
     
     IPAD_AIR_WIFI,
+    IPAD_AIR_WIFI_GSM,
     IPAD_AIR_WIFI_CDMA,
     
     SIMULATOR

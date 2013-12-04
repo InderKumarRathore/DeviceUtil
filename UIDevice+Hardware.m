@@ -72,7 +72,8 @@
     if ([hardware isEqualToString:@"iPad3,5"])      return IPAD_4;
     if ([hardware isEqualToString:@"iPad3,6"])      return IPAD_4_GSM_CDMA;
     if ([hardware isEqualToString:@"iPad4,1"])      return IPAD_AIR_WIFI;
-    if ([hardware isEqualToString:@"iPad4,2"])      return IPAD_AIR_WIFI_CDMA;
+    if ([hardware isEqualToString:@"iPad4,2"])      return IPAD_AIR_WIFI_GSM;
+    if ([hardware isEqualToString:@"iPad4,3"])      return IPAD_AIR_WIFI_CDMA;
     if ([hardware isEqualToString:@"iPad4,4"])      return IPAD_MINI_RETINA_WIFI;
     if ([hardware isEqualToString:@"iPad4,5"])      return IPAD_MINI_RETINA_WIFI_CDMA;
     
@@ -120,7 +121,8 @@
     if ([hardware isEqualToString:@"iPad3,5"])      return @"iPad 4 (CDMA)";
     if ([hardware isEqualToString:@"iPad3,6"])      return @"iPad 4 (Global)";
     if ([hardware isEqualToString:@"iPad4,1"])      return @"iPad Air (WiFi)";
-    if ([hardware isEqualToString:@"iPad4,2"])      return @"iPad Air (WiFi+CDMA)";
+    if ([hardware isEqualToString:@"iPad4,2"])      return @"iPad Air (WiFi+GSM)";
+    if ([hardware isEqualToString:@"iPad4,3"])      return @"iPad Air (WiFi+CDMA)";
     if ([hardware isEqualToString:@"iPad4,4"])      return @"iPad Mini Retina (WiFi)";
     if ([hardware isEqualToString:@"iPad4,5"])      return @"iPad Mini Retina (WiFi+CDMA)";
     if ([hardware isEqualToString:@"i386"])         return @"Simulator";
@@ -171,13 +173,15 @@
         case IPAD_4:    return 3.5f;
         case IPAD_4_GSM_CDMA:    return 3.6f;
         case IPAD_AIR_WIFI:    return 4.1f;
-        case IPAD_AIR_WIFI_CDMA:    return 4.2f;
+        case IPAD_AIR_WIFI_GSM:    return 4.2f;
+        case IPAD_AIR_WIFI_CDMA:    return 4.3f;
         case IPAD_MINI_RETINA_WIFI:    return 4.4f;
         case IPAD_MINI_RETINA_WIFI_CDMA:    return 4.5f;
             
         case SIMULATOR:    return 100.0f;
         case NOT_AVAILABLE:    return 200.0f;
     }
+    return 200.0f; //Device is not available
 }
 
 - (BOOL)isCurrentDeviceHardwareBetterThan:(Hardware)hardware {
