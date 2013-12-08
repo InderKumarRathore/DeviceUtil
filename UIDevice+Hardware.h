@@ -71,6 +71,9 @@ typedef enum
 /** This method returns the readable description of hardware string */
 - (NSString*)hardwareDescription;
 
+/** This method returs the readble description without identifier (GSM, CDMA, GLOBAL) */
+- (NSString *)hardwareSimpleDescription;
+
 /** This method returns YES if the current device is better than the hardware passed */
 - (BOOL)isCurrentDeviceHardwareBetterThan:(Hardware)hardware;
 @end
