@@ -12,9 +12,11 @@
 
 @implementation UIDevice (Hardware)
 - (NSString*)hardwareString {
-    size_t size = 100;
-    char *hw_machine = malloc(size);
     int name[] = {CTL_HW,HW_MACHINE};
+    size_t size = 100;
+    sysctl(name, 2, NULL, &size, NULL, 0); // getting size of answer
+    char *hw_machine = malloc(size);
+
     sysctl(name, 2, hw_machine, &size, NULL, 0);
     NSString *hardware = [NSString stringWithUTF8String:hw_machine];
     free(hw_machine);
