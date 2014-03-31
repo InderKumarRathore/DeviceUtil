@@ -12,9 +12,11 @@
 
 @implementation UIDevice (Hardware)
 - (NSString*)hardwareString {
-    size_t size = 100;
-    char *hw_machine = malloc(size);
     int name[] = {CTL_HW,HW_MACHINE};
+    size_t size = 100;
+    sysctl(name, 2, NULL, &size, NULL, 0); // getting size of answer
+    char *hw_machine = malloc(size);
+
     sysctl(name, 2, hw_machine, &size, NULL, 0);
     NSString *hardware = [NSString stringWithUTF8String:hw_machine];
     free(hw_machine);
@@ -246,4 +248,70 @@
     float currentHardware = [self hardwareNumber:[self hardware]];
     return currentHardware >= otherHardware;
 }
+
+- (CGSize)backCameraStillImageResolutionInPixels
+{
+    switch ([self hardware]) {
+        case IPHONE_2G:
+        case IPHONE_3G:
+            return CGSizeMake(1600, 1200);
+            break;
+        case IPHONE_3GS:
+            return CGSizeMake(2048, 1536);
+            break;
+        case IPHONE_4:
+        case IPHONE_4_CDMA:
+        case IPAD_3_WIFI:
+        case IPAD_3_WIFI_CDMA:
+        case IPAD_3:
+        case IPAD_4_WIFI:
+        case IPAD_4:
+        case IPAD_4_GSM_CDMA:
+            return CGSizeMake(2592, 1936);
+            break;
+        case IPHONE_4S:
+        case IPHONE_5:
+        case IPHONE_5_CDMA_GSM:
+        case IPHONE_5C:
+        case IPHONE_5C_CDMA_GSM:
+            return CGSizeMake(3264, 2448);
+            break;
+            
+        case IPOD_TOUCH_4G:
+            return CGSizeMake(960, 720);
+            break;
+        case IPOD_TOUCH_5G:
+            return CGSizeMake(2440, 1605);
+            break;
+            
+        case IPAD_2_WIFI:
+        case IPAD_2:
+        case IPAD_2_CDMA:
+            return CGSizeMake(872, 720);
+            break;
+            
+        case IPAD_MINI_WIFI:
+        case IPAD_MINI:
+        case IPAD_MINI_WIFI_CDMA:
+            return CGSizeMake(1820, 1304);
+            break;
+        default:
+            NSLog(@"We have no resolution for your device's camera listed in this category. Please, make photo with back camera of your device, get its resolution in pixels (via Preview Cmd+I for example) and add a comment to this repository on GitHub.com in format Device = Hpx x Wpx.");
+            NSLog(@"Your device is: %@", [self hardwareDescription]);
+            break;
+    }
+    return CGSizeZero;
+}
+
+- (BOOL)isIphoneWith4inchDisplay
+{
+    if (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone) {
+        double height = [[UIScreen mainScreen] bounds].size.height;
+        if (fabs(height-568.0f) < DBL_EPSILON) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
 @end
