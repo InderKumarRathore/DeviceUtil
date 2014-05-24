@@ -16,6 +16,8 @@
 #define IS_IOS7_OR_LATER (((double)(DEVICE_IOS_VERSION)-7.0) > -((double)(DEVICE_IOS_VERSION)-7.0)*DBL_EPSILON)
 #define NSStringAdd568hIfIphone4inch(str) [NSString stringWithFormat:[UIDevice currentDevice].isIphoneWith4inchDisplay ? @"%@-568h" : @"%@", str]
 
+#define IS_IPHONE_5 [[UIScreen mainScreen] applicationFrame].size.height == 568
+
 typedef enum
 {
     NOT_AVAILABLE,
