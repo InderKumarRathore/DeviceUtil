@@ -53,7 +53,7 @@
   if ([hardware isEqualToString:@"iPhone6,2"])    return IPHONE_5S_CDMA_GSM;
 
   if ([hardware isEqualToString:@"iPhone7,1"])    return IPHONE_6_PLUS;
-  if ([hardware isEqualToString:@"iPhone7,2"])    return IPHONE_6_PLUS;
+  if ([hardware isEqualToString:@"iPhone7,2"])    return IPHONE_6;
 
   if ([hardware isEqualToString:@"iPod1,1"])      return IPOD_TOUCH_1G;
   if ([hardware isEqualToString:@"iPod2,1"])      return IPOD_TOUCH_2G;
@@ -103,8 +103,8 @@
   if ([hardware isEqualToString:@"iPhone6,1"])    return @"iPhone 5S (GSM)";
   if ([hardware isEqualToString:@"iPhone6,2"])    return @"iPhone 5S (Global)";
 
-  if ([hardware isEqualToString:@"iPhone7,1"])    return @"iPhone 6";
-  if ([hardware isEqualToString:@"iPhone7,2"])    return @"iPhone 6 Plus";
+  if ([hardware isEqualToString:@"iPhone7,1"])    return @"iPhone 6 Plus";
+  if ([hardware isEqualToString:@"iPhone7,2"])    return @"iPhone 6";
 
   if ([hardware isEqualToString:@"iPod1,1"])      return @"iPod Touch (1 Gen)";
   if ([hardware isEqualToString:@"iPod2,1"])      return @"iPod Touch (2 Gen)";
