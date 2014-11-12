@@ -81,7 +81,11 @@
   if ([hardware isEqualToString:@"iPad4,3"])      return IPAD_AIR_WIFI_CDMA;
   if ([hardware isEqualToString:@"iPad4,4"])      return IPAD_MINI_RETINA_WIFI;
   if ([hardware isEqualToString:@"iPad4,5"])      return IPAD_MINI_RETINA_WIFI_CDMA;
-
+  if ([hardware isEqualToString:@"iPad4,6"])      return IPAD_MINI_RETINA_WIFI_CELLULAR_CN;
+  if ([hardware isEqualToString:@"iPad4,7"])      return IPAD_MINI_3_WIFI;
+  if ([hardware isEqualToString:@"iPad4,8"])      return IPAD_MINI_3_WIFI_CELLULAR;
+  if ([hardware isEqualToString:@"iPad5,3"])      return IPAD_AIR_2_WIFI;
+  if ([hardware isEqualToString:@"iPad5,4"])      return IPAD_AIR_2_WIFI_CELLULAR;
   if ([hardware isEqualToString:@"i386"])         return SIMULATOR;
   if ([hardware isEqualToString:@"x86_64"])       return SIMULATOR;
   return NOT_AVAILABLE;
@@ -132,6 +136,11 @@
   if ([hardware isEqualToString:@"iPad4,3"])      return @"iPad Air (WiFi+CDMA)";
   if ([hardware isEqualToString:@"iPad4,4"])      return @"iPad Mini Retina (WiFi)";
   if ([hardware isEqualToString:@"iPad4,5"])      return @"iPad Mini Retina (WiFi+CDMA)";
+  if ([hardware isEqualToString:@"iPad4,6"])      return @"iPad Mini Retina (Wi-Fi + Cellular CN)";
+  if ([hardware isEqualToString:@"iPad4,7"])      return @"iPad Mini 3 (Wi-Fi)";
+  if ([hardware isEqualToString:@"iPad4,8"])      return @"iPad Mini 3 (Wi-Fi + Cellular)";
+  if ([hardware isEqualToString:@"iPad5,3"])      return @"iPad Air 2 (Wi-Fi)";
+  if ([hardware isEqualToString:@"iPad5,4"])      return @"iPad Air 2 (Wi-Fi + Cellular)";
   if ([hardware isEqualToString:@"i386"])         return @"Simulator";
   if ([hardware isEqualToString:@"x86_64"])       return @"Simulator";
 
