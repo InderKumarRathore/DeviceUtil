@@ -329,7 +329,7 @@
     
     case IPAD_AIR_2_WIFI:
     case IPAD_AIR_2_WIFI_CELLULAR:
-        return CGSizeMake (1536, 2048);
+        return CGSizeMake (1536, 2048);
         break;
           
     default:
