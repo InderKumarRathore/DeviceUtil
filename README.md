@@ -9,7 +9,7 @@
 1.0.2
 
 ### Installation
-Add this into your pod file
+Add this in your pod file
 ```sh
 pod 'UIDeviceUtil', '1.0.2'
 ```
@@ -21,7 +21,7 @@ Want to contribute? Great!
 Fork the repo and send me the pull request :)
 
 
-#License
+### License
 MIT
 
 
