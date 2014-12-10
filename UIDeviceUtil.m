@@ -80,7 +80,11 @@
   if ([hardware isEqualToString:@"iPad4,3"])      return IPAD_AIR_WIFI_CDMA;
   if ([hardware isEqualToString:@"iPad4,4"])      return IPAD_MINI_RETINA_WIFI;
   if ([hardware isEqualToString:@"iPad4,5"])      return IPAD_MINI_RETINA_WIFI_CDMA;
-
+  if ([hardware isEqualToString:@"iPad4,6"])      return IPAD_MINI_RETINA_WIFI_CELLULAR_CN;
+  if ([hardware isEqualToString:@"iPad4,7"])      return IPAD_MINI_3_WIFI;
+  if ([hardware isEqualToString:@"iPad4,8"])      return IPAD_MINI_3_WIFI_CELLULAR;
+  if ([hardware isEqualToString:@"iPad5,3"])      return IPAD_AIR_2_WIFI;
+  if ([hardware isEqualToString:@"iPad5,4"])      return IPAD_AIR_2_WIFI_CELLULAR;
   if ([hardware isEqualToString:@"i386"])         return SIMULATOR;
   if ([hardware isEqualToString:@"x86_64"])       return SIMULATOR;
   return NOT_AVAILABLE;
@@ -131,6 +135,11 @@
   if ([hardware isEqualToString:@"iPad4,3"])      return @"iPad Air (WiFi+CDMA)";
   if ([hardware isEqualToString:@"iPad4,4"])      return @"iPad Mini Retina (WiFi)";
   if ([hardware isEqualToString:@"iPad4,5"])      return @"iPad Mini Retina (WiFi+CDMA)";
+  if ([hardware isEqualToString:@"iPad4,6"])      return @"iPad Mini Retina (Wi-Fi + Cellular CN)";
+  if ([hardware isEqualToString:@"iPad4,7"])      return @"iPad Mini 3 (Wi-Fi)";
+  if ([hardware isEqualToString:@"iPad4,8"])      return @"iPad Mini 3 (Wi-Fi + Cellular)";
+  if ([hardware isEqualToString:@"iPad5,3"])      return @"iPad Air 2 (Wi-Fi)";
+  if ([hardware isEqualToString:@"iPad5,4"])      return @"iPad Air 2 (Wi-Fi + Cellular)";
   if ([hardware isEqualToString:@"i386"])         return @"Simulator";
   if ([hardware isEqualToString:@"x86_64"])       return @"Simulator";
 
@@ -187,6 +196,11 @@
   if ([hardware isEqualToString:@"iPad4,3"])      return @"iPad Air";
   if ([hardware isEqualToString:@"iPad4,4"])      return @"iPad Mini Retina";
   if ([hardware isEqualToString:@"iPad4,5"])      return @"iPad Mini Retina";
+  if ([hardware isEqualToString:@"iPad4,6"])      return @"iPad Mini Retina CN";
+  if ([hardware isEqualToString:@"iPad4,7"])      return @"iPad Mini 3";
+  if ([hardware isEqualToString:@"iPad4,8"])      return @"iPad Mini 3";
+  if ([hardware isEqualToString:@"iPad5,3"])      return @"iPad Air 2";
+  if ([hardware isEqualToString:@"iPad5,4"])      return @"iPad Air 2";
 
   if ([hardware isEqualToString:@"i386"])         return @"Simulator";
   if ([hardware isEqualToString:@"x86_64"])       return @"Simulator";
@@ -226,25 +240,33 @@
     case IPOD_TOUCH_4G:    return 4.1f;
     case IPOD_TOUCH_5G:    return 5.1f;
 
-    case IPAD:    return 1.1f;
-    case IPAD_3G:    return 1.2f;
-    case IPAD_2_WIFI:    return 2.1f;
-    case IPAD_2:    return 2.2f;
-    case IPAD_2_CDMA:    return 2.3f;
-    case IPAD_MINI_WIFI:    return 2.5f;
-    case IPAD_MINI:    return 2.6f;
-    case IPAD_MINI_WIFI_CDMA:    return 2.7f;
-    case IPAD_3_WIFI:    return 3.1f;
-    case IPAD_3_WIFI_CDMA:    return 3.2f;
-    case IPAD_3:    return 3.3f;
-    case IPAD_4_WIFI:    return 3.4f;
-    case IPAD_4:    return 3.5f;
-    case IPAD_4_GSM_CDMA:    return 3.6f;
-    case IPAD_AIR_WIFI:    return 4.1f;
-    case IPAD_AIR_WIFI_GSM:    return 4.2f;
-    case IPAD_AIR_WIFI_CDMA:    return 4.3f;
-    case IPAD_MINI_RETINA_WIFI:    return 4.4f;
-    case IPAD_MINI_RETINA_WIFI_CDMA:    return 4.5f;
+    case IPAD:                              return 1.1f;
+    case IPAD_3G:                           return 1.2f;
+    case IPAD_2_WIFI:                       return 2.1f;
+    case IPAD_2:                            return 2.2f;
+    case IPAD_2_CDMA:                       return 2.3f;
+    case IPAD_MINI_WIFI:                    return 2.5f;
+    case IPAD_MINI:                         return 2.6f;
+    case IPAD_MINI_WIFI_CDMA:               return 2.7f;
+    case IPAD_3_WIFI:                       return 3.1f;
+    case IPAD_3_WIFI_CDMA:                  return 3.2f;
+    case IPAD_3:                            return 3.3f;
+    case IPAD_4_WIFI:                       return 3.4f;
+    case IPAD_4:                            return 3.5f;
+    case IPAD_4_GSM_CDMA:                   return 3.6f;
+
+    case IPAD_AIR_WIFI:                     return 4.1f;
+    case IPAD_AIR_WIFI_GSM:                 return 4.2f;
+    case IPAD_AIR_WIFI_CDMA:                return 4.3f;
+    case IPAD_AIR_2_WIFI:                   return 5.3f;
+    case IPAD_AIR_2_WIFI_CELLULAR:          return 5.4f;
+
+    case IPAD_MINI_RETINA_WIFI:             return 4.4f;
+    case IPAD_MINI_RETINA_WIFI_CDMA:        return 4.5f;
+    case IPAD_MINI_3_WIFI:                  return 4.6f;
+    case IPAD_MINI_3_WIFI_CELLULAR:         return 4.7f;
+    case IPAD_MINI_RETINA_WIFI_CELLULAR_CN: return 4.8f;
+
 
     case SIMULATOR:    return 100.0f;
     case NOT_AVAILABLE:    return 200.0f;
@@ -304,6 +326,12 @@
     case IPAD_MINI_WIFI_CDMA:
       return CGSizeMake(1820, 1304);
       break;
+    
+    case IPAD_AIR_2_WIFI:
+    case IPAD_AIR_2_WIFI_CELLULAR:
+        return CGSizeMake (1536, 2048);
+        break;
+          
     default:
       NSLog(@"We have no resolution for your device's camera listed in this category. Please, make photo with back camera of your device, get its resolution in pixels (via Preview Cmd+I for example) and add a comment to this repository on GitHub.com in format Device = Hpx x Wpx.");
       NSLog(@"Your device is: %@", [self hardwareDescription]);
