@@ -1,6 +1,28 @@
-UIDeviceUtil
-=================
+# UIDeviceUtil
 
-This category helps to check the hardware version of the device in iOS.<br>
-Please give your feedback and suggestion to improve this category.<br>
-Thanks
+*UIDeviceUtil* is a simple lib to know the exact type of the device instead of just iPhone or iPad.
+
+  - Easy to use
+  - Light weight
+
+### Version
+1.0.2
+
+### Installation
+Add this into your pod file
+```sh
+pod 'UIDeviceUtil', '1.0.2'
+```
+
+### Development
+
+Want to contribute? Great!
+
+Fork the repo and send me the pull request :)
+
+
+#License
+MIT
+
+
+**Free Software, Hell Yeah!**
