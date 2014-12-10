@@ -1,17 +1,16 @@
 //
-//  UIDevice+Hardware.m
-//  TestTable
+//  DeviceName.m
 //
 //  Created by Inder Kumar Rathore on 19/01/13.
 //  Copyright (c) 2013 Rathore. All rights reserved.
 //
 
-#import "UIDevice+Hardware.h"
+#import "UIDeviceUtil.h"
 #include <sys/types.h>
 #include <sys/sysctl.h>
 
-@implementation UIDevice (Hardware)
-- (NSString*)hardwareString {
+@implementation UIDeviceUtil
++ (NSString*)hardwareString {
   int name[] = {CTL_HW,HW_MACHINE};
   size_t size = 100;
   sysctl(name, 2, NULL, &size, NULL, 0); // getting size of answer
@@ -36,7 +35,7 @@
  }
  */
 
-- (Hardware)hardware {
++ (Hardware)hardware {
   NSString *hardware = [self hardwareString];
   if ([hardware isEqualToString:@"iPhone1,1"])    return IPHONE_2G;
   if ([hardware isEqualToString:@"iPhone1,2"])    return IPHONE_3G;
@@ -87,7 +86,7 @@
   return NOT_AVAILABLE;
 }
 
-- (NSString*)hardwareDescription {
++ (NSString*)hardwareDescription {
   NSString *hardware = [self hardwareString];
   if ([hardware isEqualToString:@"iPhone1,1"])    return @"iPhone 2G";
   if ([hardware isEqualToString:@"iPhone1,2"])    return @"iPhone 3G";
@@ -143,8 +142,7 @@
   return nil;
 }
 
-- (NSString*)hardwareSimpleDescription
-{
++ (NSString*)hardwareSimpleDescription {
   NSString *hardware = [self hardwareString];
   if ([hardware isEqualToString:@"iPhone1,1"])    return @"iPhone 2G";
   if ([hardware isEqualToString:@"iPhone1,2"])    return @"iPhone 3G";
@@ -204,7 +202,7 @@
 }
 
 
-- (float)hardwareNumber:(Hardware)hardware {
++ (float)hardwareNumber:(Hardware)hardware {
   switch (hardware) {
     case IPHONE_2G: return 1.1f;
     case IPHONE_3G: return 1.2f;
@@ -254,13 +252,13 @@
   return 200.0f; //Device is not available
 }
 
-- (BOOL)isCurrentDeviceHardwareBetterThan:(Hardware)hardware {
++ (BOOL)isCurrentDeviceHardwareBetterThan:(Hardware)hardware {
   float otherHardware = [self hardwareNumber:hardware];
   float currentHardware = [self hardwareNumber:[self hardware]];
   return currentHardware >= otherHardware;
 }
 
-- (CGSize)backCameraStillImageResolutionInPixels
++ (CGSize)backCameraStillImageResolutionInPixels
 {
   switch ([self hardware]) {
     case IPHONE_2G:

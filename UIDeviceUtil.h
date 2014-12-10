@@ -1,6 +1,5 @@
 //
-//  UIDevice+Hardware.h
-//  TestTable
+//  DeviceName.h
 //
 //  Created by Inder Kumar Rathore on 19/01/13.
 //  Copyright (c) 2013 Rathore. All rights reserved.
@@ -14,9 +13,6 @@
 
 #define DEVICE_HAS_RETINA_DISPLAY (fabs([UIScreen mainScreen].scale - 2.0) <= fabs([UIScreen mainScreen].scale - 2.0)*DBL_EPSILON)
 #define IS_IOS7_OR_LATER (((double)(DEVICE_IOS_VERSION)-7.0) > -((double)(DEVICE_IOS_VERSION)-7.0)*DBL_EPSILON)
-#define NSStringAdd568hIfIphone4inch(str) [NSString stringWithFormat:[UIDevice currentDevice].isIphoneWith4inchDisplay ? @"%@-568h" : @"%@", str]
-
-#define IS_IPHONE_5 [[UIScreen mainScreen] applicationFrame].size.height == 568
 
 typedef enum
 {
@@ -70,24 +66,24 @@ typedef enum
 } Hardware;
 
 
-@interface UIDevice (Hardware)
+@interface UIDeviceUtil : NSObject 
 /** This method retruns the hardware type */
-- (NSString*)hardwareString;
++ (NSString*)hardwareString;
 
 /** This method returns the Hardware enum depending upon harware string */
-- (Hardware)hardware;
++ (Hardware)hardware;
 
 /** This method returns the readable description of hardware string */
-- (NSString*)hardwareDescription;
++ (NSString*)hardwareDescription;
 
 /** This method returs the readble description without identifier (GSM, CDMA, GLOBAL) */
-- (NSString *)hardwareSimpleDescription;
++ (NSString *)hardwareSimpleDescription;
 
 /** This method returns YES if the current device is better than the hardware passed */
-- (BOOL)isCurrentDeviceHardwareBetterThan:(Hardware)hardware;
++ (BOOL)isCurrentDeviceHardwareBetterThan:(Hardware)hardware;
 
 /** This method returns the resolution for still image that can be received
  from back camera of the current device. Resolution returned for image oriented landscape right. **/
-- (CGSize)backCameraStillImageResolutionInPixels;
++ (CGSize)backCameraStillImageResolutionInPixels;
 
 @end
