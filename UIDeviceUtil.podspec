@@ -11,4 +11,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/InderKumarRathore/UIDeviceUtil.git", :tag => '1.0.1' }
   s.source_files  = "*.{h,m}"
   s.platform = :ios
+  s.requires_arc = false
 end
