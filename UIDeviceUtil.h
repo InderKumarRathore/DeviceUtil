@@ -9,15 +9,15 @@
 
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad)
 #define IS_IPHONE (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone)
-#define DEVICE_HARDWARE_BETTER_THAN(i) [[UIDevice currentDevice] isCurrentDeviceHardwareBetterThan:i]
+#define DEVICE_HARDWARE_BETTER_THAN(i) [UIDeviceUtil  isCurrentDeviceHardwareBetterThan:i]
 
 #define DEVICE_HAS_RETINA_DISPLAY (fabs([UIScreen mainScreen].scale - 2.0) <= fabs([UIScreen mainScreen].scale - 2.0)*DBL_EPSILON)
 
 #define IS_SCREEN_HEIGHT_EQUAL(SCREEN_HEIGHT_VALUE) (MAX([UIScreen mainScreen].bounds.size.height,[UIScreen mainScreen].bounds.size.width)==SCREEN_HEIGHT_VALUE)
 #define IS_IPHONE_5         ( IS_IPHONE && IS_SCREEN_HEIGHT_EQUAL(568.0) )
-#define IS_SIMULATOR        ( [UIDevice currentDevice].hardware==SIMULATOR )
-#define IS_IPHONE_6         ( IS_IPHONE && ([UIDevice currentDevice].hardware==IPHONE_6 || IS_SCREEN_HEIGHT_EQUAL(667.0)) )
-#define IS_IPHONE_6_PLUS    ( IS_IPHONE && ([UIDevice currentDevice].hardware==IPHONE_6_PLUS || IS_SCREEN_HEIGHT_EQUAL(736.0)) )
+#define IS_SIMULATOR        ( [UIDeviceUtil hardware]==SIMULATOR )
+#define IS_IPHONE_6         ( IS_IPHONE && ([UIDeviceUtil hardware]==IPHONE_6 || IS_SCREEN_HEIGHT_EQUAL(667.0)) )
+#define IS_IPHONE_6_PLUS    ( IS_IPHONE && ([UIDeviceUtil hardware]==IPHONE_6_PLUS || IS_SCREEN_HEIGHT_EQUAL(736.0)) )
 
 typedef enum
 {
