@@ -5,13 +5,14 @@
   - Easy to use
   - Light weight
 
-### Version
-1.0.2
-
 ### Installation
-Add this in your pod file
+
+Go to [http://cocoapods.org](http://cocoapods.org) <br>
+Search for UIDeviceUtil lib <br>
+Copy the pod dependency and add that to your pod file. e.g.
+
 ```sh
-pod 'UIDeviceUtil', '1.0.2'
+pod 'UIDeviceUtil', '~> 1.0'
 ```
 
 ### Development
