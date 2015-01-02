@@ -19,7 +19,7 @@
 #define IS_IPHONE_6         ( IS_IPHONE && ([UIDeviceUtil hardware]==IPHONE_6 || IS_SCREEN_HEIGHT_EQUAL(667.0)) )
 #define IS_IPHONE_6_PLUS    ( IS_IPHONE && ([UIDeviceUtil hardware]==IPHONE_6_PLUS || IS_SCREEN_HEIGHT_EQUAL(736.0)) )
 
-typedef enum
+typedef NS_ENUM(int32_t, Hardware)
 {
   NOT_AVAILABLE,
   
@@ -73,7 +73,7 @@ typedef enum
   IPAD_AIR_2_WIFI_CELLULAR,
 
   SIMULATOR
-} Hardware;
+};
 
 
 @interface UIDeviceUtil : NSObject 
