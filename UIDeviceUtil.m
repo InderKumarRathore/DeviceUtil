@@ -87,6 +87,13 @@
   if ([hardware isEqualToString:@"iPad5,4"])      return IPAD_AIR_2_WIFI_CELLULAR;
   if ([hardware isEqualToString:@"i386"])         return SIMULATOR;
   if ([hardware isEqualToString:@"x86_64"])       return SIMULATOR;
+  if ([hardware hasPrefix:@"iPhone"])             return SIMULATOR;
+  if ([hardware hasPrefix:@"iPod"])               return SIMULATOR;
+  if ([hardware hasPrefix:@"iPad"])               return SIMULATOR;
+
+  //log message that your device is not present in the list
+  [self logMessage:hardware];
+
   return NOT_AVAILABLE;
 }
 
@@ -140,14 +147,16 @@
   if ([hardware isEqualToString:@"iPad4,8"])      return @"iPad Mini 3 (Wi-Fi + Cellular)";
   if ([hardware isEqualToString:@"iPad5,3"])      return @"iPad Air 2 (Wi-Fi)";
   if ([hardware isEqualToString:@"iPad5,4"])      return @"iPad Air 2 (Wi-Fi + Cellular)";
+
   if ([hardware isEqualToString:@"i386"])         return @"Simulator";
   if ([hardware isEqualToString:@"x86_64"])       return @"Simulator";
+  if ([hardware hasPrefix:@"iPhone"])             return @"iPhone";
+  if ([hardware hasPrefix:@"iPod"])               return @"iPod";
+  if ([hardware hasPrefix:@"iPad"])               return @"iPad";
 
-  NSLog(@"This is a device which is not listed in this category. Please visit https://github.com/inderkumarrathore/UIDevice-Hardware and add a comment there.");
-  NSLog(@"Your device hardware string is: %@", hardware);
-  if ([hardware hasPrefix:@"iPhone"]) return @"iPhone";
-  if ([hardware hasPrefix:@"iPod"]) return @"iPod";
-  if ([hardware hasPrefix:@"iPad"]) return @"iPad";
+  //log message that your device is not present in the list
+  [self logMessage:hardware];
+
   return nil;
 }
 
@@ -166,7 +175,6 @@
   if ([hardware isEqualToString:@"iPhone5,4"])    return @"iPhone 5C";
   if ([hardware isEqualToString:@"iPhone6,1"])    return @"iPhone 5S";
   if ([hardware isEqualToString:@"iPhone6,2"])    return @"iPhone 5S";
-
   if ([hardware isEqualToString:@"iPhone7,1"])    return @"iPhone 6 Plus";
   if ([hardware isEqualToString:@"iPhone7,2"])    return @"iPhone 6";
 
@@ -204,13 +212,12 @@
 
   if ([hardware isEqualToString:@"i386"])         return @"Simulator";
   if ([hardware isEqualToString:@"x86_64"])       return @"Simulator";
+  if ([hardware hasPrefix:@"iPhone"])             return @"iPhone";
+  if ([hardware hasPrefix:@"iPod"])               return @"iPod";
+  if ([hardware hasPrefix:@"iPad"])               return @"iPad";
 
-  NSLog(@"This is a device which is not listed in this category. Please visit https://github.com/inderkumarrathore/UIDevice-Hardware and add a comment there.");
-  NSLog(@"Your device hardware string is: %@", hardware);
-
-  if ([hardware hasPrefix:@"iPhone"]) return @"iPhone";
-  if ([hardware hasPrefix:@"iPod"]) return @"iPod";
-  if ([hardware hasPrefix:@"iPad"]) return @"iPad";
+  //log message that your device is not present in the list
+  [self logMessage:hardware];
 
   return nil;
 }
@@ -218,27 +225,26 @@
 
 + (float)hardwareNumber:(Hardware)hardware {
   switch (hardware) {
-    case IPHONE_2G: return 1.1f;
-    case IPHONE_3G: return 1.2f;
-    case IPHONE_3GS: return 2.1f;
-    case IPHONE_4:    return 3.1f;
-    case IPHONE_4_CDMA:    return 3.3f;
-    case IPHONE_4S:    return 4.1f;
-    case IPHONE_5:    return 5.1f;
-    case IPHONE_5_CDMA_GSM:    return 5.2f;
-    case IPHONE_5C:    return 5.3f;
-    case IPHONE_5C_CDMA_GSM:    return 5.4f;
-    case IPHONE_5S:    return 6.1f;
-    case IPHONE_5S_CDMA_GSM:    return 6.2f;
+    case IPHONE_2G:                         return 1.1f;
+    case IPHONE_3G:                         return 1.2f;
+    case IPHONE_3GS:                        return 2.1f;
+    case IPHONE_4:                          return 3.1f;
+    case IPHONE_4_CDMA:                     return 3.3f;
+    case IPHONE_4S:                         return 4.1f;
+    case IPHONE_5:                          return 5.1f;
+    case IPHONE_5_CDMA_GSM:                 return 5.2f;
+    case IPHONE_5C:                         return 5.3f;
+    case IPHONE_5C_CDMA_GSM:                return 5.4f;
+    case IPHONE_5S:                         return 6.1f;
+    case IPHONE_5S_CDMA_GSM:                return 6.2f;
+    case IPHONE_6_PLUS:                     return 7.1f;
+    case IPHONE_6:                          return 7.2f;
 
-    case IPHONE_6_PLUS:   return 7.1f;
-    case IPHONE_6:   return 7.2f;
-
-    case IPOD_TOUCH_1G:    return 1.1f;
-    case IPOD_TOUCH_2G:    return 2.1f;
-    case IPOD_TOUCH_3G:    return 3.1f;
-    case IPOD_TOUCH_4G:    return 4.1f;
-    case IPOD_TOUCH_5G:    return 5.1f;
+    case IPOD_TOUCH_1G:                     return 1.1f;
+    case IPOD_TOUCH_2G:                     return 2.1f;
+    case IPOD_TOUCH_3G:                     return 3.1f;
+    case IPOD_TOUCH_4G:                     return 4.1f;
+    case IPOD_TOUCH_5G:                     return 5.1f;
 
     case IPAD:                              return 1.1f;
     case IPAD_3G:                           return 1.2f;
@@ -268,8 +274,8 @@
     case IPAD_MINI_RETINA_WIFI_CELLULAR_CN: return 4.8f;
 
 
-    case SIMULATOR:    return 100.0f;
-    case NOT_AVAILABLE:    return 200.0f;
+    case SIMULATOR:                         return 100.0f;
+    case NOT_AVAILABLE:                     return 200.0f;
   }
   return 200.0f; //Device is not available
 }
@@ -333,11 +339,17 @@
         break;
           
     default:
-      NSLog(@"We have no resolution for your device's camera listed in this category. Please, make photo with back camera of your device, get its resolution in pixels (via Preview Cmd+I for example) and add a comment to this repository on GitHub.com in format Device = Hpx x Wpx.");
+      NSLog(@"We have no resolution for your device's camera listed in this category. Please, make photo with back camera of your device, get its resolution in pixels (via Preview Cmd+I for example) and add a comment to this repository (https://github.com/InderKumarRathore/UIDeviceUtil) on GitHub.com in format Device = Hpx x Wpx.");
       NSLog(@"Your device is: %@", [self hardwareDescription]);
       break;
   }
   return CGSizeZero;
+}
+
+
++ (void)logMessage:(NSString *)hardware {
+  NSLog(@"This is a device which is not listed in this category. Please visit https://github.com/InderKumarRathore/UIDeviceUtil and add a comment there.");
+  NSLog(@"Your device hardware string is: %@", hardware);
 }
 
 @end

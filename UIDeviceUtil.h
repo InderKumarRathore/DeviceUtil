@@ -7,20 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define IS_IPAD (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad)
-#define IS_IPHONE (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone)
-#define DEVICE_HARDWARE_BETTER_THAN(i) [UIDeviceUtil  isCurrentDeviceHardwareBetterThan:i]
-
-#define DEVICE_HAS_RETINA_DISPLAY (fabs([UIScreen mainScreen].scale - 2.0) <= fabs([UIScreen mainScreen].scale - 2.0)*DBL_EPSILON)
-
-#define IS_SCREEN_HEIGHT_EQUAL(SCREEN_HEIGHT_VALUE) (MAX([UIScreen mainScreen].bounds.size.height,[UIScreen mainScreen].bounds.size.width)==SCREEN_HEIGHT_VALUE)
-#define IS_IPHONE_5         ( IS_IPHONE && IS_SCREEN_HEIGHT_EQUAL(568.0) )
-#define IS_SIMULATOR        ( [UIDeviceUtil hardware]==SIMULATOR )
-#define IS_IPHONE_6         ( IS_IPHONE && ([UIDeviceUtil hardware]==IPHONE_6 || IS_SCREEN_HEIGHT_EQUAL(667.0)) )
-#define IS_IPHONE_6_PLUS    ( IS_IPHONE && ([UIDeviceUtil hardware]==IPHONE_6_PLUS || IS_SCREEN_HEIGHT_EQUAL(736.0)) )
-
-typedef enum
-{
+typedef NS_ENUM(NSUInteger, Hardware) {
   NOT_AVAILABLE,
   
   IPHONE_2G,
@@ -35,7 +22,6 @@ typedef enum
   IPHONE_5C_CDMA_GSM,
   IPHONE_5S,
   IPHONE_5S_CDMA_GSM,
-
   IPHONE_6_PLUS,
   IPHONE_6,
 
@@ -73,10 +59,11 @@ typedef enum
   IPAD_AIR_2_WIFI_CELLULAR,
 
   SIMULATOR
-} Hardware;
+};
 
 
-@interface UIDeviceUtil : NSObject 
+@interface UIDeviceUtil : NSObject
+
 /** This method retruns the hardware type */
 + (NSString*)hardwareString;
 
@@ -86,7 +73,7 @@ typedef enum
 /** This method returns the readable description of hardware string */
 + (NSString*)hardwareDescription;
 
-/** This method returs the readble description without identifier (GSM, CDMA, GLOBAL) */
+/** This method returs the readable description without identifier (GSM, CDMA, GLOBAL) */
 + (NSString *)hardwareSimpleDescription;
 
 /** This method returns YES if the current device is better than the hardware passed */
