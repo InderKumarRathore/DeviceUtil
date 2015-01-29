@@ -12,7 +12,7 @@ Search for UIDeviceUtil lib <br>
 Copy the pod dependency and add that to your pod file. e.g.
 
 ```sh
-pod 'UIDeviceUtil', '~> 1.0'
+pod 'UIDeviceUtil', '~> 1.1'
 ```
 
 ### Development
