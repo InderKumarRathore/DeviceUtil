@@ -311,6 +311,8 @@
     case IPHONE_5_CDMA_GSM:
     case IPHONE_5C:
     case IPHONE_5C_CDMA_GSM:
+    case IPHONE_6:
+    case IPHONE_6_PLUS:
       return CGSizeMake(3264, 2448);
       break;
 
