@@ -73,11 +73,11 @@ typedef NS_ENUM(NSUInteger, Hardware) {
 /** This method returns the readable description of hardware string */
 + (NSString*)hardwareDescription;
 
-/** This method returs the readable description without identifier (GSM, CDMA, GLOBAL) */
-+ (NSString *)hardwareSimpleDescription;
-
-/** This method returns YES if the current device is better than the hardware passed */
-+ (BOOL)isCurrentDeviceHardwareBetterThan:(Hardware)hardware;
+/**
+ This method returns the hardware number not actual but logically.
+ e.g. if the hardware string is 5,1 then hardware number would be 5.1
+ */
++ (float)hardwareNumber:(Hardware)hardware;
 
 /** This method returns the resolution for still image that can be received
  from back camera of the current device. Resolution returned for image oriented landscape right. **/

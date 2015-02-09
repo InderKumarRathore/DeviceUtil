@@ -222,7 +222,6 @@
   return nil;
 }
 
-
 + (float)hardwareNumber:(Hardware)hardware {
   switch (hardware) {
     case IPHONE_2G:                         return 1.1f;
@@ -280,14 +279,7 @@
   return 200.0f; //Device is not available
 }
 
-+ (BOOL)isCurrentDeviceHardwareBetterThan:(Hardware)hardware {
-  float otherHardware = [self hardwareNumber:hardware];
-  float currentHardware = [self hardwareNumber:[self hardware]];
-  return currentHardware >= otherHardware;
-}
-
-+ (CGSize)backCameraStillImageResolutionInPixels
-{
++ (CGSize)backCameraStillImageResolutionInPixels {
   switch ([self hardware]) {
     case IPHONE_2G:
     case IPHONE_3G:
@@ -347,7 +339,6 @@
   }
   return CGSizeZero;
 }
-
 
 + (void)logMessage:(NSString *)hardware {
   NSLog(@"This is a device which is not listed in this category. Please visit https://github.com/InderKumarRathore/UIDeviceUtil and add a comment there.");
