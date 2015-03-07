@@ -1,6 +1,7 @@
 # UIDeviceUtil
 
 *UIDeviceUtil* is a simple lib to know the exact type of the device instead of just iPhone or iPad.
+For Swift lib please visit [DeviceGuru](https://github.com/InderKumarRathore/DeviceGuru)
 
   - Easy to use
   - Light weight
@@ -19,7 +20,7 @@ pod 'UIDeviceUtil', '~> 1.1'
 
 Want to contribute? Great!
 
-Fork the repo and send me the pull request :)
+Send the pull request :)
 
 
 ### License
