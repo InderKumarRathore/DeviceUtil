@@ -13,7 +13,7 @@ Search for DeviceUtil lib <br>
 Copy the pod dependency and add that to your pod file. e.g.
 
 ```sh
-pod 'DeviceUtil', '~> 1.3'
+pod 'DeviceUtil', '~> 1.2'
 ```
 
 ### Development

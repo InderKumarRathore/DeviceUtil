@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name                = "DeviceUtil"
-  s.version             = "1.3.0"
+  s.version             = "1.2.0"
   s.summary             = "This category helps to check the hardware version of the device in iOS."
   s.homepage            = "https://github.com/InderKumarRathore/DeviceUtil.git"
   s.license             = { :type => "MIT", :file => "LICENSE.txt" }
