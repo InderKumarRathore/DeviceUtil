@@ -1,5 +1,5 @@
 //
-//  DeviceName.h
+//  DeviceUtil.h
 //
 //  Created by Inder Kumar Rathore on 19/01/13.
 //  Copyright (c) 2013 Rathore. All rights reserved.
@@ -62,7 +62,7 @@ typedef NS_ENUM(NSUInteger, Hardware) {
 };
 
 
-@interface UIDeviceUtil : NSObject
+@interface DeviceUtil : NSObject
 
 /** This method retruns the hardware type */
 + (NSString*)hardwareString;

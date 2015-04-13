@@ -1,15 +1,15 @@
 //
-//  DeviceName.m
+//  DeviceUtil.m
 //
 //  Created by Inder Kumar Rathore on 19/01/13.
 //  Copyright (c) 2013 Rathore. All rights reserved.
 //
 
-#import "UIDeviceUtil.h"
+#import "DeviceUtil.h"
 #include <sys/types.h>
 #include <sys/sysctl.h>
 
-@implementation UIDeviceUtil
+@implementation DeviceUtil
 + (NSString*)hardwareString {
   int name[] = {CTL_HW,HW_MACHINE};
   size_t size = 100;
