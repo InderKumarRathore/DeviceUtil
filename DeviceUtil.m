@@ -110,8 +110,8 @@
   if ([hardware isEqualToString:@"iPhone5,2"])    return @"iPhone 5 (Global)";
   if ([hardware isEqualToString:@"iPhone5,3"])    return @"iPhone 5C (GSM)";
   if ([hardware isEqualToString:@"iPhone5,4"])    return @"iPhone 5C (Global)";
-  if ([hardware isEqualToString:@"iPhone6,1"])    return @"iPhone 5S (GSM)";
-  if ([hardware isEqualToString:@"iPhone6,2"])    return @"iPhone 5S (Global)";
+  if ([hardware isEqualToString:@"iPhone6,1"])    return @"iPhone 5s (GSM)";
+  if ([hardware isEqualToString:@"iPhone6,2"])    return @"iPhone 5s (Global)";
 
   if ([hardware isEqualToString:@"iPhone7,1"])    return @"iPhone 6 Plus";
   if ([hardware isEqualToString:@"iPhone7,2"])    return @"iPhone 6";
@@ -173,8 +173,8 @@
   if ([hardware isEqualToString:@"iPhone5,2"])    return @"iPhone 5";
   if ([hardware isEqualToString:@"iPhone5,3"])    return @"iPhone 5C";
   if ([hardware isEqualToString:@"iPhone5,4"])    return @"iPhone 5C";
-  if ([hardware isEqualToString:@"iPhone6,1"])    return @"iPhone 5S";
-  if ([hardware isEqualToString:@"iPhone6,2"])    return @"iPhone 5S";
+  if ([hardware isEqualToString:@"iPhone6,1"])    return @"iPhone 5s";
+  if ([hardware isEqualToString:@"iPhone6,2"])    return @"iPhone 5s";
   if ([hardware isEqualToString:@"iPhone7,1"])    return @"iPhone 6 Plus";
   if ([hardware isEqualToString:@"iPhone7,2"])    return @"iPhone 6";
 
