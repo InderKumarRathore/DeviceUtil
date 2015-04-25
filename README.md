@@ -26,5 +26,3 @@ Send the pull request :)
 ### License
 MIT
 
-
-**Free Software, Hell Yeah!**
