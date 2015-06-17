@@ -16,6 +16,13 @@ Copy the pod dependency and add that to your pod file. e.g.
 pod 'DeviceUtil', '~> 1.2'
 ```
 
+### Usage
+```sh
+  if ([DeviceUtil hardware] == IPHONE_5C) {
+    NSLog(@"Device is iPhone 5c");
+  }
+```
+
 ### Development
 
 Want to contribute? Great!
@@ -25,4 +32,5 @@ Send the pull request :)
 
 ### License
 MIT
+
 
