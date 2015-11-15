@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>iPhone1,1</key>
+	<dict>
+		<key>version</key>
+		<real>1.1</real>
+		<key>name</key>
+		<string>iPhone 2G</string>
+	</dict>
+	<key>iPhone1,2</key>
+	<dict>
+		<key>version</key>
+		<real>1.2</real>
+		<key>name</key>
+		<string>iPhone 3G</string>
+	</dict>
+	<key>iPhone2,1</key>
+	<dict>
+		<key>version</key>
+		<real>2.1</real>
+		<key>name</key>
+		<string>iPhone 3GS</string>
+	</dict>
+	<key>iPhone3,1</key>
+	<dict>
+		<key>version</key>
+		<real>3.1</real>
+		<key>name</key>
+		<string>iPhone 4 (GSM)</string>
+	</dict>
+	<key>iPhone3,2</key>
+	<dict>
+		<key>version</key>
+		<real>3.2</real>
+		<key>name</key>
+		<string>iPhone 4 (GSM Rev. A)</string>
+	</dict>
+	<key>iPhone3,3</key>
+	<dict>
+		<key>version</key>
+		<real>3.3</real>
+		<key>name</key>
+		<string>iPhone 4 (CDMA)</string>
+	</dict>
+	<key>iPhone4,1</key>
+	<dict>
+		<key>version</key>
+		<real>4.1</real>
+		<key>name</key>
+		<string>iPhone 4S</string>
+	</dict>
+	<key>iPhone5,1</key>
+	<dict>
+		<key>version</key>
+		<real>5.1</real>
+		<key>name</key>
+		<string>iPhone 5 (GSM)</string>
+	</dict>
+	<key>iPhone5,2</key>
+	<dict>
+		<key>version</key>
+		<real>5.2</real>
+		<key>name</key>
+		<string>iPhone 5 (Global)</string>
+	</dict>
+	<key>iPhone5,3</key>
+	<dict>
+		<key>version</key>
+		<real>5.3</real>
+		<key>name</key>
+		<string>iPhone 5c (GSM)</string>
+	</dict>
+	<key>iPhone5,4</key>
+	<dict>
+		<key>version</key>
+		<real>5.4</real>
+		<key>name</key>
+		<string>iPhone 5c (Global)</string>
+	</dict>
+	<key>iPhone6,1</key>
+	<dict>
+		<key>version</key>
+		<real>6.1</real>
+		<key>name</key>
+		<string>iPhone 5s (GSM)</string>
+	</dict>
+	<key>iPhone6,2</key>
+	<dict>
+		<key>version</key>
+		<real>6.2</real>
+		<key>name</key>
+		<string>iPhone 5s (Global)</string>
+	</dict>
+	<key>iPhone7,1</key>
+	<dict>
+		<key>version</key>
+		<real>7.1</real>
+		<key>name</key>
+		<string>iPhone 6 Plus</string>
+	</dict>
+	<key>iPhone7,2</key>
+	<dict>
+		<key>version</key>
+		<real>7.2</real>
+		<key>name</key>
+		<string>iPhone 6</string>
+	</dict>
+	<key>iPhone8,1</key>
+	<dict>
+		<key>version</key>
+		<real>8.1</real>
+		<key>name</key>
+		<string>iPhone 6s</string>
+	</dict>
+	<key>iPhone8,2</key>
+	<dict>
+		<key>version</key>
+		<real>8.199999999999999</real>
+		<key>name</key>
+		<string>iPhone 6s Plus</string>
+	</dict>
+	<key>iPod1,1</key>
+	<dict>
+		<key>version</key>
+		<real>1.1</real>
+		<key>name</key>
+		<string>iPod Touch (1 Gen)</string>
+	</dict>
+	<key>iPod2,1</key>
+	<dict>
+		<key>version</key>
+		<real>2.1</real>
+		<key>name</key>
+		<string>iPod Touch (2 Gen)</string>
+	</dict>
+	<key>iPod3,1</key>
+	<dict>
+		<key>version</key>
+		<real>3.1</real>
+		<key>name</key>
+		<string>iPod Touch (3 Gen)</string>
+	</dict>
+	<key>iPod4,1</key>
+	<dict>
+		<key>version</key>
+		<real>4.1</real>
+		<key>name</key>
+		<string>iPod Touch (4 Gen)</string>
+	</dict>
+	<key>iPod5,1</key>
+	<dict>
+		<key>version</key>
+		<real>5.1</real>
+		<key>name</key>
+		<string>iPod Touch (5 Gen)</string>
+	</dict>
+	<key>iPod7,1</key>
+	<dict>
+		<key>version</key>
+		<real>7.1</real>
+		<key>name</key>
+		<string>iPod Touch (6 Gen)</string>
+	</dict>
+	<key>iPad1,1</key>
+	<dict>
+		<key>version</key>
+		<real>1.1</real>
+		<key>name</key>
+		<string>iPad (WiFi)</string>
+	</dict>
+	<key>iPad1,2</key>
+	<dict>
+		<key>version</key>
+		<real>1.2</real>
+		<key>name</key>
+		<string>iPad 3G</string>
+	</dict>
+	<key>iPad2,1</key>
+	<dict>
+		<key>version</key>
+		<real>2.1</real>
+		<key>name</key>
+		<string>iPad 2 (WiFi)</string>
+	</dict>
+	<key>iPad2,2</key>
+	<dict>
+		<key>version</key>
+		<real>2.2</real>
+		<key>name</key>
+		<string>iPad 2 (GSM)</string>
+	</dict>
+	<key>iPad2,3</key>
+	<dict>
+		<key>version</key>
+		<real>2.3</real>
+		<key>name</key>
+		<string>iPad 2 (CDMA)</string>
+	</dict>
+	<key>iPad2,4</key>
+	<dict>
+		<key>version</key>
+		<real>2.4</real>
+		<key>name</key>
+		<string>iPad 2 (WiFi Rev. A)</string>
+	</dict>
+	<key>iPad2,5</key>
+	<dict>
+		<key>version</key>
+		<real>2.5</real>
+		<key>name</key>
+		<string>iPad Mini (WiFi)</string>
+	</dict>
+	<key>iPad2,6</key>
+	<dict>
+		<key>version</key>
+		<real>2.6</real>
+		<key>name</key>
+		<string>iPad Mini (GSM)</string>
+	</dict>
+	<key>iPad2,7</key>
+	<dict>
+		<key>version</key>
+		<real>2.7</real>
+		<key>name</key>
+		<string>iPad Mini (CDMA)</string>
+	</dict>
+	<key>iPad3,1</key>
+	<dict>
+		<key>version</key>
+		<real>3.1</real>
+		<key>name</key>
+		<string>iPad 3 (WiFi)</string>
+	</dict>
+	<key>iPad3,2</key>
+	<dict>
+		<key>version</key>
+		<real>3.2</real>
+		<key>name</key>
+		<string>iPad 3 (CDMA)</string>
+	</dict>
+	<key>iPad3,3</key>
+	<dict>
+		<key>version</key>
+		<real>3.3</real>
+		<key>name</key>
+		<string>iPad 3 (Global)</string>
+	</dict>
+	<key>iPad3,4</key>
+	<dict>
+		<key>version</key>
+		<real>3.4</real>
+		<key>name</key>
+		<string>iPad 4 (WiFi)</string>
+	</dict>
+	<key>iPad3,5</key>
+	<dict>
+		<key>version</key>
+		<real>3.5</real>
+		<key>name</key>
+		<string>iPad 4 (CDMA)</string>
+	</dict>
+	<key>iPad3,6</key>
+	<dict>
+		<key>version</key>
+		<real>3.6</real>
+		<key>name</key>
+		<string>iPad 4 (Global)</string>
+	</dict>
+	<key>iPad4,1</key>
+	<dict>
+		<key>version</key>
+		<real>4.1</real>
+		<key>name</key>
+		<string>iPad Air (WiFi)</string>
+	</dict>
+	<key>iPad4,2</key>
+	<dict>
+		<key>version</key>
+		<real>4.2</real>
+		<key>name</key>
+		<string>iPad Air (WiFi+GSM)</string>
+	</dict>
+	<key>iPad4,3</key>
+	<dict>
+		<key>version</key>
+		<real>4.3</real>
+		<key>name</key>
+		<string>iPad Air (WiFi+CDMA)</string>
+	</dict>
+	<key>iPad4,4</key>
+	<dict>
+		<key>version</key>
+		<real>4.4</real>
+		<key>name</key>
+		<string>iPad Mini Retina (WiFi)</string>
+	</dict>
+	<key>iPad4,5</key>
+	<dict>
+		<key>version</key>
+		<real>4.5</real>
+		<key>name</key>
+		<string>iPad Mini Retina (WiFi+CDMA)</string>
+	</dict>
+	<key>iPad4,6</key>
+	<dict>
+		<key>version</key>
+		<real>4.6</real>
+		<key>name</key>
+		<string>iPad Mini Retina (Wi-Fi + Cellular CN)</string>
+	</dict>
+	<key>iPad4,7</key>
+	<dict>
+		<key>version</key>
+		<real>4.7</real>
+		<key>name</key>
+		<string>iPad Mini 3 (Wi-Fi)</string>
+	</dict>
+	<key>iPad4,8</key>
+	<dict>
+		<key>version</key>
+		<real>4.8</real>
+		<key>name</key>
+		<string>iPad Mini 3 (Wi-Fi + Cellular)</string>
+	</dict>
+	<key>iPad4,9</key>
+	<dict>
+		<key>version</key>
+		<real>4.9</real>
+		<key>name</key>
+		<string>iPad mini 3 (Wi-Fi/Cellular, China)</string>
+	</dict>
+	<key>iPad5,1</key>
+	<dict>
+		<key>version</key>
+		<real>5.1</real>
+		<key>name</key>
+		<string>iPad mini 4 (Wi-Fi Only)</string>
+	</dict>
+	<key>iPad5,2</key>
+	<dict>
+		<key>version</key>
+		<real>5.2</real>
+		<key>name</key>
+		<string>iPad mini 4 (Wi-Fi/Cellular)</string>
+	</dict>
+	<key>iPad5,3</key>
+	<dict>
+		<key>version</key>
+		<real>5.3</real>
+		<key>name</key>
+		<string>iPad Air 2 (Wi-Fi)</string>
+	</dict>
+	<key>iPad5,4</key>
+	<dict>
+		<key>version</key>
+		<real>5.4</real>
+		<key>name</key>
+		<string>iPad Air 2 (Wi-Fi + Cellular)</string>
+	</dict>
+	<key>iPad6,7</key>
+	<dict>
+		<key>version</key>
+		<real>6.7</real>
+		<key>name</key>
+		<string>iPad Pro (Wi-Fi Only)</string>
+	</dict>
+	<key>iPad6,8</key>
+	<dict>
+		<key>version</key>
+		<real>6.8</real>
+		<key>name</key>
+		<string>iPad Pro (Wi-Fi/Cellular)</string>
+	</dict>
+	<key>i386</key>
+	<dict>
+		<key>version</key>
+		<integer>-1</integer>
+		<key>name</key>
+		<string>Simulator</string>
+	</dict>
+	<key>x86_64</key>
+	<dict>
+		<key>version</key>
+		<integer>-1</integer>
+		<key>name</key>
+		<string>Simulator</string>
+	</dict>
+</dict>
+</plist>
