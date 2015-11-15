@@ -135,8 +135,8 @@ static NSString* const iPad5_4 = @"iPad5,4";
 static NSString* const iPad6_7 = @"iPad6,7";
 static NSString* const iPad6_8 = @"iPad6,8";
 
-static NSString* const i386    = @"i386";
-static NSString* const x86_64  = @"x86_64";
+static NSString* const i386_Sim    = @"i386";
+static NSString* const x86_64_Sim  = @"x86_64";
 
 
 @interface DeviceUtil : NSObject

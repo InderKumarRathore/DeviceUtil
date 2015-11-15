@@ -126,8 +126,8 @@
   if ([hardware isEqualToString:iPad6_7])      return IPAD_PRO_WIFI;
   if ([hardware isEqualToString:iPad6_8])      return IPAD_PRO_WIFI_CELLULAR;
   
-  if ([hardware isEqualToString:i386])         return SIMULATOR;
-  if ([hardware isEqualToString:x86_64])       return SIMULATOR;
+  if ([hardware isEqualToString:i386_Sim])         return SIMULATOR;
+  if ([hardware isEqualToString:x86_64_Sim])       return SIMULATOR;
 
   //log message that your device is not present in the list
   [self logMessage:hardware];
@@ -228,7 +228,7 @@
 }
 
 + (void)logMessage:(NSString *)hardware {
-  NSLog(@"This is a device which is not listed in this category. Please visit https://github.com/InderKumarRathore/UIDeviceUtil and add a comment there.");
+  NSLog(@"This is a device which is not listed in this category. Please visit https://github.com/InderKumarRathore/DeviceUtil and add a comment there.");
   NSLog(@"Your device hardware string is: %@", hardware);
 }
 
