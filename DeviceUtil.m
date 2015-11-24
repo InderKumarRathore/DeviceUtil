@@ -41,25 +41,23 @@
 
 
 + (NSDictionary *)getDeviceList {
-  @synchronized(self) {
-    static NSDictionary *deviceList = nil;
-    if (deviceList == nil) {
-      NSBundle *deviceUtilBundle = nil;
-      NSURL *url = [[NSBundle mainBundle] URLForResource:@"DeviceUtil" withExtension:@"bundle"];
-      if (url == nil) {
-        //the bundle is not present tyr main bundle, this will happen if you drag and drop the files
-        //instead of using pod
-        deviceUtilBundle = [NSBundle mainBundle];
-      }
-      else {
-        //device bundle is present just load it
-        deviceUtilBundle = [NSBundle bundleWithURL:url];
-      }
-      deviceList = [NSDictionary dictionaryWithContentsOfFile:[deviceUtilBundle pathForResource:@"DeviceList" ofType:@"plist"]];
-      NSAssert(deviceList != nil, @"Please either use cocoapod for this library or include DeviceList.plist in your project");
+  NSDictionary *deviceList = nil;
+  if (deviceList == nil) {
+    NSBundle *deviceUtilBundle = nil;
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"DeviceUtil" withExtension:@"bundle"];
+    if (url == nil) {
+      //the bundle is not present tyr main bundle, this will happen if you drag and drop the files
+      //instead of using pod
+      deviceUtilBundle = [NSBundle mainBundle];
     }
-    return deviceList;
+    else {
+      //device bundle is present just load it
+      deviceUtilBundle = [NSBundle bundleWithURL:url];
+    }
+    deviceList = [NSDictionary dictionaryWithContentsOfFile:[deviceUtilBundle pathForResource:@"DeviceList" ofType:@"plist"]];
+    NSAssert(deviceList != nil, @"Please either use cocoapod for this library or include DeviceList.plist in your project");
   }
+  return deviceList;
 }
 
 
