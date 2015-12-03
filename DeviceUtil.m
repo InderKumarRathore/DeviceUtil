@@ -193,6 +193,11 @@
       return CGSizeMake(3264, 2448);
       break;
 
+    case IPHONE_6S:
+    case IPHONE_6S_PLUS:
+      return CGSizeMake(4032, 3024);
+      break;
+
     case IPOD_TOUCH_4G:
       return CGSizeMake(960, 720);
       break;
