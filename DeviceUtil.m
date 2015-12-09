@@ -43,12 +43,13 @@
 + (NSDictionary *)getDeviceList {
   NSDictionary *deviceList = nil;
   if (deviceList == nil) {
+    NSBundle *deviceUtilTopBundle = [NSBundle bundleForClass:[self class]];
     NSBundle *deviceUtilBundle = nil;
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"DeviceUtil" withExtension:@"bundle"];
+    NSURL *url = [deviceUtilTopBundle URLForResource:@"DeviceUtil" withExtension:@"bundle"];
     if (url == nil) {
       //the bundle is not present tyr main bundle, this will happen if you drag and drop the files
       //instead of using pod
-      deviceUtilBundle = [NSBundle mainBundle];
+      deviceUtilBundle = deviceUtilTopBundle;
     }
     else {
       //device bundle is present just load it
@@ -59,7 +60,6 @@
   }
   return deviceList;
 }
-
 
 + (Hardware)hardware {
   NSString *hardware = [self hardwareString];
