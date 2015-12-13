@@ -44,7 +44,7 @@
   // if it's DeviceUtil.framework then it returns the DeviceUtil.framework bundle
   NSBundle *deviceUtilTopBundle = [NSBundle bundleForClass:[self class]];
   NSDictionary *deviceList = [NSDictionary dictionaryWithContentsOfFile:[deviceUtilTopBundle pathForResource:@"DeviceList" ofType:@"plist"]];
-  NSAssert(deviceList != nil, @"DevicePlist not found in the bundle.");
+  NSAssert(deviceList != nil, @"DevicePlist.plist not found in the bundle.");
   return deviceList;
 }
 
