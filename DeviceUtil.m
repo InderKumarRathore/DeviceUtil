@@ -42,20 +42,11 @@
 + (NSDictionary *)getDeviceList {
   NSDictionary *deviceList = nil;
   if (deviceList == nil) {
+    // get the bundle of the DeviceUtil if it's main bundle then it returns main bundle
+    // if it's DeviceUtil.framework then it returns the DeviceUtil.framework bundle
     NSBundle *deviceUtilTopBundle = [NSBundle bundleForClass:[self class]];
-    NSBundle *deviceUtilBundle = nil;
-    NSURL *url = [deviceUtilTopBundle URLForResource:@"DeviceUtil" withExtension:@"bundle"];
-    if (url == nil) {
-      //the bundle is not present tyr main bundle, this will happen if you drag and drop the files
-      //instead of using pod
-      deviceUtilBundle = deviceUtilTopBundle;
-    }
-    else {
-      //device bundle is present just load it
-      deviceUtilBundle = [NSBundle bundleWithURL:url];
-    }
-    deviceList = [NSDictionary dictionaryWithContentsOfFile:[deviceUtilBundle pathForResource:@"DeviceList" ofType:@"plist"]];
-    NSAssert(deviceList != nil, @"Please either use cocoapod for this library or include DeviceList.plist in your project");
+    deviceList = [NSDictionary dictionaryWithContentsOfFile:[deviceUtilTopBundle pathForResource:@"DeviceList" ofType:@"plist"]];
+    NSAssert(deviceList != nil, @"DevicePlist not found in the bundle.");
   }
   return deviceList;
 }
