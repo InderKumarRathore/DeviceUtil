@@ -18,7 +18,7 @@
   size_t size = 100;
   sysctl(name, 2, NULL, &size, NULL, 0); // getting size of answer
   char *hw_machine = malloc(size);
-
+  
   sysctl(name, 2, hw_machine, &size, NULL, 0);
   NSString *hardware = [NSString stringWithUTF8String:hw_machine];
   free(hw_machine);
@@ -40,14 +40,11 @@
 
 
 + (NSDictionary *)getDeviceList {
-  NSDictionary *deviceList = nil;
-  if (deviceList == nil) {
-    // get the bundle of the DeviceUtil if it's main bundle then it returns main bundle
-    // if it's DeviceUtil.framework then it returns the DeviceUtil.framework bundle
-    NSBundle *deviceUtilTopBundle = [NSBundle bundleForClass:[self class]];
-    deviceList = [NSDictionary dictionaryWithContentsOfFile:[deviceUtilTopBundle pathForResource:@"DeviceList" ofType:@"plist"]];
-    NSAssert(deviceList != nil, @"DevicePlist not found in the bundle.");
-  }
+  // get the bundle of the DeviceUtil if it's main bundle then it returns main bundle
+  // if it's DeviceUtil.framework then it returns the DeviceUtil.framework bundle
+  NSBundle *deviceUtilTopBundle = [NSBundle bundleForClass:[self class]];
+  NSDictionary *deviceList = [NSDictionary dictionaryWithContentsOfFile:[deviceUtilTopBundle pathForResource:@"DeviceList" ofType:@"plist"]];
+  NSAssert(deviceList != nil, @"DevicePlist not found in the bundle.");
   return deviceList;
 }
 
@@ -107,7 +104,7 @@
   if ([hardware isEqualToString:iPad4_9])      return IPAD_MINI_3_WIFI_CELLULAR_CN;
   if ([hardware isEqualToString:iPad5_1])      return IPAD_MINI_4_WIFI;
   if ([hardware isEqualToString:iPad5_2])      return IPAD_MINI_4_WIFI_CELLULAR;
-
+  
   if ([hardware isEqualToString:iPad5_3])      return IPAD_AIR_2_WIFI;
   if ([hardware isEqualToString:iPad5_4])      return IPAD_AIR_2_WIFI_CELLULAR;
   
@@ -116,10 +113,10 @@
   
   if ([hardware isEqualToString:i386_Sim])         return SIMULATOR;
   if ([hardware isEqualToString:x86_64_Sim])       return SIMULATOR;
-
+  
   //log message that your device is not present in the list
   [self logMessage:hardware];
-
+  
   return NOT_AVAILABLE;
 }
 
@@ -182,36 +179,36 @@
     case IPHONE_6_PLUS:
       return CGSizeMake(3264, 2448);
       break;
-
+      
     case IPHONE_6S:
     case IPHONE_6S_PLUS:
       return CGSizeMake(4032, 3024);
       break;
-
+      
     case IPOD_TOUCH_4G:
       return CGSizeMake(960, 720);
       break;
     case IPOD_TOUCH_5G:
       return CGSizeMake(2440, 1605);
       break;
-
+      
     case IPAD_2_WIFI:
     case IPAD_2:
     case IPAD_2_CDMA:
       return CGSizeMake(872, 720);
       break;
-
+      
     case IPAD_MINI_WIFI:
     case IPAD_MINI:
     case IPAD_MINI_WIFI_CDMA:
       return CGSizeMake(1820, 1304);
       break;
-    
+      
     case IPAD_AIR_2_WIFI:
     case IPAD_AIR_2_WIFI_CELLULAR:
-        return CGSizeMake (1536, 2048);
-        break;
-          
+      return CGSizeMake (1536, 2048);
+      break;
+      
     default:
       NSLog(@"We have no resolution for your device's camera listed in this category. Please, make photo with back camera of your device, get its resolution in pixels (via Preview Cmd+I for example) and add a comment to this repository (https://github.com/InderKumarRathore/DeviceUtil) on GitHub.com in format Device = Hpx x Wpx.");
       NSLog(@"Your device is: %@", [self hardwareDescription]);
