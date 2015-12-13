@@ -8,7 +8,6 @@
 //
 
 #import "DeviceUtil.h"
-#include <sys/types.h>
 #include <sys/sysctl.h>
 
 
