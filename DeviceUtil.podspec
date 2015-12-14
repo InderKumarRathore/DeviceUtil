@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |spec|
 spec.name             = "DeviceUtil"
-spec.version          = "1.3.3"
+spec.version          = "1.3.4"
 spec.summary          = "DeviceUtil helps identifying the exact harware type of the device. e.g. iPhone 6 or iPhone 6s."
 spec.homepage         = "https://github.com/InderKumarRathore/DeviceUtil.git"
 spec.license          = { :type => "MIT", :file => "LICENSE.txt" }
