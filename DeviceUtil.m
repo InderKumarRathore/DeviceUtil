@@ -44,7 +44,15 @@
   // if it's DeviceUtil.framework then it returns the DeviceUtil.framework bundle
   NSBundle *deviceUtilTopBundle = [NSBundle bundleForClass:[self class]];
   NSURL *url = [deviceUtilTopBundle URLForResource:@"DeviceUtil" withExtension:@"bundle"];
-  NSBundle *deviceUtilBundle = [NSBundle bundleWithURL:url];
+  NSBundle *deviceUtilBundle;
+  if (url != nil) {
+    // DeviceUtil bundle is present
+    deviceUtilBundle = [NSBundle bundleWithURL:url];
+  }
+  else {
+    // pick the main buncle
+    deviceUtilBundle = deviceUtilTopBundle;
+  }
   NSString *path = [deviceUtilBundle pathForResource:@"DeviceList" ofType:@"plist"];
   NSDictionary *deviceList = [NSDictionary dictionaryWithContentsOfFile:path];
   NSAssert(deviceList != nil, @"DevicePlist not found in the bundle.");
