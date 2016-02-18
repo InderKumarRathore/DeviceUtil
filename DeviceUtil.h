@@ -144,7 +144,7 @@ static NSString* const x86_64_Sim  = @"x86_64";
 /** This method retruns the hardware type */
 + (NSString*)hardwareString;
 
-/** This method returns the Hardware enum depending upon harware string */
+/** This method returns the Hardware enum depending upon hardware string */
 + (Hardware)hardware;
 
 /** This method returns the readable description of hardware string */
