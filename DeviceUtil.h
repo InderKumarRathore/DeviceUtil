@@ -29,7 +29,7 @@ typedef NS_ENUM(NSUInteger, Hardware) {
   IPHONE_6_PLUS,
   IPHONE_6S,
   IPHONE_6S_PLUS,
-  
+  IPHONE_SE,
 
   IPOD_TOUCH_1G,
   IPOD_TOUCH_2G,

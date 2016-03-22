@@ -121,6 +121,12 @@
 		<key>name</key>
 		<string>iPhone 6s Plus</string>
 	</dict>
+	<dict>
+		<key>version</key>
+		<real>8.4</real>
+		<key>name</key>
+		<string>iPhone SE</string>
+	</dict>
 	<key>iPod1,1</key>
 	<dict>
 		<key>version</key>
