@@ -81,7 +81,8 @@
   if ([hardware isEqualToString:iPhone7_2])    return IPHONE_6;
   if ([hardware isEqualToString:iPhone8_1])    return IPHONE_6S;
   if ([hardware isEqualToString:iPhone8_2])    return IPHONE_6S_PLUS;
-  
+  if ([hardware isEqualToString:iPhone8_4])    return IPHONE_SE;
+
   if ([hardware isEqualToString:iPod1_1])      return IPOD_TOUCH_1G;
   if ([hardware isEqualToString:iPod2_1])      return IPOD_TOUCH_2G;
   if ([hardware isEqualToString:iPod3_1])      return IPOD_TOUCH_3G;
