@@ -117,10 +117,11 @@
 	<key>iPhone8,2</key>
 	<dict>
 		<key>version</key>
-		<real>8.199999999999999</real>
+		<real>8.2</real>
 		<key>name</key>
 		<string>iPhone 6s Plus</string>
 	</dict>
+	<key>iPhone8,4</key>
 	<dict>
 		<key>version</key>
 		<real>8.4</real>
