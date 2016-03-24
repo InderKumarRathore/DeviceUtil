@@ -1,6 +1,8 @@
 # DeviceUtil
 
-*DeviceUtil* helps identifying the exact harware type of the device. e.g. iPhone 6 or iPhone 6s. For **Swift** please visit [DeviceGuru](https://github.com/InderKumarRathore/DeviceGuru)
+### For **Swift** please visit [DeviceGuru](https://github.com/InderKumarRathore/DeviceGuru)
+
+*DeviceUtil* helps identifying the exact harware type of the device. e.g. iPhone 6 or iPhone 6s.
 
   - Easy to use
   - Light weight
