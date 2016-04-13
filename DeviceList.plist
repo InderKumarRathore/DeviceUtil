@@ -366,6 +366,20 @@
 		<key>name</key>
 		<string>iPad Air 2 (Wi-Fi + Cellular)</string>
 	</dict>
+	<key>iPad6,3</key>
+	<dict>
+		<key>version</key>
+		<real>6.3</real>
+		<key>name</key>
+		<string>iPad Pro 9.7-inch (Wi-Fi Only)</string>
+	</dict>
+	<key>iPad6,4</key>
+	<dict>
+		<key>version</key>
+		<real>6.4</real>
+		<key>name</key>
+		<string>iPad Pro 9.7-inch (Wi-Fi + Cellular)</string>
+	</dict>
 	<key>iPad6,7</key>
 	<dict>
 		<key>version</key>

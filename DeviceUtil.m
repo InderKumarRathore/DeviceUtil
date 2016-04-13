@@ -119,7 +119,10 @@
   
   if ([hardware isEqualToString:iPad5_3])      return IPAD_AIR_2_WIFI;
   if ([hardware isEqualToString:iPad5_4])      return IPAD_AIR_2_WIFI_CELLULAR;
-  
+
+  if ([hardware isEqualToString:iPad6_3])      return IPAD_PRO_97_WIFI;
+  if ([hardware isEqualToString:iPad6_4])      return IPAD_PRO_97_WIFI_CELLULAR;
+
   if ([hardware isEqualToString:iPad6_7])      return IPAD_PRO_WIFI;
   if ([hardware isEqualToString:iPad6_8])      return IPAD_PRO_WIFI_CELLULAR;
   
