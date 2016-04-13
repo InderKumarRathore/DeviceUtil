@@ -223,6 +223,11 @@
     case IPAD_AIR_2_WIFI_CELLULAR:
       return CGSizeMake (1536, 2048);
       break;
+
+    case IPAD_PRO_97_WIFI:
+    case IPAD_PRO_97_WIFI_CELLULAR:
+      return CGSizeMake(4032, 3024);
+      break;
       
     default:
       NSLog(@"We have no resolution for your device's camera listed in this category. Please, make photo with back camera of your device, get its resolution in pixels (via Preview Cmd+I for example) and add a comment to this repository (https://github.com/InderKumarRathore/DeviceUtil) on GitHub.com in format Device = Hpx x Wpx.");
