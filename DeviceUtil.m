@@ -119,7 +119,10 @@
   
   if ([hardware isEqualToString:iPad5_3])      return IPAD_AIR_2_WIFI;
   if ([hardware isEqualToString:iPad5_4])      return IPAD_AIR_2_WIFI_CELLULAR;
-  
+
+  if ([hardware isEqualToString:iPad6_3])      return IPAD_PRO_97_WIFI;
+  if ([hardware isEqualToString:iPad6_4])      return IPAD_PRO_97_WIFI_CELLULAR;
+
   if ([hardware isEqualToString:iPad6_7])      return IPAD_PRO_WIFI;
   if ([hardware isEqualToString:iPad6_8])      return IPAD_PRO_WIFI_CELLULAR;
   
@@ -219,6 +222,11 @@
     case IPAD_AIR_2_WIFI:
     case IPAD_AIR_2_WIFI_CELLULAR:
       return CGSizeMake (1536, 2048);
+      break;
+
+    case IPAD_PRO_97_WIFI:
+    case IPAD_PRO_97_WIFI_CELLULAR:
+      return CGSizeMake(4032, 3024);
       break;
       
     default:
