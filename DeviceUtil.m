@@ -192,6 +192,8 @@
     case IPHONE_5C_CDMA_GSM:
     case IPHONE_6:
     case IPHONE_6_PLUS:
+    case IPAD_AIR_2_WIFI:
+    case IPAD_AIR_2_WIFI_CELLULAR:
       return CGSizeMake(3264, 2448);
       break;
       
@@ -219,11 +221,6 @@
       return CGSizeMake(1820, 1304);
       break;
       
-    case IPAD_AIR_2_WIFI:
-    case IPAD_AIR_2_WIFI_CELLULAR:
-      return CGSizeMake (1536, 2048);
-      break;
-
     case IPAD_PRO_97_WIFI:
     case IPAD_PRO_97_WIFI_CELLULAR:
       return CGSizeMake(4032, 3024);
