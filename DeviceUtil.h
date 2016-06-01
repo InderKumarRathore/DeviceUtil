@@ -75,7 +75,9 @@ typedef NS_ENUM(NSUInteger, Hardware) {
   IPAD_PRO_WIFI,
   IPAD_PRO_WIFI_CELLULAR,
 
-  SIMULATOR
+  SIMULATOR,
+
+  HARDWARE_MAX
 };
 
 /**
