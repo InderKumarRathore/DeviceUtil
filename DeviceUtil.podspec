@@ -9,6 +9,7 @@ s.social_media_url = "https://twitter.com/InderKRathore"
 s.source           = { :git => "https://github.com/InderKumarRathore/UIDeviceUtil.git", :tag => s.version }
 s.source_files     = "*.{h,m}"
 s.resource_bundles = {s.name => ['DeviceList.plist']}
-s.platform         = :ios, "5.0"
 s.requires_arc     = false
+s.ios.deployment_target = '5.0'
+s.tvos.deployment_target = '9.0'
 end
