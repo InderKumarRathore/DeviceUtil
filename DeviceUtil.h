@@ -31,6 +31,11 @@ typedef NS_ENUM(NSUInteger, Hardware) {
   IPHONE_6S_PLUS,
   IPHONE_SE,
 
+  IPHONE_7,
+  IPHONE_7_GSM,
+  IPHONE_7_PLUS,
+  IPHONE_7_PLUS_GSM,
+
   IPOD_TOUCH_1G,
   IPOD_TOUCH_2G,
   IPOD_TOUCH_3G,
@@ -102,6 +107,10 @@ static NSString* const iPhone7_2 = @"iPhone7,2";
 static NSString* const iPhone8_1 = @"iPhone8,1";
 static NSString* const iPhone8_2 = @"iPhone8,2";
 static NSString* const iPhone8_4 = @"iPhone8,4";
+static NSString* const iPhone9_1 = @"iPhone9,1";
+static NSString* const iPhone9_2 = @"iPhone9,2";
+static NSString* const iPhone9_3 = @"iPhone9,3";
+static NSString* const iPhone9_4 = @"iPhone9,4";
 
 static NSString* const iPod1_1 = @"iPod1,1";
 static NSString* const iPod2_1 = @"iPod2,1";
