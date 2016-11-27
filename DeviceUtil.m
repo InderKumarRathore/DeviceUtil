@@ -10,6 +10,71 @@
 #import "DeviceUtil.h"
 #include <sys/sysctl.h>
 
+/**
+ * Hardware string of devices
+ */
+
+NSString* const iPhone1_1 = @"iPhone1,1";
+NSString* const iPhone1_2 = @"iPhone1,2";
+NSString* const iPhone2_1 = @"iPhone2,1";
+NSString* const iPhone3_1 = @"iPhone3,1";
+NSString* const iPhone3_2 = @"iPhone3,2";
+NSString* const iPhone3_3 = @"iPhone3,3";
+NSString* const iPhone4_1 = @"iPhone4,1";
+NSString* const iPhone5_1 = @"iPhone5,1";
+NSString* const iPhone5_2 = @"iPhone5,2";
+NSString* const iPhone5_3 = @"iPhone5,3";
+NSString* const iPhone5_4 = @"iPhone5,4";
+NSString* const iPhone6_1 = @"iPhone6,1";
+NSString* const iPhone6_2 = @"iPhone6,2";
+NSString* const iPhone7_1 = @"iPhone7,1";
+NSString* const iPhone7_2 = @"iPhone7,2";
+NSString* const iPhone8_1 = @"iPhone8,1";
+NSString* const iPhone8_2 = @"iPhone8,2";
+NSString* const iPhone8_4 = @"iPhone8,4";
+
+NSString* const iPod1_1 = @"iPod1,1";
+NSString* const iPod2_1 = @"iPod2,1";
+NSString* const iPod3_1 = @"iPod3,1";
+NSString* const iPod4_1 = @"iPod4,1";
+NSString* const iPod5_1 = @"iPod5,1";
+NSString* const iPod7_1 = @"iPod7,1";
+
+NSString* const iPad1_1 = @"iPad1,1";
+NSString* const iPad1_2 = @"iPad1,2";
+NSString* const iPad2_1 = @"iPad2,1";
+NSString* const iPad2_2 = @"iPad2,2";
+NSString* const iPad2_3 = @"iPad2,3";
+NSString* const iPad2_4 = @"iPad2,4";
+NSString* const iPad2_5 = @"iPad2,5";
+NSString* const iPad2_6 = @"iPad2,6";
+NSString* const iPad2_7 = @"iPad2,7";
+NSString* const iPad3_1 = @"iPad3,1";
+NSString* const iPad3_2 = @"iPad3,2";
+NSString* const iPad3_3 = @"iPad3,3";
+NSString* const iPad3_4 = @"iPad3,4";
+NSString* const iPad3_5 = @"iPad3,5";
+NSString* const iPad3_6 = @"iPad3,6";
+NSString* const iPad4_1 = @"iPad4,1";
+NSString* const iPad4_2 = @"iPad4,2";
+NSString* const iPad4_3 = @"iPad4,3";
+NSString* const iPad4_4 = @"iPad4,4";
+NSString* const iPad4_5 = @"iPad4,5";
+NSString* const iPad4_6 = @"iPad4,6";
+NSString* const iPad4_7 = @"iPad4,7";
+NSString* const iPad4_8 = @"iPad4,8";
+NSString* const iPad4_9 = @"iPad4,9";
+NSString* const iPad5_1 = @"iPad5,1";
+NSString* const iPad5_2 = @"iPad5,2";
+NSString* const iPad5_3 = @"iPad5,3";
+NSString* const iPad5_4 = @"iPad5,4";
+NSString* const iPad6_3 = @"iPad6,3";
+NSString* const iPad6_4 = @"iPad6,4";
+NSString* const iPad6_7 = @"iPad6,7";
+NSString* const iPad6_8 = @"iPad6,8";
+
+NSString* const i386_Sim    = @"i386";
+NSString* const x86_64_Sim  = @"x86_64";
 
 
 @implementation DeviceUtil
