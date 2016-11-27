@@ -147,6 +147,10 @@ NSString* const x86_64_Sim  = @"x86_64";
   if ([hardware isEqualToString:iPhone8_1])    return IPHONE_6S;
   if ([hardware isEqualToString:iPhone8_2])    return IPHONE_6S_PLUS;
   if ([hardware isEqualToString:iPhone8_4])    return IPHONE_SE;
+  if ([hardware isEqualToString:iPhone9_1])    return IPHONE_7;
+  if ([hardware isEqualToString:iPhone9_3])    return IPHONE_7_GSM;
+  if ([hardware isEqualToString:iPhone9_2])    return IPHONE_7_PLUS;
+  if ([hardware isEqualToString:iPhone9_4])    return IPHONE_7_PLUS_GSM;
 
   if ([hardware isEqualToString:iPod1_1])      return IPOD_TOUCH_1G;
   if ([hardware isEqualToString:iPod2_1])      return IPOD_TOUCH_2G;
@@ -236,10 +240,10 @@ NSString* const x86_64_Sim  = @"x86_64";
     case IPHONE_2G:
     case IPHONE_3G:
       return CGSizeMake(1600, 1200);
-      break;
+
     case IPHONE_3GS:
       return CGSizeMake(2048, 1536);
-      break;
+
     case IPHONE_4:
     case IPHONE_4_CDMA:
     case IPAD_3_WIFI:
@@ -249,7 +253,7 @@ NSString* const x86_64_Sim  = @"x86_64";
     case IPAD_4:
     case IPAD_4_GSM_CDMA:
       return CGSizeMake(2592, 1936);
-      break;
+
     case IPHONE_4S:
     case IPHONE_5:
     case IPHONE_5_CDMA_GSM:
@@ -260,37 +264,35 @@ NSString* const x86_64_Sim  = @"x86_64";
     case IPAD_AIR_2_WIFI:
     case IPAD_AIR_2_WIFI_CELLULAR:
       return CGSizeMake(3264, 2448);
-      break;
-      
+
     case IPHONE_6S:
     case IPHONE_6S_PLUS:
+    case IPHONE_7:
+    case IPHONE_7_GSM:
+    case IPHONE_7_PLUS:
+    case IPHONE_7_PLUS_GSM:
       return CGSizeMake(4032, 3024);
-      break;
-      
+
     case IPOD_TOUCH_4G:
       return CGSizeMake(960, 720);
-      break;
+
     case IPOD_TOUCH_5G:
       return CGSizeMake(2440, 1605);
-      break;
-      
+
     case IPAD_2_WIFI:
     case IPAD_2:
     case IPAD_2_CDMA:
       return CGSizeMake(872, 720);
-      break;
-      
+
     case IPAD_MINI_WIFI:
     case IPAD_MINI:
     case IPAD_MINI_WIFI_CDMA:
       return CGSizeMake(1820, 1304);
-      break;
-      
+
     case IPAD_PRO_97_WIFI:
     case IPAD_PRO_97_WIFI_CELLULAR:
       return CGSizeMake(4032, 3024);
-      break;
-      
+
     default:
       NSLog(@"We have no resolution for your device's camera listed in this category. Please, make photo with back camera of your device, get its resolution in pixels (via Preview Cmd+I for example) and add a comment to this repository (https://github.com/InderKumarRathore/DeviceUtil) on GitHub.com in format Device = Hpx x Wpx.");
       NSLog(@"Your device is: %@", [self hardwareDescription]);
