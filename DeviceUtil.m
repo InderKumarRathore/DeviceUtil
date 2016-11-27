@@ -32,6 +32,10 @@ NSString* const iPhone7_2 = @"iPhone7,2";
 NSString* const iPhone8_1 = @"iPhone8,1";
 NSString* const iPhone8_2 = @"iPhone8,2";
 NSString* const iPhone8_4 = @"iPhone8,4";
+NSString* const iPhone9_1 = @"iPhone9,1";
+NSString* const iPhone9_2 = @"iPhone9,2";
+NSString* const iPhone9_3 = @"iPhone9,3";
+NSString* const iPhone9_4 = @"iPhone9,4";
 
 NSString* const iPod1_1 = @"iPod1,1";
 NSString* const iPod2_1 = @"iPod2,1";
@@ -72,6 +76,7 @@ NSString* const iPad6_3 = @"iPad6,3";
 NSString* const iPad6_4 = @"iPad6,4";
 NSString* const iPad6_7 = @"iPad6,7";
 NSString* const iPad6_8 = @"iPad6,8";
+
 
 NSString* const i386_Sim    = @"i386";
 NSString* const x86_64_Sim  = @"x86_64";
