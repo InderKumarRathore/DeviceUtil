@@ -422,6 +422,97 @@
 		<key>name</key>
 		<string>iPad Pro (Wi-Fi/Cellular)</string>
 	</dict>
+	<key>iPad6,11</key>
+	<dict>
+		<key>version</key>
+		<real>6.11</real>
+		<key>name</key>
+		<string>9.7-inch iPad (Wi-Fi)</string>
+	</dict>
+	<key>iPad6,12</key>
+	<dict>
+		<key>version</key>
+		<real>6.12</real>
+		<key>name</key>
+		<string>9.7-inch iPad (Wi-Fi + Cellular)</string>
+	</dict>
+	<key>appleTV1,1</key>
+	<dict>
+		<key>version</key>
+		<real>1.1</real>
+		<key>name</key>
+		<string>Apple TV 1G</string>
+	</dict>
+	<key>appleTV2,1</key>
+	<dict>
+		<key>version</key>
+		<real>2.1</real>
+		<key>name</key>
+		<string>Apple TV 2G</string>
+	</dict>
+	<key>appleTV3,1</key>
+	<dict>
+		<key>version</key>
+		<real>3.1</real>
+		<key>name</key>
+		<string>Apple TV 3G</string>
+	</dict>
+	<key>appleTV3,2</key>
+	<dict>
+		<key>version</key>
+		<real>3.2</real>
+		<key>name</key>
+		<string>Apple TV 3G</string>
+	</dict>
+	<key>appleTV5,3</key>
+	<dict>
+		<key>version</key>
+		<string>5,3</string>
+		<key>name</key>
+		<string>Apple TV 4G</string>
+	</dict>
+	<key>Watch1,1</key>
+	<dict>
+		<key>version</key>
+		<real>1.1</real>
+		<key>name</key>
+		<string>Apple Watch (38 mm)</string>
+	</dict>
+	<key>Watch1,2</key>
+	<dict>
+		<key>version</key>
+		<real>1.2</real>
+		<key>name</key>
+		<string>Apple Watch (42 mm)</string>
+	</dict>
+	<key>Watch2,3</key>
+	<dict>
+		<key>version</key>
+		<real>2.3</real>
+		<key>name</key>
+		<string>Apple Watch Series 2 (38 mm)</string>
+	</dict>
+	<key>Watch2,4</key>
+	<dict>
+		<key>version</key>
+		<real>2.4</real>
+		<key>name</key>
+		<string>Apple Watch Series 2 (42 mm)</string>
+	</dict>
+	<key>Watch2,6</key>
+	<dict>
+		<key>version</key>
+		<real>2.6</real>
+		<key>name</key>
+		<string>Apple Watch Series 1 (38 mm)</string>
+	</dict>
+	<key>Watch2,7</key>
+	<dict>
+		<key>version</key>
+		<real>2.7</real>
+		<key>name</key>
+		<string>Apple Watch Series 1 (42 mm)</string>
+	</dict>
 	<key>i386</key>
 	<dict>
 		<key>version</key>
