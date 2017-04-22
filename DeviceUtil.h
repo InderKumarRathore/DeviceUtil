@@ -79,6 +79,23 @@ typedef NS_ENUM(NSUInteger, Hardware) {
 
   IPAD_PRO_WIFI,
   IPAD_PRO_WIFI_CELLULAR,
+  
+  IPAD_5_WIFI,
+  IPAD_5_WIFI_CELLULAR,
+  
+  APPLE_TV_1G,
+  APPLE_TV_2G,
+  APPLE_TV_3G,
+  APPLE_TV_3_2G,
+  APPLE_TV_4G,
+  
+  APPLE_WATCH_38,
+  APPLE_WATCH_42,
+  APPLE_WATCH_SERIES_2_38,
+  APPLE_WATCH_SERIES_2_42,
+  APPLE_WATCH_SERIES_1_38,
+  APPLE_WATCH_SERIES_1_42,
+  
 
   SIMULATOR,
 
@@ -151,6 +168,19 @@ extern NSString* const iPad6_3;
 extern NSString* const iPad6_4;
 extern NSString* const iPad6_7;
 extern NSString* const iPad6_8;
+extern NSString* const iPad6_11;
+extern NSString* const iPad6_12;
+extern NSString* const AppleTV1_1;
+extern NSString* const AppleTV2_1;
+extern NSString* const AppleTV3_1;
+extern NSString* const AppleTV3_2;
+extern NSString* const AppleTV5_3;
+extern NSString* const Watch1_1;
+extern NSString* const Watch1_2;
+extern NSString* const Watch2_3;
+extern NSString* const Watch2_4;
+extern NSString* const Watch2_6;
+extern NSString* const Watch2_7;
 
 extern NSString* const i386_Sim;
 extern NSString* const x86_64_Sim;

@@ -76,6 +76,21 @@ NSString* const iPad6_3 = @"iPad6,3";
 NSString* const iPad6_4 = @"iPad6,4";
 NSString* const iPad6_7 = @"iPad6,7";
 NSString* const iPad6_8 = @"iPad6,8";
+NSString* const iPad6_11 = @"iPad6,11";
+NSString* const iPad6_12 = @"iPad6,12";
+
+NSString* const AppleTV1_1 = @"AppleTV1,1";
+NSString* const AppleTV2_1 = @"AppleTV2,1";
+NSString* const AppleTV3_1 = @"AppleTV3,1";
+NSString* const AppleTV3_2 = @"AppleTV3,2";
+NSString* const AppleTV5_3 = @"AppleTV5,3";
+
+NSString* const Watch1_1 = @"Watch1,1";
+NSString* const Watch1_2 = @"Watch1,2";
+NSString* const Watch2_3 = @"Watch2,3";
+NSString* const Watch2_4 = @"Watch2,4";
+NSString* const Watch2_6 = @"Watch2,6";
+NSString* const Watch2_7 = @"Watch2,7";
 
 
 NSString* const i386_Sim    = @"i386";
@@ -200,8 +215,24 @@ NSString* const x86_64_Sim  = @"x86_64";
   if ([hardware isEqualToString:iPad6_7])      return IPAD_PRO_WIFI;
   if ([hardware isEqualToString:iPad6_8])      return IPAD_PRO_WIFI_CELLULAR;
   
-  if ([hardware isEqualToString:i386_Sim])         return SIMULATOR;
-  if ([hardware isEqualToString:x86_64_Sim])       return SIMULATOR;
+  if ([hardware isEqualToString:iPad6_11])     return IPAD_5_WIFI;
+  if ([hardware isEqualToString:iPad6_12])     return IPAD_5_WIFI_CELLULAR;
+  
+  if ([hardware isEqualToString:AppleTV1_1])   return APPLE_TV_1G;
+  if ([hardware isEqualToString:AppleTV2_1])   return APPLE_TV_2G;
+  if ([hardware isEqualToString:AppleTV3_1])   return APPLE_TV_3G;
+  if ([hardware isEqualToString:AppleTV3_2])   return APPLE_TV_3_2G;
+  if ([hardware isEqualToString:AppleTV5_3])   return APPLE_TV_4G;
+  
+  if ([hardware isEqualToString:Watch1_1])     return APPLE_WATCH_38;
+  if ([hardware isEqualToString:Watch1_2])     return APPLE_WATCH_42;
+  if ([hardware isEqualToString:Watch2_3])     return APPLE_WATCH_SERIES_2_38;
+  if ([hardware isEqualToString:Watch2_4])     return APPLE_WATCH_SERIES_2_42;
+  if ([hardware isEqualToString:Watch2_6])     return APPLE_WATCH_SERIES_1_38;
+  if ([hardware isEqualToString:Watch2_7])     return APPLE_WATCH_SERIES_1_42;
+  
+  if ([hardware isEqualToString:i386_Sim])     return SIMULATOR;
+  if ([hardware isEqualToString:x86_64_Sim])   return SIMULATOR;
   
   //log message that your device is not present in the list
   [self logMessage:hardware];
