@@ -297,6 +297,7 @@ NSString* const x86_64_Sim  = @"x86_64";
     case IPHONE_5C_CDMA_GSM:
     case IPHONE_6:
     case IPHONE_6_PLUS:
+    case IPOD_TOUCH_6G:
     case IPAD_AIR_2_WIFI:
     case IPAD_AIR_2_WIFI_CELLULAR:
       return CGSizeMake(3264, 2448);
