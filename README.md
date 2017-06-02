@@ -59,6 +59,7 @@ iPod Touch 2G | ```ipod_TOUCH_2G``` | ```iPod2,1```
 iPod Touch 3G | ```ipod_TOUCH_3G``` | ```iPod3,1```
 iPod Touch 4G | ```ipod_TOUCH_4G``` | ```iPod4,1```
 iPod Touch 5G | ```ipod_TOUCH_5G``` | ```iPod5,1```
+iPod Touch 6G | ```ipod_TOUCH_6G``` | ```iPod7,1```
 
 ##### iPad
 Device | hardware() | hardwareString()
