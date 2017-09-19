@@ -197,6 +197,9 @@ extern NSString* const x86_64_Sim;
 /** This method returns the readable description of hardware string */
 + (NSString*)hardwareDescription;
 
+/** This method returns the readable simple description of hardware string */
++ (NSString*)hardwareSimpleDescription;
+
 /**
  This method returns the hardware number not actual but logically.
  e.g. if the hardware string is 5,1 then hardware number would be 5.1

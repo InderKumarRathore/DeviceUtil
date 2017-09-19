@@ -255,6 +255,21 @@ NSString* const x86_64_Sim  = @"x86_64";
   }
 }
 
++ (NSString*)hardwareSimpleDescription {
+  NSString *hardwareDescription = [DeviceUtil hardwareDescription];
+  if (hardwareDescription == nil) {
+    return nil;
+  }
+  NSError *error = nil;
+  // this expression matches all strings between round brackets (e.g (Wifi), (GSM)) except the pattern "[0-9]+ Gen"
+  NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"\\((?![0-9]+ Gen).*\\)" options:NSRegularExpressionCaseInsensitive error:&error];
+  NSString *hardwareSimpleDescription = [regex stringByReplacingMatchesInString:hardwareDescription options:0 range:NSMakeRange(0, [hardwareDescription length]) withTemplate:@""];
+  if (error) {
+    return nil;
+  } else {
+    return hardwareSimpleDescription;
+  }
+}
 
 + (float)hardwareNumber {
   NSString *hardware = [self hardwareString];
