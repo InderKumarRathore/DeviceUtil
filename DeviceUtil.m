@@ -79,6 +79,11 @@ NSString* const iPad6_8 = @"iPad6,8";
 NSString* const iPad6_11 = @"iPad6,11";
 NSString* const iPad6_12 = @"iPad6,12";
 
+NSString* const iPad7_1 = @"iPad7,1";
+NSString* const iPad7_2 = @"iPad7,2";
+NSString* const iPad7_3 = @"iPad7,3";
+NSString* const iPad7_4 = @"iPad7,4";
+
 NSString* const AppleTV1_1 = @"AppleTV1,1";
 NSString* const AppleTV2_1 = @"AppleTV2,1";
 NSString* const AppleTV3_1 = @"AppleTV3,1";
@@ -217,6 +222,11 @@ NSString* const x86_64_Sim  = @"x86_64";
   
   if ([hardware isEqualToString:iPad6_11])     return IPAD_5_WIFI;
   if ([hardware isEqualToString:iPad6_12])     return IPAD_5_WIFI_CELLULAR;
+  
+  if ([hardware isEqualToString:iPad7_1])      return IPAD_PRO_2G_WIFI;
+  if ([hardware isEqualToString:iPad7_2])      return IPAD_PRO_2G_WIFI_CELLULAR;
+  if ([hardware isEqualToString:iPad7_3])      return IPAD_PRO_105_WIFI;
+  if ([hardware isEqualToString:iPad7_4])      return IPAD_PRO_105_WIFI_CELLULAR;
   
   if ([hardware isEqualToString:AppleTV1_1])   return APPLE_TV_1G;
   if ([hardware isEqualToString:AppleTV2_1])   return APPLE_TV_2G;

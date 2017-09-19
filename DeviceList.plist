@@ -117,7 +117,7 @@
 	<key>iPhone8,2</key>
 	<dict>
 		<key>version</key>
-		<real>8.2</real>
+		<real>8.199999999999999</real>
 		<key>name</key>
 		<string>iPhone 6s Plus</string>
 	</dict>
@@ -138,14 +138,14 @@
 	<key>iPhone9,2</key>
 	<dict>
 		<key>version</key>
-		<real>9.2</real>
+		<real>9.199999999999999</real>
 		<key>name</key>
 		<string>iPhone 7 Plus</string>
 	</dict>
 	<key>iPhone9,3</key>
 	<dict>
 		<key>version</key>
-		<real>9.3</real>
+		<real>9.300000000000001</real>
 		<key>name</key>
 		<string>iPhone 7</string>
 	</dict>
@@ -436,6 +436,34 @@
 		<key>name</key>
 		<string>9.7-inch iPad (Wi-Fi + Cellular)</string>
 	</dict>
+	<key>iPad7,1</key>
+	<dict>
+		<key>version</key>
+		<real>7.1</real>
+		<key>name</key>
+		<string>iPad Pro 12.9-Inch (Wi-Fi Only - 2nd Gen)</string>
+	</dict>
+	<key>iPad7,2</key>
+	<dict>
+		<key>version</key>
+		<real>7.2</real>
+		<key>name</key>
+		<string>iPad Pro 12.9-Inch (Wi-Fi/Cell - 2nd Gen)</string>
+	</dict>
+	<key>iPad7,3</key>
+	<dict>
+		<key>version</key>
+		<real>7.3</real>
+		<key>name</key>
+		<string>iPad Pro 10.5-Inch (Wi-Fi Only)</string>
+	</dict>
+	<key>iPad7,4</key>
+	<dict>
+		<key>version</key>
+		<real>7.4</real>
+		<key>name</key>
+		<string>iPad Pro 10.5-Inch (Wi-Fi/Cellular)</string>
+	</dict>
 	<key>appleTV1,1</key>
 	<dict>
 		<key>version</key>
@@ -455,14 +483,14 @@
 		<key>version</key>
 		<real>3.1</real>
 		<key>name</key>
-		<string>Apple TV 3G</string>
+		<string>Apple TV 2012</string>
 	</dict>
 	<key>appleTV3,2</key>
 	<dict>
 		<key>version</key>
 		<real>3.2</real>
 		<key>name</key>
-		<string>Apple TV 3G</string>
+		<string>Apple TV 2013</string>
 	</dict>
 	<key>appleTV5,3</key>
 	<dict>
