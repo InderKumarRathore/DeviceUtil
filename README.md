@@ -1,6 +1,9 @@
 # DeviceUtil
 
-### For **Swift** please visit [DeviceGuru](https://github.com/InderKumarRathore/DeviceGuru)
+### For **Swift** please use [DeviceGuru](https://github.com/InderKumarRathore/DeviceGuru) as below
+```sh
+pod 'DeviceGuru'
+```
 
 *DeviceUtil* helps identifying the exact harware type of the device. e.g. iPhone 6 or iPhone 6s.
 
