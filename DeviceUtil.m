@@ -339,10 +339,10 @@ NSString* const x86_64_Sim  = @"x86_64";
     case IPOD_TOUCH_6G:
     case IPAD_AIR_2_WIFI:
     case IPAD_AIR_2_WIFI_CELLULAR:
-      return CGSizeMake(3264, 2448);
-
     case IPHONE_6S:
     case IPHONE_6S_PLUS:
+      return CGSizeMake(3264, 2448);
+
     case IPHONE_7:
     case IPHONE_7_GSM:
     case IPHONE_7_PLUS:
