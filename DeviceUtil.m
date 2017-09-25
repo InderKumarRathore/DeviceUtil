@@ -347,11 +347,11 @@ NSString* const x86_64_Sim  = @"x86_64";
     case IPHONE_7_PLUS:
     case IPHONE_7_PLUS_GSM:
     case IPHONE_8:
-    case IPHONE_8_GSM:
+    case IPHONE_8_CN:
     case IPHONE_8_PLUS:
-    case IPHONE_8_PLUS_GSM:
+    case IPHONE_8_PLUS_CN:
     case IPHONE_X:
-    case IPHONE_X_GSM:
+    case IPHONE_X_CN:
       return CGSizeMake(4032, 3024);
 
     case IPOD_TOUCH_4G:
