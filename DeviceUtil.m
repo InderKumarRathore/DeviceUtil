@@ -183,13 +183,12 @@ NSString* const x86_64_Sim  = @"x86_64";
   if ([hardware isEqualToString:iPhone9_2])    return IPHONE_7_PLUS;
   if ([hardware isEqualToString:iPhone9_4])    return IPHONE_7_PLUS_GSM;
   
-  if ([hardware isEqualToString:iPhone10_1])    return IPHONE_8;
-  if ([hardware isEqualToString:iPhone10_4])    return IPHONE_8_GSM;
-  if ([hardware isEqualToString:iPhone10_2])    return IPHONE_8_PLUS;
-  if ([hardware isEqualToString:iPhone10_5])    return IPHONE_8_PLUS_GSM;
-
-  if ([hardware isEqualToString:iPhone10_3])    return IPHONE_X;
-  if ([hardware isEqualToString:iPhone10_6])    return IPHONE_X_GSM;  
+  if ([hardware isEqualToString:iPhone10_1])    return IPHONE_8_CN;
+  if ([hardware isEqualToString:iPhone10_2])    return IPHONE_8_PLUS_CN;
+  if ([hardware isEqualToString:iPhone10_3])    return IPHONE_X_CN;
+  if ([hardware isEqualToString:iPhone10_4])    return IPHONE_8;
+  if ([hardware isEqualToString:iPhone10_5])    return IPHONE_8_PLUS;
+  if ([hardware isEqualToString:iPhone10_6])    return IPHONE_X;
 
   if ([hardware isEqualToString:iPod1_1])      return IPOD_TOUCH_1G;
   if ([hardware isEqualToString:iPod2_1])      return IPOD_TOUCH_2G;

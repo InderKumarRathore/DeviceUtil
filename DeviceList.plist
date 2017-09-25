@@ -156,6 +156,48 @@
 		<key>name</key>
 		<string>iPhone 7 Plus</string>
 	</dict>
+	<key>iPhone10,1</key>
+	<dict>
+		<key>version</key>
+		<real>10.1</real>
+		<key>name</key>
+		<string>iPhone 8 China/Japan</string>
+	</dict>
+	<key>iPhone10,2</key>
+	<dict>
+		<key>version</key>
+		<real>10.2</real>
+		<key>name</key>
+		<string>iPhone 8 Plus China/Japan</string>
+	</dict>
+	<key>iPhone10,3</key>
+	<dict>
+		<key>version</key>
+		<real>10.3</real>
+		<key>name</key>
+		<string>iPhone X China/Japan</string>
+	</dict>
+	<key>iPhone10,4</key>
+	<dict>
+		<key>version</key>
+		<real>10.4</real>
+		<key>name</key>
+		<string>iPhone 8 Global</string>
+	</dict>
+	<key>iPhone10,5</key>
+	<dict>
+		<key>version</key>
+		<real>10.5</real>
+		<key>name</key>
+		<string>iPhone 8 Plus Global</string>
+	</dict>
+	<key>iPhone10,6</key>
+	<dict>
+		<key>version</key>
+		<real>10.6</real>
+		<key>name</key>
+		<string>iPhone X Global</string>
+	</dict>
 	<key>iPod1,1</key>
 	<dict>
 		<key>version</key>
