@@ -95,6 +95,9 @@ typedef NS_ENUM(NSUInteger, Hardware) {
   
   IPAD_5_WIFI,
   IPAD_5_WIFI_CELLULAR,
+	
+  IPAD_6_WIFI,
+  IPAD_6_WIFI_CELLULAR,
   
   APPLE_TV_1G,
   APPLE_TV_2G,
@@ -191,6 +194,8 @@ extern NSString* const iPad7_1;
 extern NSString* const iPad7_2;
 extern NSString* const iPad7_3;
 extern NSString* const iPad7_4;
+extern NSString* const iPad7_5;
+extern NSString* const iPad7_6;
 extern NSString* const iPad6_11;
 extern NSString* const iPad6_12;
 extern NSString* const AppleTV1_1;
@@ -211,7 +216,7 @@ extern NSString* const x86_64_Sim;
 
 @interface DeviceUtil : NSObject
 
-/** This method retruns the hardware type */
+/** This method returns the hardware type */
 + (NSString*)hardwareString;
 
 /** This method returns the Hardware enum depending upon hardware string */
