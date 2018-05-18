@@ -506,20 +506,20 @@
 		<key>name</key>
 		<string>iPad Pro 10.5-Inch (Wi-Fi/Cellular)</string>
 	</dict>
-    <key>iPad7,5</key>
-    <dict>
-        <key>version</key>
-        <real>7.5</real>
-        <key>name</key>
-        <string>iPad 9.7-Inch 2018 (Wi-Fi Only)</string>
-    </dict>
-    <key>iPad7,6</key>
-    <dict>
-        <key>version</key>
-        <real>7.6</real>
-        <key>name</key>
-        <string>iPad 9.7-Inch 2018 (Wi-Fi/Cellular)</string>
-    </dict>
+	<key>iPad7,5</key>
+	<dict>
+		<key>version</key>
+		<real>7.5</real>
+		<key>name</key>
+		<string>iPad 9.7-Inch 6th Gen (Wi-Fi Only)</string>
+	</dict>
+	<key>iPad7,6</key>
+	<dict>
+		<key>version</key>
+		<real>7.6</real>
+		<key>name</key>
+		<string>iPad 9.7-Inch 6th Gen (Wi-Fi/Cellular)</string>
+	</dict>
 	<key>appleTV1,1</key>
 	<dict>
 		<key>version</key>
