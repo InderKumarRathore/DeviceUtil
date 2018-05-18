@@ -161,42 +161,42 @@
 		<key>version</key>
 		<real>10.1</real>
 		<key>name</key>
-		<string>iPhone 8 China/Japan</string>
+		<string>iPhone 8</string>
 	</dict>
 	<key>iPhone10,2</key>
 	<dict>
 		<key>version</key>
 		<real>10.2</real>
 		<key>name</key>
-		<string>iPhone 8 Plus China/Japan</string>
+		<string>iPhone 8 Plus</string>
 	</dict>
 	<key>iPhone10,3</key>
 	<dict>
 		<key>version</key>
 		<real>10.3</real>
 		<key>name</key>
-		<string>iPhone X China/Japan</string>
+		<string>iPhone X</string>
 	</dict>
 	<key>iPhone10,4</key>
 	<dict>
 		<key>version</key>
 		<real>10.4</real>
 		<key>name</key>
-		<string>iPhone 8 Global</string>
+		<string>iPhone 8</string>
 	</dict>
 	<key>iPhone10,5</key>
 	<dict>
 		<key>version</key>
 		<real>10.5</real>
 		<key>name</key>
-		<string>iPhone 8 Plus Global</string>
+		<string>iPhone 8 Plus</string>
 	</dict>
 	<key>iPhone10,6</key>
 	<dict>
 		<key>version</key>
 		<real>10.6</real>
 		<key>name</key>
-		<string>iPhone X Global</string>
+		<string>iPhone X</string>
 	</dict>
 	<key>iPod1,1</key>
 	<dict>
@@ -506,6 +506,20 @@
 		<key>name</key>
 		<string>iPad Pro 10.5-Inch (Wi-Fi/Cellular)</string>
 	</dict>
+    <key>iPad7,5</key>
+    <dict>
+        <key>version</key>
+        <real>7.5</real>
+        <key>name</key>
+        <string>iPad 9.7-Inch 2018 (Wi-Fi Only)</string>
+    </dict>
+    <key>iPad7,6</key>
+    <dict>
+        <key>version</key>
+        <real>7.6</real>
+        <key>name</key>
+        <string>iPad 9.7-Inch 2018 (Wi-Fi/Cellular)</string>
+    </dict>
 	<key>appleTV1,1</key>
 	<dict>
 		<key>version</key>
