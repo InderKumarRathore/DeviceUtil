@@ -12,7 +12,7 @@ pod 'DeviceGuru'
 
 ### Installation
 
-Go to [http://cocoapods.org](http://cocoapods.org) <br>
+Go to [https://cocoapods.org](https://cocoapods.org) <br>
 Search for DeviceUtil lib <br>
 Copy the pod dependency and add that to your pod file. e.g.
 
