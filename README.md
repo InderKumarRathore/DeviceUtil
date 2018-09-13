@@ -53,6 +53,15 @@ iPhone 7 | ```iphone_7``` | ```iPhone9,1```
 iPhone 7 Plus | ```iphone_7_PLUS``` | ```iPhone9,2```
 iPhone 7 | ```iphone_7``` | ```iPhone9,3```
 iPhone 7 Plus | ```iphone_7_PLUS``` | ```iPhone9,4```
+iPhone 8 | ```iphone_8``` | ```iPhone10,1```
+iPhone 8 Plus | ```iphone_8_PLUS``` | ```iPhone10,2```
+iPhone 8 | ```iphone_8``` | ```iPhone10,4```
+iPhone 8 Plus | ```iphone_8_PLUS``` | ```iPhone10,5```
+iPhone X | ```iphone_X``` | ```iPhone10,3```
+iPhone X | ```iphone_X``` | ```iPhone10,6```
+iPhone XS | ```iphone_XS``` | ```iPhone11,2```
+iPhone XS Max | ```iphone_XS_Max``` | ```iPhone11,4```
+iPhone XR | ```iphone_XR``` | ```iPhone11,8```
 
 ##### iPod
 Device | hardware() | hardwareString()
