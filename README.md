@@ -49,18 +49,15 @@ iPhone 6 | ```iphone_6``` | ```iPhone7,2```
 iPhone 6s Plus | ```iphone_6S_PLUS``` | ```iPhone8,2```
 iPhone 6s | ```iphone_6S``` | ```iPhone8,2```
 iPhone SE | ```iphone_SE``` | ```iPhone8,4```
-iPhone 7 | ```iphone_7``` | ```iPhone9,1```
-iPhone 7 Plus | ```iphone_7_PLUS``` | ```iPhone9,2```
+iPhone 7 | ```iphone_7``` | ```iPhone9,1``` & ```iPhone9,3```
+iPhone 7 Plus | ```iphone_7_PLUS``` | ```iPhone9,2``` & ```iPhone9,4```
 iPhone 7 | ```iphone_7``` | ```iPhone9,3```
 iPhone 7 Plus | ```iphone_7_PLUS``` | ```iPhone9,4```
-iPhone 8 | ```iphone_8``` | ```iPhone10,1```
-iPhone 8 Plus | ```iphone_8_PLUS``` | ```iPhone10,2```
-iPhone 8 | ```iphone_8``` | ```iPhone10,4```
-iPhone 8 Plus | ```iphone_8_PLUS``` | ```iPhone10,5```
-iPhone X | ```iphone_X``` | ```iPhone10,3```
-iPhone X | ```iphone_X``` | ```iPhone10,6```
+iPhone 8 | ```iphone_8``` | ```iPhone10,1``` & ```iPhone10,4```
+iPhone 8 Plus | ```iphone_8_PLUS``` | ```iPhone10,2``` & ```iPhone10,5```
+iPhone X | ```iphone_X``` | ```iPhone10,3``` & ```iPhone10,6```
 iPhone XS | ```iphone_XS``` | ```iPhone11,2```
-iPhone XS Max | ```iphone_XS_Max``` | ```iPhone11,4```
+iPhone XS Max | ```iphone_XS_MAX``` | ```iPhone11,4``` & ```iPhone11,6```
 iPhone XR | ```iphone_XR``` | ```iPhone11,8```
 
 ##### iPod
@@ -71,7 +68,6 @@ iPod Touch 2G | ```ipod_TOUCH_2G``` | ```iPod2,1```
 iPod Touch 3G | ```ipod_TOUCH_3G``` | ```iPod3,1```
 iPod Touch 4G | ```ipod_TOUCH_4G``` | ```iPod4,1```
 iPod Touch 5G | ```ipod_TOUCH_5G``` | ```iPod5,1```
-iPod Touch 6G | ```ipod_TOUCH_6G``` | ```iPod7,1```
 
 ##### iPad
 Device | hardware() | hardwareString()
@@ -106,6 +102,12 @@ iPad Pro  | ```ipad_PRO_WIFI``` | ```iPad6,7```
 iPad Pro Cellular  | ```ipad_PRO_WIFI_CELLULAR``` | ```iPad6,8```
 9.7-inch iPad Wifi  | ```ipad_2017_WIFI``` | ```iPad6,11```
 9.7-inch iPad Wifi + Cellular | ```ipad_2017_WIFI_CELLULAR``` | ```iPad6,12```
+iPad Pro 12.9-Inch (Wi-Fi Only - 2nd Gen) | ```ipad_PRO_2G_WIFI``` | ```iPad7,1```
+iPad Pro 12.9-Inch (Wi-Fi/Cell - 2nd Gen) | ```ipad_PRO_2G_WIFI_CELLULAR``` | ```iPad7,2```
+iPad Pro 10.5-Inch (Wi-Fi Only) | ```ipad_PRO_105_WIFI``` | ```iPad7,3```
+iPad Pro 10.5-Inch (Wi-Fi/Cellular) | ```ipad_PRO_105_WIFI_CELLULAR``` | ```iPad7,4```
+iPad 9.7-Inch 6th Gen Wifi  | ```ipad_6_WIFI``` | ```iPad7,5```
+iPad 9.7-Inch 6th Gen Wifi + Cellular | ```ipad_6_WIFI_CELLULAR``` | ```iPad7,6```
 
 ##### Apple TV
 Device | hardware() | hardwareString()
@@ -125,15 +127,17 @@ Apple Watch Series 2 (38 mm) | ```appleWatch_SERIES_2_38``` | ```Watch2,3```
 Apple Watch Series 2 (42 mm) | ```appleWatch_SERIES_2_42``` | ```Watch2,4```
 Apple Watch Series 1 (38 mm) | ```appleWatch_SERIES_1_38``` | ```Watch2,6```
 Apple Watch Series 1 (42 mm) | ```appleWatch_SERIES_1_42``` | ```Watch2,7```
+Apple Watch Series 3 Cellular (38 mm) | ```appleWatch_SERIES_3_38_CELLULAR``` | ```Watch3,1```
+Apple Watch Series 3 Cellular (42 mm) | ```appleWatch_SERIES_3_42_CELLULAR``` | ```Watch3,2```
+Apple Watch Series 3 (38 mm) | ```appleWatch_SERIES_3_38``` | ```Watch3,3```
+Apple Watch Series 3 (42 mm) | ```appleWatch_SERIES_3_42``` | ```Watch3,4```
 
 ##### Simulator
 Device | hardware() | hardwareString()
 --- | --- | ---
 Simulator  | ```simulator``` | ```i386```
 Simulator  | ```simulator``` | ```x86_64```
-Simulator  | ```simulator``` | ```hasPrefix("iPhone")```
-Simulator  | ```simulator``` | ```hasPrefix("iPod")```
-Simulator  | ```simulator``` | ```hasPrefix("iPad)```
+
 
 
 ### Development
