@@ -212,6 +212,13 @@
 		<key>name</key>
 		<string>iPhone XS Max</string>
 	</dict>
+	<key>iPhone11,6</key>
+	<dict>
+		<key>version</key>
+		<real>11.6</real>
+		<key>name</key>
+		<string>iPhone XS Max China</string>
+	</dict>
 	<key>iPhone11,8</key>
 	<dict>
 		<key>version</key>
@@ -617,6 +624,34 @@
 		<real>2.7</real>
 		<key>name</key>
 		<string>Apple Watch Series 1 (42 mm)</string>
+	</dict>
+	<key>Watch3,1</key>
+	<dict>
+		<key>version</key>
+		<real>3.1</real>
+		<key>name</key>
+		<string>Apple Watch Series 3 (38 mm/Cellular)</string>
+	</dict>
+	<key>Watch3,2</key>
+	<dict>
+		<key>version</key>
+		<real>3.2</real>
+		<key>name</key>
+		<string>Apple Watch Series 3 (42 mm/Cellular)</string>
+	</dict>
+	<key>Watch3,3</key>
+	<dict>
+		<key>version</key>
+		<real>3.3</real>
+		<key>name</key>
+		<string>Apple Watch Series 3 (38 mm)</string>
+	</dict>
+	<key>Watch3,4</key>
+	<dict>
+		<key>version</key>
+		<real>3.4</real>
+		<key>name</key>
+		<string>Apple Watch Series 3 (42 mm)</string>
 	</dict>
 	<key>i386</key>
 	<dict>

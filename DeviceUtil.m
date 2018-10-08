@@ -44,6 +44,7 @@ NSString* const iPhone10_5 = @"iPhone10,5";
 NSString* const iPhone10_6 = @"iPhone10,6";
 NSString* const iPhone11_2 = @"iPhone11,2";
 NSString* const iPhone11_4 = @"iPhone11,4";
+NSString* const iPhone11_6 = @"iPhone11,6";
 NSString* const iPhone11_8 = @"iPhone11,8";
 
 NSString* const iPod1_1 = @"iPod1,1";
@@ -101,12 +102,17 @@ NSString* const AppleTV3_1 = @"AppleTV3,1";
 NSString* const AppleTV3_2 = @"AppleTV3,2";
 NSString* const AppleTV5_3 = @"AppleTV5,3";
 
+
 NSString* const Watch1_1 = @"Watch1,1";
 NSString* const Watch1_2 = @"Watch1,2";
 NSString* const Watch2_3 = @"Watch2,3";
 NSString* const Watch2_4 = @"Watch2,4";
 NSString* const Watch2_6 = @"Watch2,6";
 NSString* const Watch2_7 = @"Watch2,7";
+NSString* const Watch3_1 = @"Watch3,1";
+NSString* const Watch3_2 = @"Watch3,2";
+NSString* const Watch3_3 = @"Watch3,3";
+NSString* const Watch3_4 = @"Watch3,4";
 
 
 NSString* const i386_Sim    = @"i386";
@@ -197,6 +203,7 @@ NSString* const x86_64_Sim  = @"x86_64";
 
   if ([hardware isEqualToString:iPhone11_2])    return IPHONE_XS;
   if ([hardware isEqualToString:iPhone11_4])    return IPHONE_XS_MAX;
+  if ([hardware isEqualToString:iPhone11_6])    return IPHONE_XS_MAX_CN;
   if ([hardware isEqualToString:iPhone11_8])    return IPHONE_XR;
 
   if ([hardware isEqualToString:iPod1_1])      return IPOD_TOUCH_1G;
@@ -265,6 +272,10 @@ NSString* const x86_64_Sim  = @"x86_64";
   if ([hardware isEqualToString:Watch2_4])     return APPLE_WATCH_SERIES_2_42;
   if ([hardware isEqualToString:Watch2_6])     return APPLE_WATCH_SERIES_1_38;
   if ([hardware isEqualToString:Watch2_7])     return APPLE_WATCH_SERIES_1_42;
+  if ([hardware isEqualToString:Watch3_1])     return APPLE_WATCH_SERIES_3_38_CELLULAR;
+  if ([hardware isEqualToString:Watch3_2])     return APPLE_WATCH_SERIES_3_42_CELLULAR;
+  if ([hardware isEqualToString:Watch3_3])     return APPLE_WATCH_SERIES_3_38;
+  if ([hardware isEqualToString:Watch3_4])     return APPLE_WATCH_SERIES_3_42;
   
   if ([hardware isEqualToString:i386_Sim])     return SIMULATOR;
   if ([hardware isEqualToString:x86_64_Sim])   return SIMULATOR;
