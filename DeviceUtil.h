@@ -7,6 +7,16 @@
 
 #import <UIKit/UIKit.h>
 
+/// Enum of the different Apple's device platforms
+typedef NS_ENUM(NSUInteger, Platform) {
+  iPhone,
+  iPodTouch,
+  iPad,
+  AppleTV,
+  AppleWatch,
+  Unknown
+};
+
 typedef NS_ENUM(NSUInteger, Hardware) {
   NOT_AVAILABLE,
   

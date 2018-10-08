@@ -173,6 +173,25 @@ NSString* const x86_64_Sim  = @"x86_64";
  */
 
 
+/// This method returns the Platform enum depending upon harware string
+///
+///
+/// - returns: `Platform` type of the device
+///
+- (Platform)platform {
+  
+  NSString *hardware = [self hardwareString];
+  
+  if ([hardware hasPrefix:@"iPhone"])     return iPhone;
+  if ([hardware hasPrefix:@"iPod"])       return iPodTouch;
+  if ([hardware hasPrefix:@"iPad"])       return iPad;
+  if ([hardware hasPrefix:@"Watch"])      return AppleWatch;
+  if ([hardware hasPrefix:@"AppleTV"])    return AppleTV;
+  
+  return Unknown;
+}
+
+
 - (Hardware)hardware {
   NSString *hardware = [self hardwareString];
   if ([hardware isEqualToString:iPhone1_1])    return IPHONE_2G;
