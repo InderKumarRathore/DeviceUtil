@@ -228,25 +228,25 @@ extern NSString* const x86_64_Sim;
 @interface DeviceUtil : NSObject
 
 /** This method returns the hardware type */
-+ (NSString*)hardwareString;
+- (NSString*)hardwareString;
 
 /** This method returns the Hardware enum depending upon hardware string */
-+ (Hardware)hardware;
+- (Hardware)hardware;
 
 /** This method returns the readable description of hardware string */
-+ (NSString*)hardwareDescription;
+- (NSString*)hardwareDescription;
 
 /** This method returns the readable simple description of hardware string */
-+ (NSString*)hardwareSimpleDescription;
+- (NSString*)hardwareSimpleDescription;
 
 /**
  This method returns the hardware number not actual but logically.
  e.g. if the hardware string is 5,1 then hardware number would be 5.1
  */
-+ (float)hardwareNumber;
+- (float)hardwareNumber;
 
 /** This method returns the resolution for still image that can be received
  from back camera of the current device. Resolution returned for image oriented landscape right. **/
-+ (CGSize)backCameraStillImageResolutionInPixels;
+- (CGSize)backCameraStillImageResolutionInPixels;
 
 @end

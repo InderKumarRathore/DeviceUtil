@@ -119,8 +119,35 @@ NSString* const i386_Sim    = @"i386";
 NSString* const x86_64_Sim  = @"x86_64";
 
 
-@implementation DeviceUtil
-+ (NSString*)hardwareString {
+@implementation DeviceUtil {
+  NSDictionary *deviceList;
+}
+
+- (instancetype)init
+{
+  self = [super init];
+  if (self) {
+    // get the bundle of the DeviceUtil if it's main bundle then it returns main bundle
+    // if it's DeviceUtil.framework then it returns the DeviceUtil.framework bundle
+    NSBundle *deviceUtilTopBundle = [NSBundle bundleForClass:[self class]];
+    NSURL *url = [deviceUtilTopBundle URLForResource:@"DeviceUtil" withExtension:@"bundle"];
+    NSBundle *deviceUtilBundle;
+    if (url != nil) {
+      // DeviceUtil bundle is present
+      deviceUtilBundle = [NSBundle bundleWithURL:url];
+    }
+    else {
+      // pick the main buncle
+      deviceUtilBundle = deviceUtilTopBundle;
+    }
+    NSString *path = [deviceUtilBundle pathForResource:@"DeviceList" ofType:@"plist"];
+    deviceList = [NSDictionary dictionaryWithContentsOfFile:path];
+    NSAssert(deviceList != nil, @"DevicePlist not found in the bundle.");
+  }
+  return self;
+}
+
+- (NSString*)hardwareString {
   int name[] = {CTL_HW,HW_MACHINE};
   size_t size = 100;
   sysctl(name, 2, NULL, &size, NULL, 0); // getting size of answer
@@ -146,27 +173,7 @@ NSString* const x86_64_Sim  = @"x86_64";
  */
 
 
-+ (NSDictionary *)getDeviceList {
-  // get the bundle of the DeviceUtil if it's main bundle then it returns main bundle
-  // if it's DeviceUtil.framework then it returns the DeviceUtil.framework bundle
-  NSBundle *deviceUtilTopBundle = [NSBundle bundleForClass:[self class]];
-  NSURL *url = [deviceUtilTopBundle URLForResource:@"DeviceUtil" withExtension:@"bundle"];
-  NSBundle *deviceUtilBundle;
-  if (url != nil) {
-    // DeviceUtil bundle is present
-    deviceUtilBundle = [NSBundle bundleWithURL:url];
-  }
-  else {
-    // pick the main buncle
-    deviceUtilBundle = deviceUtilTopBundle;
-  }
-  NSString *path = [deviceUtilBundle pathForResource:@"DeviceList" ofType:@"plist"];
-  NSDictionary *deviceList = [NSDictionary dictionaryWithContentsOfFile:path];
-  NSAssert(deviceList != nil, @"DevicePlist not found in the bundle.");
-  return deviceList;
-}
-
-+ (Hardware)hardware {
+- (Hardware)hardware {
   NSString *hardware = [self hardwareString];
   if ([hardware isEqualToString:iPhone1_1])    return IPHONE_2G;
   if ([hardware isEqualToString:iPhone1_2])    return IPHONE_3G;
@@ -286,9 +293,8 @@ NSString* const x86_64_Sim  = @"x86_64";
   return NOT_AVAILABLE;
 }
 
-+ (NSString*)hardwareDescription {
+- (NSString*)hardwareDescription {
   NSString *hardware = [self hardwareString];
-  NSDictionary *deviceList = [self getDeviceList];
   NSString *hardwareDescription = [[deviceList objectForKey:hardware] objectForKey:@"name"];
   if (hardwareDescription) {
     return hardwareDescription;
@@ -301,8 +307,8 @@ NSString* const x86_64_Sim  = @"x86_64";
   }
 }
 
-+ (NSString*)hardwareSimpleDescription {
-  NSString *hardwareDescription = [DeviceUtil hardwareDescription];
+- (NSString*)hardwareSimpleDescription {
+  NSString *hardwareDescription = [self hardwareDescription];
   if (hardwareDescription == nil) {
     return nil;
   }
@@ -317,9 +323,8 @@ NSString* const x86_64_Sim  = @"x86_64";
   }
 }
 
-+ (float)hardwareNumber {
+- (float)hardwareNumber {
   NSString *hardware = [self hardwareString];
-  NSDictionary *deviceList = [self getDeviceList];
   float version = [[[deviceList objectForKey:hardware] objectForKey:@"version"] floatValue];
   if (version != 0.0f) {
     return version;
@@ -332,7 +337,7 @@ NSString* const x86_64_Sim  = @"x86_64";
   }
 }
 
-+ (CGSize)backCameraStillImageResolutionInPixels {
+- (CGSize)backCameraStillImageResolutionInPixels {
   switch ([self hardware]) {
     case IPHONE_2G:
     case IPHONE_3G:
@@ -405,7 +410,7 @@ NSString* const x86_64_Sim  = @"x86_64";
   return CGSizeZero;
 }
 
-+ (void)logMessage:(NSString *)hardware {
+- (void)logMessage:(NSString *)hardware {
   NSLog(@"This is a device which is not listed in this category. Please visit https://github.com/InderKumarRathore/DeviceUtil and add a comment there.");
   NSLog(@"Your device hardware string is: %@", hardware);
 }
