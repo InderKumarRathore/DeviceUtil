@@ -42,6 +42,9 @@ NSString* const iPhone10_3 = @"iPhone10,3";
 NSString* const iPhone10_4 = @"iPhone10,4";
 NSString* const iPhone10_5 = @"iPhone10,5";
 NSString* const iPhone10_6 = @"iPhone10,6";
+NSString* const iPhone11_2 = @"iPhone11,2";
+NSString* const iPhone11_4 = @"iPhone11,4";
+NSString* const iPhone11_8 = @"iPhone11,8";
 
 NSString* const iPod1_1 = @"iPod1,1";
 NSString* const iPod2_1 = @"iPod2,1";
@@ -191,6 +194,10 @@ NSString* const x86_64_Sim  = @"x86_64";
   if ([hardware isEqualToString:iPhone10_4])    return IPHONE_8;
   if ([hardware isEqualToString:iPhone10_5])    return IPHONE_8_PLUS;
   if ([hardware isEqualToString:iPhone10_6])    return IPHONE_X;
+
+  if ([hardware isEqualToString:iPhone11_2])    return IPHONE_XS;
+  if ([hardware isEqualToString:iPhone11_4])    return IPHONE_XS_MAX;
+  if ([hardware isEqualToString:iPhone11_8])    return IPHONE_XR;
 
   if ([hardware isEqualToString:iPod1_1])      return IPOD_TOUCH_1G;
   if ([hardware isEqualToString:iPod2_1])      return IPOD_TOUCH_2G;
