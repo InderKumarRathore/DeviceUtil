@@ -22,7 +22,8 @@ pod 'DeviceUtil'
 
 ### Usage
 ```sh
-  if ([DeviceUtil hardware] == IPHONE_5C) {
+  DeviceUtil *deviceUtil = [[DeviceUtil alloc] init];
+  if ([deviceUtil hardware] == IPHONE_5C) {
     NSLog(@"Device is iPhone 5c");
   }
 ```
