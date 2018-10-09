@@ -4,7 +4,7 @@
 //  Created by Inder Kumar Rathore on 19/01/13.
 //  Copyright (c) 2013 Rathore. All rights reserved.
 //
-//  Hardware string can be found @http://www.everymac.com
+//  Hardware string can be found @https://www.everymac.com
 //
 
 #import "DeviceUtil.h"
@@ -137,7 +137,7 @@ NSString* const x86_64_Sim  = @"x86_64";
       deviceUtilBundle = [NSBundle bundleWithURL:url];
     }
     else {
-      // pick the main buncle
+      // pick the main bundle
       deviceUtilBundle = deviceUtilTopBundle;
     }
     NSString *path = [deviceUtilBundle pathForResource:@"DeviceList" ofType:@"plist"];
