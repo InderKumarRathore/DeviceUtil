@@ -113,6 +113,10 @@ NSString* const Watch3_1 = @"Watch3,1";
 NSString* const Watch3_2 = @"Watch3,2";
 NSString* const Watch3_3 = @"Watch3,3";
 NSString* const Watch3_4 = @"Watch3,4";
+NSString* const Watch4_1 = @"Watch4,1";
+NSString* const Watch4_2 = @"Watch4,2";
+NSString* const Watch4_3 = @"Watch4,3";
+NSString* const Watch4_4 = @"Watch4,4";
 
 
 NSString* const i386_Sim    = @"i386";
@@ -302,6 +306,10 @@ NSString* const x86_64_Sim  = @"x86_64";
   if ([hardware isEqualToString:Watch3_2])     return APPLE_WATCH_SERIES_3_42_CELLULAR;
   if ([hardware isEqualToString:Watch3_3])     return APPLE_WATCH_SERIES_3_38;
   if ([hardware isEqualToString:Watch3_4])     return APPLE_WATCH_SERIES_3_42;
+  if ([hardware isEqualToString:Watch4_1])     return APPLE_WATCH_SERIES_4_40;
+  if ([hardware isEqualToString:Watch4_2])     return APPLE_WATCH_SERIES_4_44;
+  if ([hardware isEqualToString:Watch4_3])     return APPLE_WATCH_SERIES_4_40_CELLULAR;
+  if ([hardware isEqualToString:Watch4_4])     return APPLE_WATCH_SERIES_4_44_CELLULAR;
   
   if ([hardware isEqualToString:i386_Sim])     return SIMULATOR;
   if ([hardware isEqualToString:x86_64_Sim])   return SIMULATOR;
