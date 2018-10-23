@@ -177,7 +177,7 @@ NSString* const x86_64_Sim  = @"x86_64";
  */
 
 
-/// This method returns the Platform enum depending upon harware string
+/// This method returns the Platform enum depending upon hardware string
 ///
 ///
 /// - returns: `Platform` type of the device

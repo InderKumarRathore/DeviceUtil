@@ -244,6 +244,9 @@ extern NSString* const x86_64_Sim;
 /** This method returns the hardware type */
 - (NSString*)hardwareString;
 
+/** This method returns the Platform enum depending upon hardware string */
+- (Platform)platform;
+
 /** This method returns the Hardware enum depending upon hardware string */
 - (Hardware)hardware;
 
