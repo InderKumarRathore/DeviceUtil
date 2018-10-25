@@ -653,6 +653,34 @@
 		<key>name</key>
 		<string>Apple Watch Series 3 (42 mm)</string>
 	</dict>
+	<key>Watch4,1</key>
+	<dict>
+		<key>version</key>
+		<real>4.1</real>
+		<key>name</key>
+		<string>Apple Watch Series 4 (40 mm)</string>
+	</dict>
+	<key>Watch4,2</key>
+	<dict>
+		<key>version</key>
+		<real>4.1</real>
+		<key>name</key>
+		<string>Apple Watch Series 4 (44 mm)</string>
+	</dict>
+	<key>Watch4,3</key>
+	<dict>
+		<key>version</key>
+		<real>4.1</real>
+		<key>name</key>
+		<string>Apple Watch Series 4 (40 mm/Cellular)</string>
+	</dict>
+	<key>Watch4,4</key>
+	<dict>
+		<key>version</key>
+		<real>4.1</real>
+		<key>name</key>
+		<string>Apple Watch Series 4 (42 mm/Cellular)</string>
+	</dict>
 	<key>i386</key>
 	<dict>
 		<key>version</key>

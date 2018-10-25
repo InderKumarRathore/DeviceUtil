@@ -132,6 +132,10 @@ Apple Watch Series 3 Cellular (38 mm) | ```appleWatch_SERIES_3_38_CELLULAR``` | 
 Apple Watch Series 3 Cellular (42 mm) | ```appleWatch_SERIES_3_42_CELLULAR``` | ```Watch3,2```
 Apple Watch Series 3 (38 mm) | ```appleWatch_SERIES_3_38``` | ```Watch3,3```
 Apple Watch Series 3 (42 mm) | ```appleWatch_SERIES_3_42``` | ```Watch3,4```
+Apple Watch Series 4 (40 mm) | ```appleWatch_SERIES_4_40``` | ```Watch4,1```
+Apple Watch Series 4 (44 mm) | ```appleWatch_SERIES_4_44``` | ```Watch4,2```
+Apple Watch Series 4 Cellular (40 mm) | ```appleWatch_SERIES_4_40_CELLULAR``` | ```Watch4,3```
+Apple Watch Series 4 Cellular (44 mm) | ```appleWatch_SERIES_4_44_CELLULAR``` | ```Watch4,4```
 
 ##### Simulator
 Device | hardware() | hardwareString()

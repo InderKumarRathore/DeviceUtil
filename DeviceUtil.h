@@ -130,6 +130,10 @@ typedef NS_ENUM(NSUInteger, Hardware) {
   APPLE_WATCH_SERIES_3_42_CELLULAR,
   APPLE_WATCH_SERIES_3_38,
   APPLE_WATCH_SERIES_3_42,
+  APPLE_WATCH_SERIES_4_40,
+  APPLE_WATCH_SERIES_4_44,
+  APPLE_WATCH_SERIES_4_40_CELLULAR,
+  APPLE_WATCH_SERIES_4_44_CELLULAR,
   
   SIMULATOR,
 
@@ -239,6 +243,9 @@ extern NSString* const x86_64_Sim;
 
 /** This method returns the hardware type */
 - (NSString*)hardwareString;
+
+/** This method returns the Platform enum depending upon hardware string */
+- (Platform)platform;
 
 /** This method returns the Hardware enum depending upon hardware string */
 - (Hardware)hardware;
