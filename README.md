@@ -9,6 +9,9 @@ pod 'DeviceGuru'
 
   - Easy to use
   - Light weight
+  
+**From version `4.0.2` it can also identify the simulator type, whether it's iPhone XR or iPhone 6**
+
 
 ### Installation
 
@@ -136,12 +139,6 @@ Apple Watch Series 4 (40 mm) | ```appleWatch_SERIES_4_40``` | ```Watch4,1```
 Apple Watch Series 4 (44 mm) | ```appleWatch_SERIES_4_44``` | ```Watch4,2```
 Apple Watch Series 4 Cellular (40 mm) | ```appleWatch_SERIES_4_40_CELLULAR``` | ```Watch4,3```
 Apple Watch Series 4 Cellular (44 mm) | ```appleWatch_SERIES_4_44_CELLULAR``` | ```Watch4,4```
-
-##### Simulator
-Device | hardware() | hardwareString()
---- | --- | ---
-Simulator  | ```simulator``` | ```i386```
-Simulator  | ```simulator``` | ```x86_64```
 
 
 
