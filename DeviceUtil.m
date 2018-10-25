@@ -160,6 +160,14 @@ NSString* const x86_64_Sim  = @"x86_64";
   sysctl(name, 2, hw_machine, &size, NULL, 0);
   NSString *hardware = [NSString stringWithUTF8String:hw_machine];
   free(hw_machine);
+  
+  // Check if the hardware is simulator
+  if ([hardware isEqualToString:i386_Sim] || [hardware isEqualToString:x86_64_Sim]) {
+    NSString *deviceID = [[[NSProcessInfo processInfo] environment] objectForKey:@"SIMULATOR_MODEL_IDENTIFIER"];
+    if (deviceID != nil) {
+      hardware = deviceID;
+    }
+  }
   return hardware;
 }
 
