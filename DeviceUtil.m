@@ -187,13 +187,13 @@ NSString* const x86_64_Sim  = @"x86_64";
   
   NSString *hardware = [self hardwareString];
   
-  if ([hardware hasPrefix:@"iPhone"])     return iPhone;
-  if ([hardware hasPrefix:@"iPod"])       return iPodTouch;
-  if ([hardware hasPrefix:@"iPad"])       return iPad;
-  if ([hardware hasPrefix:@"Watch"])      return AppleWatch;
-  if ([hardware hasPrefix:@"AppleTV"])    return AppleTV;
+  if ([hardware hasPrefix:@"iPhone"])     return PlatformIPhone;
+  if ([hardware hasPrefix:@"iPod"])       return PlatformIPodTouch;
+  if ([hardware hasPrefix:@"iPad"])       return PlatformIPad;
+  if ([hardware hasPrefix:@"Watch"])      return PlatformAppleWatch;
+  if ([hardware hasPrefix:@"AppleTV"])    return PlatformAppleTV;
   
-  return Unknown;
+  return PlatformUnknown;
 }
 
 

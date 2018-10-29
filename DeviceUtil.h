@@ -9,12 +9,12 @@
 
 /// Enum of the different Apple's device platforms
 typedef NS_ENUM(NSUInteger, Platform) {
-  iPhone,
-  iPodTouch,
-  iPad,
-  AppleTV,
-  AppleWatch,
-  Unknown
+  PlatformIPhone,
+  PlatformIPodTouch,
+  PlatformIPad,
+  PlatformAppleTV,
+  PlatformAppleWatch,
+  PlatformUnknown
 };
 
 typedef NS_ENUM(NSUInteger, Hardware) {
