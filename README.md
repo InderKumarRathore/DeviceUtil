@@ -51,7 +51,7 @@ iPhone 5s CDMA GSM | ```iphone_5S_CDMA_GSM``` | ```iPhone6,2```
 iPhone 6 Plus | ```iphone_6_PLUS``` | ```iPhone7,1```
 iPhone 6 | ```iphone_6``` | ```iPhone7,2```
 iPhone 6s Plus | ```iphone_6S_PLUS``` | ```iPhone8,2```
-iPhone 6s | ```iphone_6S``` | ```iPhone8,2```
+iPhone 6s | ```iphone_6S``` | ```iPhone8,1```
 iPhone SE | ```iphone_SE``` | ```iPhone8,4```
 iPhone 7 | ```iphone_7``` | ```iPhone9,1``` & ```iPhone9,3```
 iPhone 7 Plus | ```iphone_7_PLUS``` | ```iPhone9,2``` & ```iPhone9,4```
