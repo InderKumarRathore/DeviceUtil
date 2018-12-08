@@ -253,6 +253,14 @@ extern NSString* const Watch2_3;
 extern NSString* const Watch2_4;
 extern NSString* const Watch2_6;
 extern NSString* const Watch2_7;
+extern NSString* const Watch3_1;
+extern NSString* const Watch3_2;
+extern NSString* const Watch3_3;
+extern NSString* const Watch3_4;
+extern NSString* const Watch4_1;
+extern NSString* const Watch4_2;
+extern NSString* const Watch4_3;
+extern NSString* const Watch4_4;
 
 extern NSString* const i386_Sim;
 extern NSString* const x86_64_Sim;
