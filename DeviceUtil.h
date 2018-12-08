@@ -184,6 +184,7 @@ extern NSString* const iPhone10_5;
 extern NSString* const iPhone10_6;
 extern NSString* const iPhone11_2;
 extern NSString* const iPhone11_4;
+extern NSString* const iPhone11_6;
 extern NSString* const iPhone11_8;
 
 extern NSString* const iPod1_1;
