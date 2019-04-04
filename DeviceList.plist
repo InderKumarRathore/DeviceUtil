@@ -604,40 +604,75 @@
 		<key>name</key>
 		<string>iPad Pro 12.9-Inch 1TB (Wi-Fi/Cell - 3rd Gen)</string>
 	</dict>
-	<key>appleTV1,1</key>
+	<key>iPad11,1</key>
+	<dict>
+		<key>version</key>
+		<real>11.1</real>
+		<key>name</key>
+		<string>iPad mini 5 (Wi-Fi Only)</string>
+	</dict>
+	<key>iPad11,2</key>
+	<dict>
+		<key>version</key>
+		<real>11.2</real>
+		<key>name</key>
+		<string>iPad mini 5 (Wi-Fi/Cellular)</string>
+	</dict>
+	<key>iPad11,3</key>
+	<dict>
+		<key>version</key>
+		<real>11.3</real>
+		<key>name</key>
+		<string>iPad Air 3 (Wi-Fi)</string>
+	</dict>
+	<key>iPad11,4</key>
+	<dict>
+		<key>version</key>
+		<real>11.4</real>
+		<key>name</key>
+		<string>iPad Air 3 (Wi-Fi + Cellular)</string>
+	</dict>
+	<key>AppleTV1,1</key>
 	<dict>
 		<key>version</key>
 		<real>1.1</real>
 		<key>name</key>
 		<string>Apple TV 1G</string>
 	</dict>
-	<key>appleTV2,1</key>
+	<key>AppleTV2,1</key>
 	<dict>
 		<key>version</key>
 		<real>2.1</real>
 		<key>name</key>
 		<string>Apple TV 2G</string>
 	</dict>
-	<key>appleTV3,1</key>
+	<key>AppleTV3,1</key>
 	<dict>
 		<key>version</key>
 		<real>3.1</real>
 		<key>name</key>
 		<string>Apple TV 2012</string>
 	</dict>
-	<key>appleTV3,2</key>
+	<key>AppleTV3,2</key>
 	<dict>
 		<key>version</key>
 		<real>3.2</real>
 		<key>name</key>
 		<string>Apple TV 2013</string>
 	</dict>
-	<key>appleTV5,3</key>
+	<key>AppleTV5,3</key>
 	<dict>
 		<key>version</key>
-		<string>5,3</string>
+		<string>5.3</string>
 		<key>name</key>
 		<string>Apple TV 4G</string>
+	</dict>
+	<key>AppleTV6,2</key>
+	<dict>
+		<key>version</key>
+		<string>6.2</string>
+		<key>name</key>
+		<string>Apple TV 4K</string>
 	</dict>
 	<key>Watch1,1</key>
 	<dict>
