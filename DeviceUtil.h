@@ -289,6 +289,11 @@ extern NSString* const x86_64_Sim;
  */
 - (float)hardwareNumber;
 
+/**
+ This method returns if we are running in the simulator
+ */
+- (BOOL)isSimulator;
+
 /** This method returns the resolution for still image that can be received
  from back camera of the current device. Resolution returned for image oriented landscape right. **/
 - (CGSize)backCameraStillImageResolutionInPixels;
