@@ -164,15 +164,21 @@ NSString* const x86_64_Sim  = @"x86_64";
   return self;
 }
 
+- (NSString*)nativeHardwareString {
+    int name[] = {CTL_HW,HW_MACHINE};
+    size_t size = 100;
+    sysctl(name, 2, NULL, &size, NULL, 0); // getting size of answer
+    char *hw_machine = malloc(size);
+    
+    sysctl(name, 2, hw_machine, &size, NULL, 0);
+    NSString *hardware = [NSString stringWithUTF8String:hw_machine];
+    free(hw_machine);
+    
+    return hardware;
+}
+
 - (NSString*)hardwareString {
-  int name[] = {CTL_HW,HW_MACHINE};
-  size_t size = 100;
-  sysctl(name, 2, NULL, &size, NULL, 0); // getting size of answer
-  char *hw_machine = malloc(size);
-  
-  sysctl(name, 2, hw_machine, &size, NULL, 0);
-  NSString *hardware = [NSString stringWithUTF8String:hw_machine];
-  free(hw_machine);
+  NSString *hardware = [self nativeHardwareString];
   
   // Check if the hardware is simulator
   if ([hardware isEqualToString:i386_Sim] || [hardware isEqualToString:x86_64_Sim]) {
@@ -217,6 +223,12 @@ NSString* const x86_64_Sim  = @"x86_64";
   return Unknown;
 }
 
+- (Hardware)nativeHardware {
+    NSString *hardware = [self nativeHardwareString];
+    if ([hardware isEqualToString:i386_Sim])     return SIMULATOR;
+    if ([hardware isEqualToString:x86_64_Sim])   return SIMULATOR;
+    return [self hardware];
+}
 
 - (Hardware)hardware {
   NSString *hardware = [self hardwareString];
@@ -400,6 +412,10 @@ NSString* const x86_64_Sim  = @"x86_64";
     
     return 200.0f; //device might be new one of missing one so returning 200.0f
   }
+}
+
+- (BOOL)isSimulator {
+    return [self nativeHardware] == SIMULATOR;
 }
 
 - (CGSize)backCameraStillImageResolutionInPixels {
