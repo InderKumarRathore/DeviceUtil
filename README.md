@@ -116,20 +116,24 @@ iPad Pro 11-Inch (Wi-Fi Only) | ```IPAD_PRO_11_WIFI``` | ```iPad8,1```
 iPad Pro 11-Inch 1TB (Wi-Fi Only) | ```IPAD_PRO_11_1TB_WIFI``` | ```iPad8,2```
 iPad Pro 11-Inch (Wi-Fi/Cellular) | ```IPAD_PRO_11_WIFI_CELLULAR``` | ```iPad8,3```
 iPad Pro 11-Inch 1TB (Wi-Fi/Cellular) | ```IPAD_PRO_11_1TB_WIFI_CELLULAR``` | ```iPad8,4```
-
 iPad Pro 12.9-Inch (Wi-Fi Only - 3rd Gen) | ```IPAD_PRO_3G_WIFI``` | ```iPad8,5```
 iPad Pro 12.9-Inch 1TB (Wi-Fi Only - 3rd Gen) | ```IPAD_PRO_3G_1TB_WIFI``` | ```iPad8,6```
 iPad Pro 12.9-Inch (Wi-Fi/Cell - 3rd Gen) | ```IPAD_PRO_3G_WIFI_CELLULAR``` | ```iPad8,7```
 iPad Pro 12.9-Inch 1TB (Wi-Fi/Cell - 3rd Gen) | ```IPAD_PRO_3G_1TB_WIFI_CELLULAR``` | ```iPad8,8```
+iPad mini 5 (Wi-Fi Only) | ```IPAD_MINI_5_WIFI``` | ```iPad11,1```
+iPad mini 5 (Wi-Fi/Cellular) | ```IPAD_MINI_5_WIFI_CELLULAR``` | ```iPad11,2```
+iPad Air 3 (Wi-Fi) | ```IPAD_AIR_3_WIFI``` | ```iPad11,3```
+iPad Air 3 (Wi-Fi + Cellular) | ```IPAD_AIR_3_WIFI_CELLULAR``` | ```iPad11,4```
 
 ##### Apple TV
 Device | hardware() | hardwareString()
 --- | --- | ---
-Apple TV 1G | ```appleTV_1G``` | ```appleTV1,1```
-Apple TV 2G | ```appleTV_2G``` | ```appleTV2,1```
-Apple TV 3G | ```appleTV_3G``` | ```appleTV3,1```
-Apple TV 3G rev A | ```appleTV_3_2G``` | ```appleTV3,2```
-Apple TV 4G | ```appleTV_4G``` | ```appleTV5,3```
+Apple TV 1G | ```APPLE_TV_1G``` | ```AppleTV1,1```
+Apple TV 2G | ```APPLE_TV_2G``` | ```AppleTV2,1```
+Apple TV 3G | ```APPLE_TV_3G``` | ```AppleTV3,1```
+Apple TV 3G rev A | ```APPLE_TV_3_2G``` | ```AppleTV3,2```
+Apple TV 4G | ```APPLE_TV_4G``` | ```AppleTV5,3```
+Apple TV 4K | ```APPLE_TV_4K``` | ```AppleTV6,2```
 
 ##### Apple Watch
 Device | hardware() | hardwareString()

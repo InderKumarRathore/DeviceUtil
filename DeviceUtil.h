@@ -88,6 +88,8 @@ typedef NS_ENUM(NSUInteger, Hardware) {
   IPAD_MINI_3_WIFI_CELLULAR_CN,
   IPAD_MINI_4_WIFI,
   IPAD_MINI_4_WIFI_CELLULAR,
+  IPAD_MINI_5_WIFI,
+  IPAD_MINI_5_WIFI_CELLULAR,
   
   IPAD_MINI_RETINA_WIFI_CELLULAR_CN,
   
@@ -96,6 +98,8 @@ typedef NS_ENUM(NSUInteger, Hardware) {
   IPAD_AIR_WIFI_CDMA,
   IPAD_AIR_2_WIFI,
   IPAD_AIR_2_WIFI_CELLULAR,
+  IPAD_AIR_3_WIFI,
+  IPAD_AIR_3_WIFI_CELLULAR,
   
   IPAD_PRO_97_WIFI,
   IPAD_PRO_97_WIFI_CELLULAR,
@@ -129,6 +133,7 @@ typedef NS_ENUM(NSUInteger, Hardware) {
   APPLE_TV_3G,
   APPLE_TV_3_2G,
   APPLE_TV_4G,
+  APPLE_TV_4K,
   
   APPLE_WATCH_38,
   APPLE_WATCH_42,
@@ -242,11 +247,16 @@ extern NSString* const iPad8_5;
 extern NSString* const iPad8_6;
 extern NSString* const iPad8_7;
 extern NSString* const iPad8_8;
+extern NSString* const iPad11_1;
+extern NSString* const iPad11_2;
+extern NSString* const iPad11_3;
+extern NSString* const iPad11_4;
 extern NSString* const AppleTV1_1;
 extern NSString* const AppleTV2_1;
 extern NSString* const AppleTV3_1;
 extern NSString* const AppleTV3_2;
 extern NSString* const AppleTV5_3;
+extern NSString* const AppleTV6_2;
 extern NSString* const Watch1_1;
 extern NSString* const Watch1_2;
 extern NSString* const Watch2_3;
