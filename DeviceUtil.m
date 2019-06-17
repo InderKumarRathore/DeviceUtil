@@ -53,6 +53,7 @@ NSString* const iPod3_1 = @"iPod3,1";
 NSString* const iPod4_1 = @"iPod4,1";
 NSString* const iPod5_1 = @"iPod5,1";
 NSString* const iPod7_1 = @"iPod7,1";
+NSString* const iPod9_1 = @"iPod9,1";
 
 NSString* const iPad1_1 = @"iPad1,1";
 NSString* const iPad1_2 = @"iPad1,2";
@@ -276,6 +277,7 @@ NSString* const x86_64_Sim  = @"x86_64";
   if ([hardware isEqualToString:iPod4_1])      return IPOD_TOUCH_4G;
   if ([hardware isEqualToString:iPod5_1])      return IPOD_TOUCH_5G;
   if ([hardware isEqualToString:iPod7_1])      return IPOD_TOUCH_6G;
+  if ([hardware isEqualToString:iPod9_1])      return IPOD_TOUCH_7G;
   
   if ([hardware isEqualToString:iPad1_1])      return IPAD;
   if ([hardware isEqualToString:iPad1_2])      return IPAD_3G;
