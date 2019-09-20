@@ -226,6 +226,24 @@
 		<key>name</key>
 		<string>iPhone XR</string>
 	</dict>
+	<dict>
+		<key>version</key>
+		<real>12.1</real>
+		<key>name</key>
+		<string>iPhone 11</string>
+	</dict>
+	<dict>
+		<key>version</key>
+		<real>12.3</real>
+		<key>name</key>
+		<string>iPhone 11 Pro</string>
+	</dict>
+	<dict>
+		<key>version</key>
+		<real>12.5</real>
+		<key>name</key>
+		<string>iPhone 11 Pro Max</string>
+	</dict>
 	<key>iPod1,1</key>
 	<dict>
 		<key>version</key>

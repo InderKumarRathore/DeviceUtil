@@ -63,6 +63,9 @@ iPhone X | ```iphone_X``` | ```iPhone10,3``` & ```iPhone10,6```
 iPhone XS | ```iphone_XS``` | ```iPhone11,2```
 iPhone XS Max | ```iphone_XS_MAX``` | ```iPhone11,4``` & ```iPhone11,6```
 iPhone XR | ```iphone_XR``` | ```iPhone11,8```
+iPhone 11 | ```iphone_11``` | ```iPhone12,1```
+iPhone 11 Pro | ```iphone_11_PRO``` | ```iPhone11,4``` & ```iPhone12,3```
+iPhone 11 Pro Max | ```iphone_11_PRO_MAX``` | ```iPhone12,5```
 
 ##### iPod
 Device | hardware() | hardwareString()
