@@ -46,6 +46,9 @@ NSString* const iPhone11_2 = @"iPhone11,2";
 NSString* const iPhone11_4 = @"iPhone11,4";
 NSString* const iPhone11_6 = @"iPhone11,6";
 NSString* const iPhone11_8 = @"iPhone11,8";
+NSString* const iPhone12_1 = @"iPhone12,1";
+NSString* const iPhone12_3 = @"iPhone12,3";
+NSString* const iPhone12_5 = @"iPhone12,5";
 
 NSString* const iPod1_1 = @"iPod1,1";
 NSString* const iPod2_1 = @"iPod2,1";
