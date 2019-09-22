@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>iPhone1,1</key>
+	<dict>
+		<key>version</key>
+		<real>1.1</real>
+		<key>name</key>
+		<string>iPhone 2G</string>
+		<key>enum</key>
+		<string>IPHONE_2G</string>
+	</dict>
+	<key>iPhone1,2</key>
+	<dict>
+		<key>version</key>
+		<real>1.2</real>
+		<key>name</key>
+		<string>iPhone 3G</string>
+		<key>enum</key>
+		<string>IPHONE_3G</string>
+	</dict>
+	<key>iPhone2,1</key>
+	<dict>
+		<key>version</key>
+		<real>2.1</real>
+		<key>name</key>
+		<string>iPhone 3GS</string>
+		<key>enum</key>
+		<string>IPHONE_3GS</string>
+	</dict>
+	<key>iPhone3,1</key>
+	<dict>
+		<key>version</key>
+		<real>3.1</real>
+		<key>name</key>
+		<string>iPhone 4 (GSM)</string>
+		<key>enum</key>
+		<string>IPHONE_4</string>
+	</dict>
+	<key>iPhone3,2</key>
+	<dict>
+		<key>version</key>
+		<real>3.2</real>
+		<key>name</key>
+		<string>iPhone 4 (GSM Rev. A)</string>
+		<key>enum</key>
+		<string>IPHONE_4</string>
+	</dict>
+	<key>iPhone3,3</key>
+	<dict>
+		<key>version</key>
+		<real>3.3</real>
+		<key>name</key>
+		<string>iPhone 4 (CDMA)</string>
+		<key>enum</key>
+		<string>IPHONE_4_CDMA</string>
+	</dict>
+	<key>iPhone4,1</key>
+	<dict>
+		<key>version</key>
+		<real>4.1</real>
+		<key>name</key>
+		<string>iPhone 4S</string>
+		<key>enum</key>
+		<string>IPHONE_4S</string>
+	</dict>
+	<key>iPhone5,1</key>
+	<dict>
+		<key>version</key>
+		<real>5.1</real>
+		<key>name</key>
+		<string>iPhone 5 (GSM)</string>
+		<key>enum</key>
+		<string>IPHONE_5</string>
+	</dict>
+	<key>iPhone5,2</key>
+	<dict>
+		<key>version</key>
+		<real>5.2</real>
+		<key>name</key>
+		<string>iPhone 5 (Global)</string>
+		<key>enum</key>
+		<string>IPHONE_5_CDMA_GSM</string>
+	</dict>
+	<key>iPhone5,3</key>
+	<dict>
+		<key>version</key>
+		<real>5.3</real>
+		<key>name</key>
+		<string>iPhone 5c (GSM)</string>
+		<key>enum</key>
+		<string>IPHONE_5C</string>
+	</dict>
+	<key>iPhone5,4</key>
+	<dict>
+		<key>version</key>
+		<real>5.4</real>
+		<key>name</key>
+		<string>iPhone 5c (Global)</string>
+		<key>enum</key>
+		<string>IPHONE_5C_CDMA_GSM</string>
+	</dict>
+	<key>iPhone6,1</key>
+	<dict>
+		<key>version</key>
+		<real>6.1</real>
+		<key>name</key>
+		<string>iPhone 5s (GSM)</string>
+		<key>enum</key>
+		<string>IPHONE_5S</string>
+	</dict>
+	<key>iPhone6,2</key>
+	<dict>
+		<key>version</key>
+		<real>6.2</real>
+		<key>name</key>
+		<string>iPhone 5s (Global)</string>
+		<key>enum</key>
+		<string>IPHONE_5S_CDMA_GSM</string>
+	</dict>
+	<key>iPhone7,1</key>
+	<dict>
+		<key>version</key>
+		<real>7.1</real>
+		<key>name</key>
+		<string>iPhone 6 Plus</string>
+		<key>enum</key>
+		<string>IPHONE_6_PLUS</string>
+	</dict>
+	<key>iPhone7,2</key>
+	<dict>
+		<key>version</key>
+		<real>7.2</real>
+		<key>name</key>
+		<string>iPhone 6</string>
+		<key>enum</key>
+		<string>IPHONE_6</string>
+	</dict>
+	<key>iPhone8,1</key>
+	<dict>
+		<key>version</key>
+		<real>8.1</real>
+		<key>name</key>
+		<string>iPhone 6s</string>
+		<key>enum</key>
+		<string>IPHONE_6S</string>
+	</dict>
+	<key>iPhone8,2</key>
+	<dict>
+		<key>version</key>
+		<real>8.199999999999999</real>
+		<key>name</key>
+		<string>iPhone 6s Plus</string>
+		<key>enum</key>
+		<string>IPHONE_6S_PLUS</string>
+	</dict>
+	<key>iPhone8,4</key>
+	<dict>
+		<key>version</key>
+		<real>8.4</real>
+		<key>name</key>
+		<string>iPhone SE</string>
+		<key>enum</key>
+		<string>IPHONE_SE</string>
+	</dict>
+	<key>iPhone9,1</key>
+	<dict>
+		<key>version</key>
+		<real>9.1</real>
+		<key>name</key>
+		<string>iPhone 7</string>
+		<key>enum</key>
+		<string>IPHONE_7</string>
+	</dict>
+	<key>iPhone9,2</key>
+	<dict>
+		<key>version</key>
+		<real>9.199999999999999</real>
+		<key>name</key>
+		<string>iPhone 7 Plus</string>
+		<key>enum</key>
+		<string>IPHONE_7_PLUS</string>
+	</dict>
+	<key>iPhone9,3</key>
+	<dict>
+		<key>version</key>
+		<real>9.300000000000001</real>
+		<key>name</key>
+		<string>iPhone 7</string>
+		<key>enum</key>
+		<string>IPHONE_7_GSM</string>
+	</dict>
+	<key>iPhone9,4</key>
+	<dict>
+		<key>version</key>
+		<real>9.4</real>
+		<key>name</key>
+		<string>iPhone 7 Plus</string>
+		<key>enum</key>
+		<string>IPHONE_7_PLUS_GSM</string>
+	</dict>
+	<key>iPhone10,1</key>
+	<dict>
+		<key>version</key>
+		<real>10.1</real>
+		<key>name</key>
+		<string>iPhone 8</string>
+		<key>enum</key>
+		<string>IPHONE_8_CN</string>
+	</dict>
+	<key>iPhone10,2</key>
+	<dict>
+		<key>version</key>
+		<real>10.2</real>
+		<key>name</key>
+		<string>iPhone 8 Plus</string>
+		<key>enum</key>
+		<string>IPHONE_8_PLUS_CN</string>
+	</dict>
+	<key>iPhone10,3</key>
+	<dict>
+		<key>version</key>
+		<real>10.3</real>
+		<key>name</key>
+		<string>iPhone X</string>
+		<key>enum</key>
+		<string>IPHONE_X_CN</string>
+	</dict>
+	<key>iPhone10,4</key>
+	<dict>
+		<key>version</key>
+		<real>10.4</real>
+		<key>name</key>
+		<string>iPhone 8</string>
+		<key>enum</key>
+		<string>IPHONE_8</string>
+	</dict>
+	<key>iPhone10,5</key>
+	<dict>
+		<key>version</key>
+		<real>10.5</real>
+		<key>name</key>
+		<string>iPhone 8 Plus</string>
+		<key>enum</key>
+		<string>IPHONE_8_PLUS</string>
+	</dict>
+	<key>iPhone10,6</key>
+	<dict>
+		<key>version</key>
+		<real>10.6</real>
+		<key>name</key>
+		<string>iPhone X</string>
+		<key>enum</key>
+		<string>IPHONE_X</string>
+	</dict>
+	<key>iPhone11,2</key>
+	<dict>
+		<key>version</key>
+		<real>11.2</real>
+		<key>name</key>
+		<string>iPhone XS</string>
+		<key>enum</key>
+		<string>IPHONE_XS</string>
+	</dict>
+	<key>iPhone11,4</key>
+	<dict>
+		<key>version</key>
+		<real>11.4</real>
+		<key>name</key>
+		<string>iPhone XS Max</string>
+		<key>enum</key>
+		<string>IPHONE_XS_MAX</string>
+	</dict>
+	<key>iPhone11,6</key>
+	<dict>
+		<key>version</key>
+		<real>11.6</real>
+		<key>name</key>
+		<string>iPhone XS Max China</string>
+		<key>enum</key>
+		<string>IPHONE_XS_MAX_CN</string>
+	</dict>
+	<key>iPhone11,8</key>
+	<dict>
+		<key>version</key>
+		<real>11.8</real>
+		<key>name</key>
+		<string>iPhone XR</string>
+		<key>enum</key>
+		<string>IPHONE_XR</string>
+	</dict>
+	<key>iPhone12,1</key>
+	<dict>
+		<key>version</key>
+		<real>12.1</real>
+		<key>name</key>
+		<string>iPhone 11</string>
+		<key>enum</key>
+		<string>IPHONE_11</string>
+	</dict>
+	<key>iPhone12,3</key>
+	<dict>
+		<key>version</key>
+		<real>12.3</real>
+		<key>name</key>
+		<string>iPhone 11 Pro</string>
+		<key>enum</key>
+		<string>IPHONE_11_PRO</string>
+	</dict>
+	<key>iPhone12,5</key>
+	<dict>
+		<key>version</key>
+		<real>12.5</real>
+		<key>name</key>
+		<string>iPhone 11 Pro Max</string>
+		<key>enum</key>
+		<string>IPHONE_11_PRO_MAX</string>
+	</dict>
+	<key>iPod1,1</key>
+	<dict>
+		<key>version</key>
+		<real>1.1</real>
+		<key>name</key>
+		<string>iPod Touch (1 Gen)</string>
+		<key>enum</key>
+		<string>IPOD_TOUCH_1G</string>
+	</dict>
+	<key>iPod2,1</key>
+	<dict>
+		<key>version</key>
+		<real>2.1</real>
+		<key>name</key>
+		<string>iPod Touch (2 Gen)</string>
+		<key>enum</key>
+		<string>IPOD_TOUCH_2G</string>
+	</dict>
+	<key>iPod3,1</key>
+	<dict>
+		<key>version</key>
+		<real>3.1</real>
+		<key>name</key>
+		<string>iPod Touch (3 Gen)</string>
+		<key>enum</key>
+		<string>IPOD_TOUCH_3G</string>
+	</dict>
+	<key>iPod4,1</key>
+	<dict>
+		<key>version</key>
+		<real>4.1</real>
+		<key>name</key>
+		<string>iPod Touch (4 Gen)</string>
+		<key>enum</key>
+		<string>IPOD_TOUCH_4G</string>
+	</dict>
+	<key>iPod5,1</key>
+	<dict>
+		<key>version</key>
+		<real>5.1</real>
+		<key>name</key>
+		<string>iPod Touch (5 Gen)</string>
+		<key>enum</key>
+		<string>IPOD_TOUCH_5G</string>
+	</dict>
+	<key>iPod7,1</key>
+	<dict>
+		<key>version</key>
+		<real>7.1</real>
+		<key>name</key>
+		<string>iPod Touch (6 Gen)</string>
+		<key>enum</key>
+		<string>IPOD_TOUCH_6G</string>
+	</dict>
+	<key>iPod9,1</key>
+	<dict>
+		<key>version</key>
+		<real>9.1</real>
+		<key>name</key>
+		<string>iPod Touch (7 Gen)</string>
+		<key>enum</key>
+		<string>IPOD_TOUCH_7G</string>
+	</dict>
+	<key>iPad1,1</key>
+	<dict>
+		<key>version</key>
+		<real>1.1</real>
+		<key>name</key>
+		<string>iPad (WiFi)</string>
+		<key>enum</key>
+		<string>IPAD</string>
+	</dict>
+	<key>iPad1,2</key>
+	<dict>
+		<key>version</key>
+		<real>1.2</real>
+		<key>name</key>
+		<string>iPad 3G</string>
+		<key>enum</key>
+		<string>IPAD_3G</string>
+	</dict>
+	<key>iPad2,1</key>
+	<dict>
+		<key>version</key>
+		<real>2.1</real>
+		<key>name</key>
+		<string>iPad 2 (WiFi)</string>
+		<key>enum</key>
+		<string>IPAD_2_WIFI</string>
+	</dict>
+	<key>iPad2,2</key>
+	<dict>
+		<key>version</key>
+		<real>2.2</real>
+		<key>name</key>
+		<string>iPad 2 (GSM)</string>
+		<key>enum</key>
+		<string>IPAD_2</string>
+	</dict>
+	<key>iPad2,3</key>
+	<dict>
+		<key>version</key>
+		<real>2.3</real>
+		<key>name</key>
+		<string>iPad 2 (CDMA)</string>
+		<key>enum</key>
+		<string>IPAD_2_CDMA</string>
+	</dict>
+	<key>iPad2,4</key>
+	<dict>
+		<key>version</key>
+		<real>2.4</real>
+		<key>name</key>
+		<string>iPad 2 (WiFi Rev. A)</string>
+		<key>enum</key>
+		<string>IPAD_2</string>
+	</dict>
+	<key>iPad2,5</key>
+	<dict>
+		<key>version</key>
+		<real>2.5</real>
+		<key>name</key>
+		<string>iPad Mini (WiFi)</string>
+		<key>enum</key>
+		<string>IPAD_MINI_WIFI</string>
+	</dict>
+	<key>iPad2,6</key>
+	<dict>
+		<key>version</key>
+		<real>2.6</real>
+		<key>name</key>
+		<string>iPad Mini (GSM)</string>
+		<key>enum</key>
+		<string>IPAD_MINI</string>
+	</dict>
+	<key>iPad2,7</key>
+	<dict>
+		<key>version</key>
+		<real>2.7</real>
+		<key>name</key>
+		<string>iPad Mini (CDMA)</string>
+		<key>enum</key>
+		<string>IPAD_MINI_WIFI_CDMA</string>
+	</dict>
+	<key>iPad3,1</key>
+	<dict>
+		<key>version</key>
+		<real>3.1</real>
+		<key>name</key>
+		<string>iPad 3 (WiFi)</string>
+		<key>enum</key>
+		<string>IPAD_3_WIFI</string>
+	</dict>
+	<key>iPad3,2</key>
+	<dict>
+		<key>version</key>
+		<real>3.2</real>
+		<key>name</key>
+		<string>iPad 3 (CDMA)</string>
+		<key>enum</key>
+		<string>IPAD_3_WIFI_CDMA</string>
+	</dict>
+	<key>iPad3,3</key>
+	<dict>
+		<key>version</key>
+		<real>3.3</real>
+		<key>name</key>
+		<string>iPad 3 (Global)</string>
+		<key>enum</key>
+		<string>IPAD_3</string>
+	</dict>
+	<key>iPad3,4</key>
+	<dict>
+		<key>version</key>
+		<real>3.4</real>
+		<key>name</key>
+		<string>iPad 4 (WiFi)</string>
+		<key>enum</key>
+		<string>IPAD_4_WIFI</string>
+	</dict>
+	<key>iPad3,5</key>
+	<dict>
+		<key>version</key>
+		<real>3.5</real>
+		<key>name</key>
+		<string>iPad 4 (CDMA)</string>
+		<key>enum</key>
+		<string>IPAD_4</string>
+	</dict>
+	<key>iPad3,6</key>
+	<dict>
+		<key>version</key>
+		<real>3.6</real>
+		<key>name</key>
+		<string>iPad 4 (Global)</string>
+		<key>enum</key>
+		<string>IPAD_4_GSM_CDMA</string>
+	</dict>
+	<key>iPad4,1</key>
+	<dict>
+		<key>version</key>
+		<real>4.1</real>
+		<key>name</key>
+		<string>iPad Air (WiFi)</string>
+		<key>enum</key>
+		<string>IPAD_AIR_WIFI</string>
+	</dict>
+	<key>iPad4,2</key>
+	<dict>
+		<key>version</key>
+		<real>4.2</real>
+		<key>name</key>
+		<string>iPad Air (WiFi+GSM)</string>
+		<key>enum</key>
+		<string>IPAD_AIR_WIFI_GSM</string>
+	</dict>
+	<key>iPad4,3</key>
+	<dict>
+		<key>version</key>
+		<real>4.3</real>
+		<key>name</key>
+		<string>iPad Air (WiFi+CDMA)</string>
+		<key>enum</key>
+		<string>IPAD_AIR_WIFI_CDMA</string>
+	</dict>
+	<key>iPad4,4</key>
+	<dict>
+		<key>version</key>
+		<real>4.4</real>
+		<key>name</key>
+		<string>iPad Mini Retina (WiFi)</string>
+		<key>enum</key>
+		<string>IPAD_MINI_RETINA_WIFI</string>
+	</dict>
+	<key>iPad4,5</key>
+	<dict>
+		<key>version</key>
+		<real>4.5</real>
+		<key>name</key>
+		<string>iPad Mini Retina (WiFi+CDMA)</string>
+		<key>enum</key>
+		<string>IPAD_MINI_RETINA_WIFI_CDMA</string>
+	</dict>
+	<key>iPad4,6</key>
+	<dict>
+		<key>version</key>
+		<real>4.6</real>
+		<key>name</key>
+		<string>iPad Mini Retina (Wi-Fi + Cellular CN)</string>
+		<key>enum</key>
+		<string>IPAD_MINI_RETINA_WIFI_CELLULAR_CN</string>
+	</dict>
+	<key>iPad4,7</key>
+	<dict>
+		<key>version</key>
+		<real>4.7</real>
+		<key>name</key>
+		<string>iPad Mini 3 (Wi-Fi)</string>
+		<key>enum</key>
+		<string>IPAD_MINI_3_WIFI</string>
+	</dict>
+	<key>iPad4,8</key>
+	<dict>
+		<key>version</key>
+		<real>4.8</real>
+		<key>name</key>
+		<string>iPad Mini 3 (Wi-Fi + Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_MINI_3_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad4,9</key>
+	<dict>
+		<key>version</key>
+		<real>4.9</real>
+		<key>name</key>
+		<string>iPad mini 3 (Wi-Fi/Cellular, China)</string>
+		<key>enum</key>
+		<string>IPAD_MINI_3_WIFI_CELLULAR_CN</string>
+	</dict>
+	<key>iPad5,1</key>
+	<dict>
+		<key>version</key>
+		<real>5.1</real>
+		<key>name</key>
+		<string>iPad mini 4 (Wi-Fi Only)</string>
+		<key>enum</key>
+		<string>IPAD_MINI_4_WIFI</string>
+	</dict>
+	<key>iPad5,2</key>
+	<dict>
+		<key>version</key>
+		<real>5.2</real>
+		<key>name</key>
+		<string>iPad mini 4 (Wi-Fi/Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_MINI_4_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad5,3</key>
+	<dict>
+		<key>version</key>
+		<real>5.3</real>
+		<key>name</key>
+		<string>iPad Air 2 (Wi-Fi)</string>
+		<key>enum</key>
+		<string>IPAD_AIR_2_WIFI</string>
+	</dict>
+	<key>iPad5,4</key>
+	<dict>
+		<key>version</key>
+		<real>5.4</real>
+		<key>name</key>
+		<string>iPad Air 2 (Wi-Fi + Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_AIR_2_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad6,3</key>
+	<dict>
+		<key>version</key>
+		<real>6.3</real>
+		<key>name</key>
+		<string>iPad Pro 9.7-inch (Wi-Fi Only)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_97_WIFI</string>
+	</dict>
+	<key>iPad6,4</key>
+	<dict>
+		<key>version</key>
+		<real>6.4</real>
+		<key>name</key>
+		<string>iPad Pro 9.7-inch (Wi-Fi + Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_97_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad6,7</key>
+	<dict>
+		<key>version</key>
+		<real>6.7</real>
+		<key>name</key>
+		<string>iPad Pro (Wi-Fi Only)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_WIFI</string>
+	</dict>
+	<key>iPad6,8</key>
+	<dict>
+		<key>version</key>
+		<real>6.8</real>
+		<key>name</key>
+		<string>iPad Pro (Wi-Fi/Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad6,11</key>
+	<dict>
+		<key>version</key>
+		<real>6.11</real>
+		<key>name</key>
+		<string>9.7-inch iPad (Wi-Fi)</string>
+		<key>enum</key>
+		<string>IPAD_5_WIFI</string>
+	</dict>
+	<key>iPad6,12</key>
+	<dict>
+		<key>version</key>
+		<real>6.12</real>
+		<key>name</key>
+		<string>9.7-inch iPad (Wi-Fi + Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_5_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad7,1</key>
+	<dict>
+		<key>version</key>
+		<real>7.1</real>
+		<key>name</key>
+		<string>iPad Pro 12.9-Inch (Wi-Fi Only - 2nd Gen)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_2G_WIFI</string>
+	</dict>
+	<key>iPad7,2</key>
+	<dict>
+		<key>version</key>
+		<real>7.2</real>
+		<key>name</key>
+		<string>iPad Pro 12.9-Inch (Wi-Fi/Cell - 2nd Gen)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_2G_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad7,3</key>
+	<dict>
+		<key>version</key>
+		<real>7.3</real>
+		<key>name</key>
+		<string>iPad Pro 10.5-Inch (Wi-Fi Only)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_105_WIFI</string>
+	</dict>
+	<key>iPad7,4</key>
+	<dict>
+		<key>version</key>
+		<real>7.4</real>
+		<key>name</key>
+		<string>iPad Pro 10.5-Inch (Wi-Fi/Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_105_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad7,5</key>
+	<dict>
+		<key>version</key>
+		<real>7.5</real>
+		<key>name</key>
+		<string>iPad 9.7-Inch 6th Gen (Wi-Fi Only)</string>
+		<key>enum</key>
+		<string>IPAD_6_WIFI</string>
+	</dict>
+	<key>iPad7,6</key>
+	<dict>
+		<key>version</key>
+		<real>7.6</real>
+		<key>name</key>
+		<string>iPad 9.7-Inch 6th Gen (Wi-Fi/Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_6_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad8,1</key>
+	<dict>
+		<key>version</key>
+		<real>8.1</real>
+		<key>name</key>
+		<string>iPad Pro 11-Inch (Wi-Fi Only)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_11_WIFI</string>
+	</dict>
+	<key>iPad8,2</key>
+	<dict>
+		<key>version</key>
+		<real>8.199999999999999</real>
+		<key>name</key>
+		<string>iPad Pro 11-Inch 1TB (Wi-Fi Only)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_11_1TB_WIFI</string>
+	</dict>
+	<key>iPad8,3</key>
+	<dict>
+		<key>version</key>
+		<real>8.300000000000001</real>
+		<key>name</key>
+		<string>iPad Pro 11-Inch (Wi-Fi/Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_11_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad8,4</key>
+	<dict>
+		<key>version</key>
+		<real>8.4</real>
+		<key>name</key>
+		<string>iPad Pro 11-Inch 1TB (Wi-Fi/Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_11_1TB_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad8,5</key>
+	<dict>
+		<key>version</key>
+		<real>8.5</real>
+		<key>name</key>
+		<string>iPad Pro 12.9-Inch (Wi-Fi Only - 3rd Gen)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_3G_WIFI</string>
+	</dict>
+	<key>iPad8,6</key>
+	<dict>
+		<key>version</key>
+		<real>8.6</real>
+		<key>name</key>
+		<string>iPad Pro 12.9-Inch 1TB (Wi-Fi Only - 3rd Gen)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_3G_1TB_WIFI</string>
+	</dict>
+	<key>iPad8,7</key>
+	<dict>
+		<key>version</key>
+		<real>8.699999999999999</real>
+		<key>name</key>
+		<string>iPad Pro 12.9-Inch (Wi-Fi/Cell - 3rd Gen)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_3G_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad8,8</key>
+	<dict>
+		<key>version</key>
+		<real>8.800000000000001</real>
+		<key>name</key>
+		<string>iPad Pro 12.9-Inch 1TB (Wi-Fi/Cell - 3rd Gen)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_3G_1TB_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad11,1</key>
+	<dict>
+		<key>version</key>
+		<real>11.1</real>
+		<key>name</key>
+		<string>iPad mini 5 (Wi-Fi Only)</string>
+		<key>enum</key>
+		<string>IPAD_MINI_5_WIFI</string>
+	</dict>
+	<key>iPad11,2</key>
+	<dict>
+		<key>version</key>
+		<real>11.2</real>
+		<key>name</key>
+		<string>iPad mini 5 (Wi-Fi/Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_MINI_5_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad11,3</key>
+	<dict>
+		<key>version</key>
+		<real>11.3</real>
+		<key>name</key>
+		<string>iPad Air 3 (Wi-Fi)</string>
+		<key>enum</key>
+		<string>IPAD_AIR_3_WIFI</string>
+	</dict>
+	<key>iPad11,4</key>
+	<dict>
+		<key>version</key>
+		<real>11.4</real>
+		<key>name</key>
+		<string>iPad Air 3 (Wi-Fi + Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_AIR_3_WIFI_CELLULAR</string>
+	</dict>
+	<key>AppleTV1,1</key>
+	<dict>
+		<key>version</key>
+		<real>1.1</real>
+		<key>name</key>
+		<string>Apple TV 1G</string>
+		<key>enum</key>
+		<string>APPLE_TV_1G</string>
+	</dict>
+	<key>AppleTV2,1</key>
+	<dict>
+		<key>version</key>
+		<real>2.1</real>
+		<key>name</key>
+		<string>Apple TV 2G</string>
+		<key>enum</key>
+		<string>APPLE_TV_2G</string>
+	</dict>
+	<key>AppleTV3,1</key>
+	<dict>
+		<key>version</key>
+		<real>3.1</real>
+		<key>name</key>
+		<string>Apple TV 2012</string>
+		<key>enum</key>
+		<string>APPLE_TV_3G</string>
+	</dict>
+	<key>AppleTV3,2</key>
+	<dict>
+		<key>version</key>
+		<real>3.2</real>
+		<key>name</key>
+		<string>Apple TV 2013</string>
+		<key>enum</key>
+		<string>APPLE_TV_3_2G</string>
+	</dict>
+	<key>AppleTV5,3</key>
+	<dict>
+		<key>version</key>
+		<string>5.3</string>
+		<key>name</key>
+		<string>Apple TV 4G</string>
+		<key>enum</key>
+		<string>APPLE_TV_4G</string>
+	</dict>
+	<key>AppleTV6,2</key>
+	<dict>
+		<key>version</key>
+		<string>6.2</string>
+		<key>name</key>
+		<string>Apple TV 4K</string>
+		<key>enum</key>
+		<string>APPLE_TV_4K</string>
+	</dict>
+	<key>Watch1,1</key>
+	<dict>
+		<key>version</key>
+		<real>1.1</real>
+		<key>name</key>
+		<string>Apple Watch (38 mm)</string>
+		<key>enum</key>
+		<string>APPLE_WATCH_38</string>
+	</dict>
+	<key>Watch1,2</key>
+	<dict>
+		<key>version</key>
+		<real>1.2</real>
+		<key>name</key>
+		<string>Apple Watch (42 mm)</string>
+		<key>enum</key>
+		<string>APPLE_WATCH_42</string>
+	</dict>
+	<key>Watch2,3</key>
+	<dict>
+		<key>version</key>
+		<real>2.3</real>
+		<key>name</key>
+		<string>Apple Watch Series 2 (38 mm)</string>
+		<key>enum</key>
+		<string>APPLE_WATCH_SERIES_2_38</string>
+	</dict>
+	<key>Watch2,4</key>
+	<dict>
+		<key>version</key>
+		<real>2.4</real>
+		<key>name</key>
+		<string>Apple Watch Series 2 (42 mm)</string>
+		<key>enum</key>
+		<string>APPLE_WATCH_SERIES_2_42</string>
+	</dict>
+	<key>Watch2,6</key>
+	<dict>
+		<key>version</key>
+		<real>2.6</real>
+		<key>name</key>
+		<string>Apple Watch Series 1 (38 mm)</string>
+		<key>enum</key>
+		<string>APPLE_WATCH_SERIES_1_38</string>
+	</dict>
+	<key>Watch2,7</key>
+	<dict>
+		<key>version</key>
+		<real>2.7</real>
+		<key>name</key>
+		<string>Apple Watch Series 1 (42 mm)</string>
+		<key>enum</key>
+		<string>APPLE_WATCH_SERIES_1_42</string>
+	</dict>
+	<key>Watch3,1</key>
+	<dict>
+		<key>version</key>
+		<real>3.1</real>
+		<key>name</key>
+		<string>Apple Watch Series 3 (38 mm/Cellular)</string>
+		<key>enum</key>
+		<string>APPLE_WATCH_SERIES_3_38_CELLULAR</string>
+	</dict>
+	<key>Watch3,2</key>
+	<dict>
+		<key>version</key>
+		<real>3.2</real>
+		<key>name</key>
+		<string>Apple Watch Series 3 (42 mm/Cellular)</string>
+		<key>enum</key>
+		<string>APPLE_WATCH_SERIES_3_42_CELLULAR</string>
+	</dict>
+	<key>Watch3,3</key>
+	<dict>
+		<key>version</key>
+		<real>3.3</real>
+		<key>name</key>
+		<string>Apple Watch Series 3 (38 mm)</string>
+		<key>enum</key>
+		<string>APPLE_WATCH_SERIES_3_38</string>
+	</dict>
+	<key>Watch3,4</key>
+	<dict>
+		<key>version</key>
+		<real>3.4</real>
+		<key>name</key>
+		<string>Apple Watch Series 3 (42 mm)</string>
+		<key>enum</key>
+		<string>APPLE_WATCH_SERIES_3_42</string>
+	</dict>
+	<key>Watch4,1</key>
+	<dict>
+		<key>version</key>
+		<real>4.1</real>
+		<key>name</key>
+		<string>Apple Watch Series 4 (40 mm)</string>
+		<key>enum</key>
+		<string>APPLE_WATCH_SERIES_4_40</string>
+	</dict>
+	<key>Watch4,2</key>
+	<dict>
+		<key>version</key>
+		<real>4.1</real>
+		<key>name</key>
+		<string>Apple Watch Series 4 (44 mm)</string>
+		<key>enum</key>
+		<string>APPLE_WATCH_SERIES_4_44</string>
+	</dict>
+	<key>Watch4,3</key>
+	<dict>
+		<key>version</key>
+		<real>4.1</real>
+		<key>name</key>
+		<string>Apple Watch Series 4 (40 mm/Cellular)</string>
+		<key>enum</key>
+		<string>APPLE_WATCH_SERIES_4_40_CELLULAR</string>
+	</dict>
+	<key>Watch4,4</key>
+	<dict>
+		<key>version</key>
+		<real>4.1</real>
+		<key>name</key>
+		<string>Apple Watch Series 4 (42 mm/Cellular)</string>
+		<key>enum</key>
+		<string>APPLE_WATCH_SERIES_4_44_CELLULAR</string>
+	</dict>
+	<key>i386</key>
+	<dict>
+		<key>version</key>
+		<integer>-1</integer>
+		<key>name</key>
+		<string>Simulator</string>
+		<key>enum</key>
+		<string>SIMULATOR</string>
+	</dict>
+	<key>x86_64</key>
+	<dict>
+		<key>version</key>
+		<integer>-1</integer>
+		<key>name</key>
+		<string>Simulator</string>
+		<key>enum</key>
+		<string>SIMULATOR</string>
+	</dict>
+</dict>
+</plist>
