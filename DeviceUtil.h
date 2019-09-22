@@ -65,6 +65,7 @@ typedef NS_ENUM(NSUInteger, Hardware) {
   IPOD_TOUCH_4G,
   IPOD_TOUCH_5G,
   IPOD_TOUCH_6G,
+  IPOD_TOUCH_7G,
   
   IPAD,
   IPAD_2,
