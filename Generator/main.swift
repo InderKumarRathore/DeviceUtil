@@ -39,7 +39,10 @@ func main() {
             print("Unable to get the enum case.")
             return
         }
-        let externConstant = hardwareKey.replacingOccurrences(of: ",", with: "_")
+        var externConstant = hardwareKey.replacingOccurrences(of: ",", with: "_")
+        if externConstant == "x86_64" || externConstant == "i386" {
+            externConstant += "_Simulator"
+        }
         externString += "extern NSString* const \(externConstant);\n"
         externDefString += "NSString* const \(externConstant) = @\"\(hardwareKey)\";\n"
         hardwareFuncContent +=  "\(tabSpacing)if ([hardware isEqualToString:\(externConstant)]) return \(enumCase);\n"

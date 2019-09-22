@@ -138,7 +138,7 @@ extern NSString* const Watch4_1;
 extern NSString* const Watch4_2;
 extern NSString* const Watch4_3;
 extern NSString* const Watch4_4;
-extern NSString* const i386;
+extern NSString* const i386_Simulator;
 extern NSString* const iPad1_1;
 extern NSString* const iPad1_2;
 extern NSString* const iPad11_1;
@@ -233,7 +233,7 @@ extern NSString* const iPod4_1;
 extern NSString* const iPod5_1;
 extern NSString* const iPod7_1;
 extern NSString* const iPod9_1;
-extern NSString* const x86_64;
+extern NSString* const x86_64_Simulator;
 
 @interface DeviceUtil (Constant)
 

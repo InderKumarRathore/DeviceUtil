@@ -56,7 +56,7 @@
   NSString *hardware = [self nativeHardwareString];
   
   // Check if the hardware is simulator
-  if ([hardware isEqualToString:i386] || [hardware isEqualToString:x86_64]) {
+  if ([hardware isEqualToString:i386_Simulator] || [hardware isEqualToString:x86_64_Simulator]) {
     NSString *deviceID = [[[NSProcessInfo processInfo] environment] objectForKey:@"SIMULATOR_MODEL_IDENTIFIER"];
     if (deviceID != nil) {
       hardware = deviceID;
@@ -100,8 +100,8 @@
 
 - (Hardware)nativeHardware {
     NSString *hardware = [self nativeHardwareString];
-    if ([hardware isEqualToString:i386])     return SIMULATOR;
-    if ([hardware isEqualToString:x86_64])   return SIMULATOR;
+    if ([hardware isEqualToString:i386_Simulator])     return SIMULATOR;
+    if ([hardware isEqualToString:x86_64_Simulator])   return SIMULATOR;
     return [self hardware];
 }
 

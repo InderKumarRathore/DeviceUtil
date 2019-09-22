@@ -21,7 +21,7 @@ NSString* const Watch4_1 = @"Watch4,1";
 NSString* const Watch4_2 = @"Watch4,2";
 NSString* const Watch4_3 = @"Watch4,3";
 NSString* const Watch4_4 = @"Watch4,4";
-NSString* const i386 = @"i386";
+NSString* const i386_Simulator = @"i386";
 NSString* const iPad1_1 = @"iPad1,1";
 NSString* const iPad1_2 = @"iPad1,2";
 NSString* const iPad11_1 = @"iPad11,1";
@@ -116,7 +116,7 @@ NSString* const iPod4_1 = @"iPod4,1";
 NSString* const iPod5_1 = @"iPod5,1";
 NSString* const iPod7_1 = @"iPod7,1";
 NSString* const iPod9_1 = @"iPod9,1";
-NSString* const x86_64 = @"x86_64";
+NSString* const x86_64_Simulator = @"x86_64";
 
 
  @implementation DeviceUtil (Constant)
@@ -143,7 +143,7 @@ NSString* const x86_64 = @"x86_64";
     if ([hardware isEqualToString:Watch4_2]) return APPLE_WATCH_SERIES_4_44;
     if ([hardware isEqualToString:Watch4_3]) return APPLE_WATCH_SERIES_4_40_CELLULAR;
     if ([hardware isEqualToString:Watch4_4]) return APPLE_WATCH_SERIES_4_44_CELLULAR;
-    if ([hardware isEqualToString:i386]) return SIMULATOR;
+    if ([hardware isEqualToString:i386_Simulator]) return SIMULATOR;
     if ([hardware isEqualToString:iPad1_1]) return IPAD;
     if ([hardware isEqualToString:iPad1_2]) return IPAD_3G;
     if ([hardware isEqualToString:iPad11_1]) return IPAD_MINI_5_WIFI;
@@ -238,7 +238,7 @@ NSString* const x86_64 = @"x86_64";
     if ([hardware isEqualToString:iPod5_1]) return IPOD_TOUCH_5G;
     if ([hardware isEqualToString:iPod7_1]) return IPOD_TOUCH_6G;
     if ([hardware isEqualToString:iPod9_1]) return IPOD_TOUCH_7G;
-    if ([hardware isEqualToString:x86_64]) return SIMULATOR;
+    if ([hardware isEqualToString:x86_64_Simulator]) return SIMULATOR;
 
     NSLog(@"This is a device which is not listed in this category. Please visit https://github.com/InderKumarRathore/DeviceUtil and add a comment there.");
     NSLog(@"Your device hardware string is: %@", hardware);
