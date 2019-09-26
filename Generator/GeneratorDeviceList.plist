@@ -1028,6 +1028,42 @@
 		<key>enum</key>
 		<string>APPLE_WATCH_SERIES_4_44_CELLULAR</string>
 	</dict>
+	<key>Watch5,1</key>
+	<dict>
+		<key>version</key>
+		<real>5.1</real>
+		<key>name</key>
+		<string>Apple Watch Series 5 (40 mm)</string>
+		<key>enum</key>
+		<string>APPLE_WATCH_SERIES_5_40</string>
+	</dict>
+	<key>Watch5,2</key>
+	<dict>
+		<key>version</key>
+		<real>5.2</real>
+		<key>name</key>
+		<string>Apple Watch Series 5 (44 mm)</string>
+		<key>enum</key>
+		<string>APPLE_WATCH_SERIES_5_44</string>
+	</dict>
+	<key>Watch5,3</key>
+	<dict>
+		<key>version</key>
+		<real>5.3</real>
+		<key>name</key>
+		<string>Apple Watch Series 5 (40 mm/Cellular)</string>
+		<key>enum</key>
+		<string>APPLE_WATCH_SERIES_5_40_CELLULAR</string>
+	</dict>
+	<key>Watch5,4</key>
+	<dict>
+		<key>version</key>
+		<real>5.4</real>
+		<key>name</key>
+		<string>Apple Watch Series 5 (44 mm/Cellular)</string>
+		<key>enum</key>
+		<string>APPLE_WATCH_SERIES_5_44_CELLULAR</string>
+	</dict>
 	<key>i386</key>
 	<dict>
 		<key>version</key>
