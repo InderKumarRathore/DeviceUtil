@@ -1024,7 +1024,7 @@
 		<key>version</key>
 		<real>4.1</real>
 		<key>name</key>
-		<string>Apple Watch Series 4 (42 mm/Cellular)</string>
+		<string>Apple Watch Series 4 (44 mm/Cellular)</string>
 		<key>enum</key>
 		<string>APPLE_WATCH_SERIES_4_44_CELLULAR</string>
 	</dict>
