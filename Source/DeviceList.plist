@@ -138,9 +138,37 @@
 	<key>Watch4,4</key>
 	<dict>
 		<key>name</key>
-		<string>Apple Watch Series 4 (42 mm/Cellular)</string>
+		<string>Apple Watch Series 4 (44 mm/Cellular)</string>
 		<key>version</key>
 		<real>4.0999999999999996</real>
+	</dict>
+	<key>Watch5,1</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch Series 5 (40 mm)</string>
+		<key>version</key>
+		<real>5.1</real>
+	</dict>
+	<key>Watch5,2</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch Series 5 (44 mm)</string>
+		<key>version</key>
+		<real>5.2</real>
+	</dict>
+	<key>Watch5,3</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch Series 5 (40 mm/Cellular)</string>
+		<key>version</key>
+		<real>5.3</real>
+	</dict>
+	<key>Watch5,4</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch Series 5 (44 mm/Cellular)</string>
+		<key>version</key>
+		<real>5.4</real>
 	</dict>
 	<key>i386</key>
 	<dict>

@@ -21,6 +21,10 @@ typedef NS_ENUM(NSUInteger, Hardware) {
     APPLE_WATCH_SERIES_4_40_CELLULAR,
     APPLE_WATCH_SERIES_4_44,
     APPLE_WATCH_SERIES_4_44_CELLULAR,
+    APPLE_WATCH_SERIES_5_40,
+    APPLE_WATCH_SERIES_5_40_CELLULAR,
+    APPLE_WATCH_SERIES_5_44,
+    APPLE_WATCH_SERIES_5_44_CELLULAR,
     IPAD,
     IPAD_2,
     IPAD_2_CDMA,
@@ -136,6 +140,10 @@ extern NSString* const Watch4_1;
 extern NSString* const Watch4_2;
 extern NSString* const Watch4_3;
 extern NSString* const Watch4_4;
+extern NSString* const Watch5_1;
+extern NSString* const Watch5_2;
+extern NSString* const Watch5_3;
+extern NSString* const Watch5_4;
 extern NSString* const i386_Simulator;
 extern NSString* const iPad1_1;
 extern NSString* const iPad1_2;
