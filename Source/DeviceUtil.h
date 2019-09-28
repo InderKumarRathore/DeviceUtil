@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DeviceUtil+Constant.h"
 
 /// Enum of the different Apple's device platforms
 typedef NS_ENUM(NSUInteger, Platform) {
@@ -43,4 +44,11 @@ typedef NS_ENUM(NSUInteger, Platform) {
 /// This method returns the resolution for still image that can be received from back camera of the current device. Resolution returned for image oriented landscape right.
 - (CGSize)backCameraStillImageResolutionInPixels;
 
+@end
+
+
+@interface DeviceUtil (Constant)
+
+/// This method returns the Hardware enum depending upon hardware string
+- (Hardware)hardware;
 @end
