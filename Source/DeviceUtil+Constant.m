@@ -1,5 +1,5 @@
 
-#import "DeviceUtil+Constant.h"
+#import "DeviceUtil.h"
 
 NSString* const AppleTV1_1 = @"AppleTV1,1";
 NSString* const AppleTV2_1 = @"AppleTV2,1";

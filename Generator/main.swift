@@ -73,14 +73,11 @@ func main() {
     let constantHeaderFile = "DeviceUtil+Constant.h"
     print("Creating \(constantHeaderFile)")
     do {
-        let constantHeaderFileConent = "\n#import \"DeviceUtil.h\"\n\n"
+        let constantHeaderFileConent = "\n"
             + enumString
             + "\n\n"
             + externString
-            + "\n@interface DeviceUtil (Constant)"
-            + "\n\n/// This method returns the Hardware enum depending upon hardware string"
-            + "\n- (Hardware)hardware;"
-            + "\n@end"
+            + "\n"
         try constantHeaderFileConent.write(toFile: dirPath + constantHeaderFile, atomically: true, encoding: .utf8)
         print("Created \(constantHeaderFile)")
     } catch {
@@ -92,7 +89,7 @@ func main() {
     let constantImplFile = "DeviceUtil+Constant.m"
     print("Creating \(constantImplFile)")
     do {
-        let constantImplFileConent = "\n#import \"\(constantHeaderFile)\"\n\n"
+        let constantImplFileConent = "\n#import \"DeviceUtil.h\"\n\n"
             + externDefString
             + "\n\n @implementation DeviceUtil (Constant)"
             + "\n\n- (Hardware)hardware {"
@@ -102,7 +99,7 @@ func main() {
             + "\n\(tabSpacing)NSLog(@\"Your device hardware string is: %@\", hardware);"
             + "\n\(tabSpacing)return \(unknownCase);"
             + "\n}"
-            + "\n@end"
+            + "\n@end\n"
         try constantImplFileConent.write(toFile: dirPath + constantImplFile, atomically: true, encoding: .utf8)
         print("Created \(constantImplFile)")
     } catch {

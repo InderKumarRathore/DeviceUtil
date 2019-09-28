@@ -1,6 +1,4 @@
 
-#import "DeviceUtil.h"
-
 typedef NS_ENUM(NSUInteger, Hardware) {
     UNKNOWN,
     APPLE_TV_1G,
@@ -235,8 +233,3 @@ extern NSString* const iPod7_1;
 extern NSString* const iPod9_1;
 extern NSString* const x86_64_Simulator;
 
-@interface DeviceUtil (Constant)
-
-/// This method returns the Hardware enum depending upon hardware string
-- (Hardware)hardware;
-@end
