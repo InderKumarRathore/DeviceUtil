@@ -40,6 +40,7 @@ typedef NS_ENUM(NSUInteger, Hardware) {
     IPAD_5_WIFI_CELLULAR,
     IPAD_6_WIFI,
     IPAD_6_WIFI_CELLULAR,
+    IPAD_7_WIFI,
     IPAD_AIR_2_WIFI,
     IPAD_AIR_2_WIFI_CELLULAR,
     IPAD_AIR_3_WIFI,
@@ -184,6 +185,7 @@ extern NSString* const iPad6_4;
 extern NSString* const iPad6_7;
 extern NSString* const iPad6_8;
 extern NSString* const iPad7_1;
+extern NSString* const iPad7_11;
 extern NSString* const iPad7_2;
 extern NSString* const iPad7_3;
 extern NSString* const iPad7_4;
