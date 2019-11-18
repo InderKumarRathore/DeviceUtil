@@ -450,6 +450,13 @@
 		<key>version</key>
 		<real>7.0999999999999996</real>
 	</dict>
+	<key>iPad7,11</key>
+	<dict>
+		<key>name</key>
+		<string>iPad 10.2-Inch 7th Gen (Wi-Fi Only)</string>
+		<key>version</key>
+		<real>7.1100000000000003</real>
+	</dict>
 	<key>iPad7,2</key>
 	<dict>
 		<key>name</key>

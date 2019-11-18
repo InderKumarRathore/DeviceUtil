@@ -740,6 +740,15 @@
 		<key>enum</key>
 		<string>IPAD_6_WIFI_CELLULAR</string>
 	</dict>
+	<key>iPad7,11</key>
+	<dict>
+		<key>version</key>
+		<real>7.11</real>
+		<key>name</key>
+		<string>iPad 10.2-Inch 7th Gen (Wi-Fi Only)</string>
+		<key>enum</key>
+		<string>IPAD_7_WIFI</string>
+	</dict>
 	<key>iPad8,1</key>
 	<dict>
 		<key>version</key>
