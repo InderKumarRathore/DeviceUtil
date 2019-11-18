@@ -126,21 +126,21 @@
 		<key>name</key>
 		<string>Apple Watch Series 4 (44 mm)</string>
 		<key>version</key>
-		<real>4.0999999999999996</real>
+		<real>4.2000000000000002</real>
 	</dict>
 	<key>Watch4,3</key>
 	<dict>
 		<key>name</key>
 		<string>Apple Watch Series 4 (40 mm/Cellular)</string>
 		<key>version</key>
-		<real>4.0999999999999996</real>
+		<real>4.2999999999999998</real>
 	</dict>
 	<key>Watch4,4</key>
 	<dict>
 		<key>name</key>
 		<string>Apple Watch Series 4 (44 mm/Cellular)</string>
 		<key>version</key>
-		<real>4.0999999999999996</real>
+		<real>4.4000000000000004</real>
 	</dict>
 	<key>Watch5,1</key>
 	<dict>
