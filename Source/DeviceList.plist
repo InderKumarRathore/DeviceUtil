@@ -35,14 +35,14 @@
 		<key>name</key>
 		<string>Apple TV 4G</string>
 		<key>version</key>
-		<string>5.3</string>
+		<real>5.2999999999999998</real>
 	</dict>
 	<key>AppleTV6,2</key>
 	<dict>
 		<key>name</key>
 		<string>Apple TV 4K</string>
 		<key>version</key>
-		<string>6.2</string>
+		<real>6.2000000000000002</real>
 	</dict>
 	<key>Watch1,1</key>
 	<dict>

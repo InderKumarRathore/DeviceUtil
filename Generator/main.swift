@@ -24,6 +24,7 @@ func getUniqueSortedModels(havingPrefix: String, from deviceList: [String: [Stri
     let models: [Model] = filteredDict.values.compactMap {
 
         guard let version = $0["version"] as? NSNumber, let enumCase = $0["enum"] as? String else {
+            print("Can't create model from this: \($0)")
             return nil
         }
         return Model(version: version.doubleValue, enumCase: enumCase)

@@ -896,7 +896,7 @@
 	<key>AppleTV5,3</key>
 	<dict>
 		<key>version</key>
-		<string>5.3</string>
+		<real>5.3</real>
 		<key>name</key>
 		<string>Apple TV 4G</string>
 		<key>enum</key>
@@ -905,7 +905,7 @@
 	<key>AppleTV6,2</key>
 	<dict>
 		<key>version</key>
-		<string>6.2</string>
+		<real>6.2</real>
 		<key>name</key>
 		<string>Apple TV 4K</string>
 		<key>enum</key>

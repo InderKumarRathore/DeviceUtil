@@ -121,6 +121,8 @@ typedef NS_ENUM(NSUInteger, Hardware) {
     APPLE_TV_2G,
     APPLE_TV_3G,
     APPLE_TV_3_2G,
+    APPLE_TV_4G,
+    APPLE_TV_4K,
 
     SIMULATOR,
     UNKNOWN
