@@ -12,6 +12,10 @@ struct Model: Hashable {
     func hash(into hasher: inout Hasher) {
         hasher.combine(enumCase)
     }
+
+    static func ==(lhs: Model, rhs: Model) -> Bool {
+        return lhs.enumCase == rhs.enumCase
+    }
 }
 
 func getUniqueSortedModels(havingPrefix: String, from deviceList: [String: [String: AnyObject]]) -> [Model] {
