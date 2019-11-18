@@ -31,7 +31,8 @@ func getUniqueSortedModels(havingPrefix: String, from deviceList: [String: [Stri
 
     // Get the unique models i.e. ignore models which has same enum, we don't want same enum twice in case that
     // will cause compiler error
-    let modelSet = Set(models)
+    let sortedModels = models.sorted { $0.version < $1.version }
+    let modelSet = Set(sortedModels)
     return modelSet.sorted { $0.version < $1.version }
 }
 
