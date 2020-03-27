@@ -821,6 +821,42 @@
 		<key>enum</key>
 		<string>IPAD_PRO_3G_1TB_WIFI_CELLULAR</string>
 	</dict>
+	<key>iPad8,9</key>
+	<dict>
+		<key>version</key>
+		<real>8.9</real>
+		<key>name</key>
+		<string>iPad Pro 11-Inch (Wi-Fi Only - 2nd Gen)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_11_2G_WIFI</string>
+	</dict>
+	<key>iPad8,10</key>
+	<dict>
+		<key>version</key>
+		<real>8.10</real>
+		<key>name</key>
+		<string>iPad Pro 11-Inch (Wi-Fi/Cellular - 2nd Gen)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_11_2G_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad8,11</key>
+	<dict>
+		<key>version</key>
+		<real>8.109999999999999</real>
+		<key>name</key>
+		<string>iPad Pro 12.9-Inch 1TB (Wi-Fi Only - 4th Gen)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_4G_WIFI</string>
+	</dict>
+	<key>iPad8,12</key>
+	<dict>
+		<key>version</key>
+		<real>8.800000000000001</real>
+		<key>name</key>
+		<string>iPad Pro 12.9-Inch (Wi-Fi/Cell - 4th Gen)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_4G_WIFI_CELLULAR</string>
+	</dict>
 	<key>iPad11,1</key>
 	<dict>
 		<key>version</key>
