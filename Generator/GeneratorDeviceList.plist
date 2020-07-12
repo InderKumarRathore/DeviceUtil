@@ -317,6 +317,15 @@
 		<key>enum</key>
 		<string>IPHONE_11_PRO_MAX</string>
 	</dict>
+	<key>iPhone12,8</key>
+	<dict>
+		<key>version</key>
+		<real>12.8</real>
+		<key>name</key>
+		<string>iPhone SE (2 Gen)</string>
+		<key>enum</key>
+		<string>IPHONE_SE_2G</string>
+	</dict>
 	<key>iPod1,1</key>
 	<dict>
 		<key>version</key>

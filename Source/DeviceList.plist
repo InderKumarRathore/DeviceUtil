@@ -688,6 +688,13 @@
 		<key>version</key>
 		<real>12.5</real>
 	</dict>
+	<key>iPhone12,8</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone SE (2 Gen)</string>
+		<key>version</key>
+		<real>12.800000000000001</real>
+	</dict>
 	<key>iPhone2,1</key>
 	<dict>
 		<key>name</key>
