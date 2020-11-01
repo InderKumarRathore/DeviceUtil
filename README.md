@@ -1,6 +1,6 @@
 # DeviceUtil
 
-### For **Swift** please use [DeviceGuru](https://github.com/InderKumarRathore/DeviceGuru) as below
+### Please use [DeviceGuru Library](https://github.com/InderKumarRathore/DeviceGuru), it is its swift version and also has some extra feature. Use it as below
 ```sh
 pod 'DeviceGuru'
 ```
