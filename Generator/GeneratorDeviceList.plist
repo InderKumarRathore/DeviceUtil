@@ -947,6 +947,24 @@
 		<key>enum</key>
 		<string>IPAD_AIR_3_WIFI_CELLULAR</string>
 	</dict>
+	<key>iPad13,1</key>
+	<dict>
+		<key>version</key>
+		<real>13.1</real>
+	    <key>name</key>
+	    <string>iPad Air 4 (Wi-Fi)</string>
+	    <key>enum</key>
+	    <string>IPAD_AIR_4_WIFI</string>
+	</dict>
+	<key>iPad13,2</key>
+	<dict>
+		<key>version</key>
+		<real>13.2</real>
+	    <key>name</key>
+	    <string>iPad Air 4 (Wi-Fi + Cellular)</string>
+    	<key>enum</key>
+    	<string>IPAD_AIR_4_WIFI_CELLULAR</string>
+	</dict>
 	<key>AppleTV1,1</key>
 	<dict>
 		<key>version</key>

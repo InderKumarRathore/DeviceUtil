@@ -219,6 +219,20 @@
 		<key>version</key>
 		<real>11.4</real>
 	</dict>
+	<key>iPad13,1</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air 4 (Wi-Fi)</string>
+		<key>version</key>
+		<real>13.1</real>
+	</dict>
+	<key>iPad13,2</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air 4 (Wi-Fi + Cellular)</string>
+		<key>version</key>
+		<real>13.199999999999999</real>
+	</dict>
 	<key>iPad2,1</key>
 	<dict>
 		<key>name</key>
