@@ -1,9 +1,10 @@
-# DeviceUtil
 
-### Please use [DeviceGuru Library](https://github.com/InderKumarRathore/DeviceGuru), it is its swift version and also has some extra feature. Use it as below
-```sh
-pod 'DeviceGuru'
-```
+
+### Please use [DeviceGuru Library](https://github.com/InderKumarRathore/DeviceGuru), it is its swift version and also has some extra feature.
+
+
+
+### If you still want to use Objective C lib then please expect some delays in version roll out. And you might need to raise PRs to update this repo. I'm dividing my focus on both libs and not doing justice with both of them. I just want to focus on swift library going forward in 2022.
 
 *DeviceUtil* helps identifying the exact harware type of the device. e.g. iPhone 6 or iPhone 6s.
 
