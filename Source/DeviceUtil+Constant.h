@@ -41,6 +41,10 @@ typedef NS_ENUM(NSUInteger, Hardware) {
     IPHONE_12,
     IPHONE_12_PRO,
     IPHONE_12_PRO_MAX,
+    IPHONE_13_PRO,
+    IPHONE_13_PRO_MAX,
+    IPHONE_13_MINI,
+    IPHONE_13,
 
     IPOD_TOUCH_1G,
     IPOD_TOUCH_2G,
@@ -91,8 +95,8 @@ typedef NS_ENUM(NSUInteger, Hardware) {
     IPAD_PRO_105_WIFI_CELLULAR,
     IPAD_6_WIFI,
     IPAD_6_WIFI_CELLULAR,
-    IPAD_PRO_11_WIFI,
     IPAD_PRO_11_2G_WIFI_CELLULAR,
+    IPAD_PRO_11_WIFI,
     IPAD_PRO_4G_WIFI,
     IPAD_PRO_11_1TB_WIFI,
     IPAD_PRO_11_WIFI_CELLULAR,
@@ -100,8 +104,8 @@ typedef NS_ENUM(NSUInteger, Hardware) {
     IPAD_PRO_3G_WIFI,
     IPAD_PRO_3G_1TB_WIFI,
     IPAD_PRO_3G_WIFI_CELLULAR,
-    IPAD_PRO_4G_WIFI_CELLULAR,
     IPAD_PRO_3G_1TB_WIFI_CELLULAR,
+    IPAD_PRO_4G_WIFI_CELLULAR,
     IPAD_PRO_11_2G_WIFI,
     IPAD_MINI_5_WIFI,
     IPAD_MINI_5_WIFI_CELLULAR,
@@ -245,6 +249,10 @@ extern NSString* const iPhone13_1;
 extern NSString* const iPhone13_2;
 extern NSString* const iPhone13_3;
 extern NSString* const iPhone13_4;
+extern NSString* const iPhone14_2;
+extern NSString* const iPhone14_3;
+extern NSString* const iPhone14_4;
+extern NSString* const iPhone14_5;
 extern NSString* const iPhone2_1;
 extern NSString* const iPhone3_1;
 extern NSString* const iPhone3_2;

@@ -737,6 +737,34 @@
 		<key>version</key>
 		<real>13.4</real>
 	</dict>
+	<key>iPhone14,2</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 13 Pro</string>
+		<key>version</key>
+		<real>14.199999999999999</real>
+	</dict>
+	<key>iPhone14,3</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 13 Pro Max</string>
+		<key>version</key>
+		<real>14.300000000000001</real>
+	</dict>
+	<key>iPhone14,4</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 13 mini</string>
+		<key>version</key>
+		<real>14.4</real>
+	</dict>
+	<key>iPhone14,5</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 13</string>
+		<key>version</key>
+		<real>14.5</real>
+	</dict>
 	<key>iPhone2,1</key>
 	<dict>
 		<key>name</key>
