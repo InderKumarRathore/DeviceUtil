@@ -987,55 +987,55 @@
 	<dict>
 		<key>version</key>
 		<real>12.1</real>
-	    <key>name</key>
-	    <string>iPad 9 (Wi-Fi)</string>
-	    <key>enum</key>
-	    <string>IPAD_9_WIFI</string>
+		<key>name</key>
+		<string>iPad 9 (Wi-Fi)</string>
+		<key>enum</key>
+		<string>IPAD_9_WIFI</string>
 	</dict>
 	<key>iPad12,2</key>
 	<dict>
 		<key>version</key>
 		<real>12.2</real>
-	    <key>name</key>
-	    <string>iPad 9 (Wi-Fi + Cellular)</string>
-    	<key>enum</key>
-    	<string>IPAD_9_WIFI_CELLULAR</string>
+		<key>name</key>
+		<string>iPad 9 (Wi-Fi + Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_9_WIFI_CELLULAR</string>
 	</dict>
 	<key>iPad13,1</key>
 	<dict>
 		<key>version</key>
 		<real>13.1</real>
-	    <key>name</key>
-	    <string>iPad Air 4 (Wi-Fi)</string>
-	    <key>enum</key>
-	    <string>IPAD_AIR_4_WIFI</string>
+		<key>name</key>
+		<string>iPad Air 4 (Wi-Fi)</string>
+		<key>enum</key>
+		<string>IPAD_AIR_4_WIFI</string>
 	</dict>
 	<key>iPad13,2</key>
 	<dict>
 		<key>version</key>
 		<real>13.2</real>
-	    <key>name</key>
-	    <string>iPad Air 4 (Wi-Fi + Cellular)</string>
-    	<key>enum</key>
-    	<string>IPAD_AIR_4_WIFI_CELLULAR</string>
+		<key>name</key>
+		<string>iPad Air 4 (Wi-Fi + Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_AIR_4_WIFI_CELLULAR</string>
 	</dict>
 	<key>iPad14,1</key>
 	<dict>
 		<key>version</key>
 		<real>14.1</real>
-	    <key>name</key>
-	    <string>iPad Mini 6 (Wi-Fi)</string>
-	    <key>enum</key>
-	    <string>IPAD_MINI_6_WIFI</string>
+		<key>name</key>
+		<string>iPad Mini 6 (Wi-Fi)</string>
+		<key>enum</key>
+		<string>IPAD_MINI_6_WIFI</string>
 	</dict>
 	<key>iPad14,2</key>
 	<dict>
 		<key>version</key>
 		<real>14.2</real>
-	    <key>name</key>
-	    <string>iPad Mini 6 (Wi-Fi + Cellular)</string>
-    	<key>enum</key>
-    	<string>IPAD_MINI_6_WIFI_CELLULAR</string>
+		<key>name</key>
+		<string>iPad Mini 6 (Wi-Fi + Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_MINI_6_WIFI_CELLULAR</string>
 	</dict>
 	<key>AppleTV1,1</key>
 	<dict>
