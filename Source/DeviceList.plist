@@ -231,7 +231,7 @@
 		<key>name</key>
 		<string>iPad 9 (Wi-Fi + Cellular)</string>
 		<key>version</key>
-		<real>12.2</real>
+		<real>12.199999999999999</real>
 	</dict>
 	<key>iPad13,1</key>
 	<dict>
@@ -259,7 +259,7 @@
 		<key>name</key>
 		<string>iPad Mini 6 (Wi-Fi + Cellular)</string>
 		<key>version</key>
-		<real>14.2</real>
+		<real>14.199999999999999</real>
 	</dict>
 	<key>iPad2,1</key>
 	<dict>
