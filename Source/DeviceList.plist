@@ -219,6 +219,20 @@
 		<key>version</key>
 		<real>11.4</real>
 	</dict>
+	<key>iPad12,1</key>
+	<dict>
+		<key>name</key>
+		<string>iPad 9 (Wi-Fi)</string>
+		<key>version</key>
+		<real>12.1</real>
+	</dict>
+	<key>iPad12,2</key>
+	<dict>
+		<key>name</key>
+		<string>iPad 9 (Wi-Fi + Cellular)</string>
+		<key>version</key>
+		<real>12.2</real>
+	</dict>
 	<key>iPad13,1</key>
 	<dict>
 		<key>name</key>
@@ -232,6 +246,20 @@
 		<string>iPad Air 4 (Wi-Fi + Cellular)</string>
 		<key>version</key>
 		<real>13.199999999999999</real>
+	</dict>
+	<key>iPad14,1</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Mini 6 (Wi-Fi)</string>
+		<key>version</key>
+		<real>14.1</real>
+	</dict>
+	<key>iPad14,2</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Mini 6 (Wi-Fi + Cellular)</string>
+		<key>version</key>
+		<real>14.2</real>
 	</dict>
 	<key>iPad2,1</key>
 	<dict>
