@@ -398,6 +398,15 @@
 		<key>enum</key>
 		<string>IPHONE_13</string>
 	</dict>
+	<key>iPhone14,6</key>
+	<dict>
+		<key>version</key>
+		<real>14.6</real>
+		<key>name</key>
+		<string>iPhone SE (3 Gen)</string>
+		<key>enum</key>
+		<string>IPHONE_SE_3G</string>
+	</dict>
 	<key>iPod1,1</key>
 	<dict>
 		<key>version</key>
@@ -1018,6 +1027,96 @@
 		<string>iPad Air 4 (Wi-Fi + Cellular)</string>
 		<key>enum</key>
 		<string>IPAD_AIR_4_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad13,4</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 11" 3rd Gen (Wi-Fi)</string>
+		<key>version</key>
+		<real>13.4</real>
+		<key>enum</key>
+		<string>IPAD_PRO_11_3_WIFI</string>
+	</dict>
+	<key>iPad13,5</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 11" 3rd Gen (Wi-Fi + Cellular)</string>
+		<key>version</key>
+		<real>13.5</real>
+		<key>enum</key>
+		<string>IPAD_AIR_4_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad13,6</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 11" 3rd Gen (Wi-Fi + Cellular)</string>
+		<key>version</key>
+		<real>13.6</real>
+		<key>enum</key>
+		<string>IPAD_PRO_11_3_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad13,7</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 11" 3rd Gen (Wi-Fi + Cellular)</string>
+		<key>version</key>
+		<real>13.7</real>
+		<key>enum</key>
+		<string>IPAD_PRO_11_3_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad13,8</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 12.9" 5th Gen (Wi-Fi)</string>
+		<key>version</key>
+		<real>13.8</real>
+		<key>enum</key>
+		<string>IPAD_PRO_5_WIFI</string>
+	</dict>
+	<key>iPad13,9</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 12.9" 5th Gen (Wi-Fi + Cellular)</string>
+		<key>version</key>
+		<real>13.9</real>
+		<key>enum</key>
+		<string>IPAD_PRO_5_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad13,10</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 12.9" 5th Gen (Wi-Fi + Cellular)</string>
+		<key>version</key>
+		<real>13.10</real>
+		<key>enum</key>
+		<string>IPAD_PRO_5_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad13,11</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 12.9" 5th Gen (Wi-Fi + Cellular)</string>
+		<key>version</key>
+		<real>13.11</real>
+		<key>enum</key>
+		<string>IPAD_PRO_5_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad13,16</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air 5th Gen (Wi-Fi)</string>
+		<key>version</key>
+		<real>13.16</real>
+		<key>enum</key>
+		<string>IPAD_AIR_5_WIFI</string>
+	</dict>
+	<key>iPad13,17</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air 5th Gen (Wi-Fi + Cellular)</string>
+		<key>version</key>
+		<real>13.17</real>
+		<key>enum</key>
+		<string>IPAD_AIR_5_WIFI_CELLULAR</string>
 	</dict>
 	<key>iPad14,1</key>
 	<dict>

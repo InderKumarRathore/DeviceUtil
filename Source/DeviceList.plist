@@ -240,12 +240,82 @@
 		<key>version</key>
 		<real>13.1</real>
 	</dict>
+	<key>iPad13,10</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 12.9" 5th Gen (Wi-Fi + Cellular)</string>
+		<key>version</key>
+		<real>13.1</real>
+	</dict>
+	<key>iPad13,11</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 12.9" 5th Gen (Wi-Fi + Cellular)</string>
+		<key>version</key>
+		<real>13.109999999999999</real>
+	</dict>
+	<key>iPad13,16</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air 5th Gen (Wi-Fi)</string>
+		<key>version</key>
+		<real>13.16</real>
+	</dict>
+	<key>iPad13,17</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air 5th Gen (Wi-Fi + Cellular)</string>
+		<key>version</key>
+		<real>13.17</real>
+	</dict>
 	<key>iPad13,2</key>
 	<dict>
 		<key>name</key>
 		<string>iPad Air 4 (Wi-Fi + Cellular)</string>
 		<key>version</key>
 		<real>13.199999999999999</real>
+	</dict>
+	<key>iPad13,4</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 11" 3rd Gen (Wi-Fi)</string>
+		<key>version</key>
+		<real>13.4</real>
+	</dict>
+	<key>iPad13,5</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 11" 3rd Gen (Wi-Fi + Cellular)</string>
+		<key>version</key>
+		<real>13.5</real>
+	</dict>
+	<key>iPad13,6</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 11" 3rd Gen (Wi-Fi + Cellular)</string>
+		<key>version</key>
+		<real>13.6</real>
+	</dict>
+	<key>iPad13,7</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 11" 3rd Gen (Wi-Fi + Cellular)</string>
+		<key>version</key>
+		<real>13.699999999999999</real>
+	</dict>
+	<key>iPad13,8</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 12.9" 5th Gen (Wi-Fi)</string>
+		<key>version</key>
+		<real>13.800000000000001</real>
+	</dict>
+	<key>iPad13,9</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 12.9" 5th Gen (Wi-Fi + Cellular)</string>
+		<key>version</key>
+		<real>13.9</real>
 	</dict>
 	<key>iPad14,1</key>
 	<dict>
@@ -792,6 +862,13 @@
 		<string>iPhone 13</string>
 		<key>version</key>
 		<real>14.5</real>
+	</dict>
+	<key>iPhone14,6</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone SE (3 Gen)</string>
+		<key>version</key>
+		<real>14.6</real>
 	</dict>
 	<key>iPhone2,1</key>
 	<dict>
