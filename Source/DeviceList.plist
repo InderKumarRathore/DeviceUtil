@@ -869,9 +869,37 @@
 		<string>iPhone SE (3 Gen)</string>
 		<key>version</key>
 		<real>14.6</real>
-	</dict>
-	<key>iPhone2,1</key>
-	<dict>
+    </dict>
+    <key>iPhone14,7</key>
+    <dict>
+        <key>name</key>
+        <string>iPhone 14</string>
+        <key>version</key>
+        <real>14.7</real>
+    </dict>
+    <key>iPhone14,8</key>
+    <dict>
+        <key>name</key>
+        <string>iPhone 14 Plus</string>
+        <key>version</key>
+        <real>14.8</real>
+    </dict>
+    <key>iPhone15,2</key>
+    <dict>
+        <key>name</key>
+        <string>iPhone 14 Pro</string>
+        <key>version</key>
+        <real>15.2</real>
+    </dict>
+    <key>iPhone15,3</key>
+    <dict>
+        <key>name</key>
+        <string>iPhone 14 Pro Max</string>
+        <key>version</key>
+        <real>15.3</real>
+    </dict>
+    <key>iPhone2,1</key>
+    <dict>
 		<key>name</key>
 		<string>iPhone 3GS</string>
 		<key>version</key>
