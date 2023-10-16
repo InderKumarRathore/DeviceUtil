@@ -50,6 +50,10 @@ typedef NS_ENUM(NSUInteger, Hardware) {
     IPHONE_14_PLUS,
     IPHONE_14_PRO,
     IPHONE_14_PRO_MAX,
+    IPHONE_15,
+    IPHONE_15_PLUS,
+    IPHONE_15_PRO,
+    IPHONE_15_PRO_MAX,
 
     IPOD_TOUCH_1G,
     IPOD_TOUCH_2G,
@@ -287,6 +291,10 @@ extern NSString* const iPhone14_7;
 extern NSString* const iPhone14_8;
 extern NSString* const iPhone15_2;
 extern NSString* const iPhone15_3;
+extern NSString* const iPhone15_4;
+extern NSString* const iPhone15_5;
+extern NSString* const iPhone16_1;
+extern NSString* const iPhone16_2;
 extern NSString* const iPhone2_1;
 extern NSString* const iPhone3_1;
 extern NSString* const iPhone3_2;
