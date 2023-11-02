@@ -90,48 +90,62 @@ typedef NS_ENUM(NSUInteger, Hardware) {
     IPAD_MINI_4_WIFI_CELLULAR,
     IPAD_AIR_2_WIFI,
     IPAD_AIR_2_WIFI_CELLULAR,
-    IPAD_5_WIFI,
-    IPAD_5_WIFI_CELLULAR,
     IPAD_PRO_97_WIFI,
     IPAD_PRO_97_WIFI_CELLULAR,
     IPAD_PRO_WIFI,
     IPAD_PRO_WIFI_CELLULAR,
+    IPAD_5_WIFI,
+    IPAD_5_WIFI_CELLULAR,
     IPAD_PRO_2G_WIFI,
-    IPAD_7_WIFI,
-    IPAD_7_WIFI_CELLULAR,
     IPAD_PRO_2G_WIFI_CELLULAR,
     IPAD_PRO_105_WIFI,
     IPAD_PRO_105_WIFI_CELLULAR,
     IPAD_6_WIFI,
     IPAD_6_WIFI_CELLULAR,
-    IPAD_PRO_11_2G_WIFI_CELLULAR,
+    IPAD_7_WIFI,
+    IPAD_7_WIFI_CELLULAR,
     IPAD_PRO_11_WIFI,
-    IPAD_PRO_4G_WIFI,
     IPAD_PRO_11_1TB_WIFI,
     IPAD_PRO_11_WIFI_CELLULAR,
     IPAD_PRO_11_1TB_WIFI_CELLULAR,
     IPAD_PRO_3G_WIFI,
     IPAD_PRO_3G_1TB_WIFI,
     IPAD_PRO_3G_WIFI_CELLULAR,
-    IPAD_PRO_4G_WIFI_CELLULAR,
     IPAD_PRO_3G_1TB_WIFI_CELLULAR,
     IPAD_PRO_11_2G_WIFI,
+    IPAD_PRO_11_2G_WIFI_CELLULAR,
+    IPAD_PRO_4G_WIFI,
+    IPAD_PRO_4G_WIFI_CELLULAR,
     IPAD_MINI_5_WIFI,
     IPAD_MINI_5_WIFI_CELLULAR,
     IPAD_AIR_3_WIFI,
     IPAD_AIR_3_WIFI_CELLULAR,
+    IPAD_8G_WIFI,
+    IPAD_8G_WIFI_CELLULAR,
     IPAD_9_WIFI,
     IPAD_9_WIFI_CELLULAR,
-    IPAD_PRO_5_WIFI_CELLULAR,
     IPAD_AIR_4_WIFI,
-    IPAD_AIR_5_WIFI,
-    IPAD_AIR_5_WIFI_CELLULAR,
     IPAD_AIR_4_WIFI_CELLULAR,
     IPAD_PRO_11_3_WIFI,
     IPAD_PRO_11_3_WIFI_CELLULAR,
     IPAD_PRO_5_WIFI,
+    IPAD_PRO_5_1TB_WIFI,
+    IPAD_PRO_5_WIFI_CELLULAR,
+    IPAD_PRO_5_1TB_WIFI_CELLULAR,
+    IPAD_AIR_5_WIFI,
+    IPAD_AIR_5_WIFI_CELLULAR,
+    IPAD_10G_WIFI,
+    IPAD_10G_WIFI_CELLULAR,
     IPAD_MINI_6_WIFI,
     IPAD_MINI_6_WIFI_CELLULAR,
+    IPAD_PRO_11_4G_WIFI,
+    IPAD_PRO_11_3G_1TB_WIFI,
+    IPAD_PRO_11_4G_WIFI_CELLULAR,
+    IPAD_PRO_11_4G_1TB_WIFI_CELLULAR,
+    IPAD_PRO_6G_WIFI,
+    IPAD_PRO_6G_1TB_WIFI,
+    IPAD_PRO_6G_WIFI_CELLULAR,
+    IPAD_PRO_6G_1TB_WIFI_CELLULAR,
 
     APPLE_WATCH_38,
     APPLE_WATCH_42,
@@ -158,12 +172,14 @@ typedef NS_ENUM(NSUInteger, Hardware) {
     APPLE_TV_3_2G,
     APPLE_TV_4G,
     APPLE_TV_4K,
+    APPLE_TV_4K_2G,
 
     SIMULATOR,
     UNKNOWN
 };
 
 extern NSString* const AppleTV1_1;
+extern NSString* const AppleTV11_1;
 extern NSString* const AppleTV2_1;
 extern NSString* const AppleTV3_1;
 extern NSString* const AppleTV3_2;
@@ -194,6 +210,8 @@ extern NSString* const iPad11_1;
 extern NSString* const iPad11_2;
 extern NSString* const iPad11_3;
 extern NSString* const iPad11_4;
+extern NSString* const iPad11_6;
+extern NSString* const iPad11_7;
 extern NSString* const iPad12_1;
 extern NSString* const iPad12_2;
 extern NSString* const iPad13_1;
@@ -201,6 +219,8 @@ extern NSString* const iPad13_10;
 extern NSString* const iPad13_11;
 extern NSString* const iPad13_16;
 extern NSString* const iPad13_17;
+extern NSString* const iPad13_18;
+extern NSString* const iPad13_19;
 extern NSString* const iPad13_2;
 extern NSString* const iPad13_4;
 extern NSString* const iPad13_5;
@@ -210,6 +230,14 @@ extern NSString* const iPad13_8;
 extern NSString* const iPad13_9;
 extern NSString* const iPad14_1;
 extern NSString* const iPad14_2;
+extern NSString* const iPad14_3_A;
+extern NSString* const iPad14_3_B;
+extern NSString* const iPad14_4_A;
+extern NSString* const iPad14_4_B;
+extern NSString* const iPad14_5_A;
+extern NSString* const iPad14_5_B;
+extern NSString* const iPad14_6_A;
+extern NSString* const iPad14_6_B;
 extern NSString* const iPad2_1;
 extern NSString* const iPad2_2;
 extern NSString* const iPad2_3;
