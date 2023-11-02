@@ -407,6 +407,78 @@
 		<key>enum</key>
 		<string>IPHONE_SE_3G</string>
 	</dict>
+	<key>iPhone14,7</key>
+	<dict>
+		<key>version</key>
+		<real>14.7</real>
+		<key>name</key>
+		<string>iPhone 14</string>
+		<key>enum</key>
+		<string>IPHONE_14</string>
+	</dict>
+	<key>iPhone14,8</key>
+	<dict>
+		<key>version</key>
+		<real>14.8</real>
+		<key>name</key>
+		<string>iPhone 14 Plus</string>
+		<key>enum</key>
+		<string>IPHONE_14_PLUS</string>
+	</dict>
+	<key>iPhone15,2</key>
+	<dict>
+		<key>version</key>
+		<real>15.2</real>
+		<key>name</key>
+		<string>iPhone 14 Pro</string>
+		<key>enum</key>
+		<string>IPHONE_14_PRO</string>
+	</dict>
+	<key>iPhone15,3</key>
+	<dict>
+		<key>version</key>
+		<real>15.3</real>
+		<key>name</key>
+		<string>iPhone 14 Pro Max</string>
+		<key>enum</key>
+		<string>IPHONE_14_PRO_MAX</string>
+	</dict>
+	<key>iPhone15,4</key>
+	<dict>
+		<key>version</key>
+		<real>15.4</real>
+		<key>name</key>
+		<string>iPhone 15</string>
+		<key>enum</key>
+		<string>IPHONE_15</string>
+	</dict>
+	<key>iPhone15,5</key>
+	<dict>
+		<key>version</key>
+		<real>15.5</real>
+		<key>name</key>
+		<string>iPhone 15 Plus</string>
+		<key>enum</key>
+		<string>IPHONE_15_PLUS</string>
+	</dict>
+	<key>iPhone16,1</key>
+	<dict>
+		<key>version</key>
+		<real>16.1</real>
+		<key>name</key>
+		<string>iPhone 15 Pro</string>
+		<key>enum</key>
+		<string>IPHONE_15_PRO</string>
+	</dict>
+	<key>iPhone16,2</key>
+	<dict>
+		<key>version</key>
+		<real>16.2</real>
+		<key>name</key>
+		<string>iPhone 15 Pro Max</string>
+		<key>enum</key>
+		<string>IPHONE_15_PRO_MAX</string>
+	</dict>
 	<key>iPod1,1</key>
 	<dict>
 		<key>version</key>
@@ -1031,7 +1103,7 @@
 	<key>iPad13,4</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 11" 3rd Gen (Wi-Fi)</string>
+		<string>iPad Pro 11&quot; 3rd Gen (Wi-Fi)</string>
 		<key>version</key>
 		<real>13.4</real>
 		<key>enum</key>
@@ -1040,7 +1112,7 @@
 	<key>iPad13,5</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 11" 3rd Gen (Wi-Fi + Cellular)</string>
+		<string>iPad Pro 11&quot; 3rd Gen (Wi-Fi + Cellular)</string>
 		<key>version</key>
 		<real>13.5</real>
 		<key>enum</key>
@@ -1049,7 +1121,7 @@
 	<key>iPad13,6</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 11" 3rd Gen (Wi-Fi + Cellular)</string>
+		<string>iPad Pro 11&quot; 3rd Gen (Wi-Fi + Cellular)</string>
 		<key>version</key>
 		<real>13.6</real>
 		<key>enum</key>
@@ -1058,7 +1130,7 @@
 	<key>iPad13,7</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 11" 3rd Gen (Wi-Fi + Cellular)</string>
+		<string>iPad Pro 11&quot; 3rd Gen (Wi-Fi + Cellular)</string>
 		<key>version</key>
 		<real>13.7</real>
 		<key>enum</key>
@@ -1067,7 +1139,7 @@
 	<key>iPad13,8</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9" 5th Gen (Wi-Fi)</string>
+		<string>iPad Pro 12.9&quot; 5th Gen (Wi-Fi)</string>
 		<key>version</key>
 		<real>13.8</real>
 		<key>enum</key>
@@ -1076,7 +1148,7 @@
 	<key>iPad13,9</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9" 5th Gen (Wi-Fi + Cellular)</string>
+		<string>iPad Pro 12.9&quot; 5th Gen (Wi-Fi + Cellular)</string>
 		<key>version</key>
 		<real>13.9</real>
 		<key>enum</key>
@@ -1085,7 +1157,7 @@
 	<key>iPad13,10</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9" 5th Gen (Wi-Fi + Cellular)</string>
+		<string>iPad Pro 12.9&quot; 5th Gen (Wi-Fi + Cellular)</string>
 		<key>version</key>
 		<real>13.10</real>
 		<key>enum</key>
@@ -1094,7 +1166,7 @@
 	<key>iPad13,11</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9" 5th Gen (Wi-Fi + Cellular)</string>
+		<string>iPad Pro 12.9&quot; 5th Gen (Wi-Fi + Cellular)</string>
 		<key>version</key>
 		<real>13.11</real>
 		<key>enum</key>
