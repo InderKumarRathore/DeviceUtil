@@ -1162,16 +1162,16 @@
 	<key>iPad13,9</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9&quot; 5th Gen (Wi-Fi + Cellular)</string>
+		<string>iPad Pro 12.9&quot; (1TB, 5th generation)</string>
 		<key>version</key>
 		<real>13.9</real>
 		<key>enum</key>
-		<string>IPAD_PRO_5_WIFI_CELLULAR</string>
+		<string>IPAD_PRO_5_1TB_WIFI</string>
 	</dict>
 	<key>iPad13,10</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9&quot; 5th Gen (Wi-Fi + Cellular)</string>
+		<string>iPad Pro 12.9&quot; 5th Gen (Wi-Fi + Cellular, 5th generation)</string>
 		<key>version</key>
 		<real>13.10</real>
 		<key>enum</key>
@@ -1180,11 +1180,11 @@
 	<key>iPad13,11</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9&quot; 5th Gen (Wi-Fi + Cellular)</string>
+		<string>iPad Pro 12.9&quot; 5th Gen (1TB, Wi-Fi + Cellular, 5th generation)</string>
 		<key>version</key>
 		<real>13.11</real>
 		<key>enum</key>
-		<string>IPAD_PRO_5_WIFI_CELLULAR</string>
+		<string>IPAD_PRO_5_1TB_WIFI_CELLULAR</string>
 	</dict>
 	<key>iPad13,16</key>
 	<dict>
