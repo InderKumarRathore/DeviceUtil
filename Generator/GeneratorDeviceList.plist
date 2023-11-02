@@ -1064,6 +1064,20 @@
 		<key>enum</key>
 		<string>IPAD_AIR_3_WIFI_CELLULAR</string>
 	</dict>
+	<key>iPad11,6</key>
+	<dict>
+		<key>name</key>
+		<string>iPad (8th generation)</string>
+		<key>enum</key>
+		<string>IPAD_8G_WIFI</string>
+	</dict>
+	<key>iPad11,7</key>
+	<dict>
+		<key>name</key>
+		<string>iPad (Wi-Fi + Cellular, 8th generation)</string>
+		<key>enum</key>
+		<string>IPAD_8G_WIFI_CELLULAR</string>
+	</dict>
 	<key>iPad12,1</key>
 	<dict>
 		<key>version</key>
@@ -1190,6 +1204,20 @@
 		<key>enum</key>
 		<string>IPAD_AIR_5_WIFI_CELLULAR</string>
 	</dict>
+	<key>iPad13,18</key>
+	<dict>
+		<key>name</key>
+		<string>iPad (10th generation)</string>
+		<key>enum</key>
+		<string>IPAD_10G_WIFI</string>
+	</dict>
+	<key>iPad13,19</key>
+	<dict>
+		<key>name</key>
+		<string>iPad (Wi-Fi + Cellular, 10th generation)</string>
+		<key>enum</key>
+		<string>IPAD_10G_WIFI_CELLULAR</string>
+	</dict>
 	<key>iPad14,1</key>
 	<dict>
 		<key>version</key>
@@ -1207,6 +1235,62 @@
 		<string>iPad Mini 6 (Wi-Fi + Cellular)</string>
 		<key>enum</key>
 		<string>IPAD_MINI_6_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad14,3-A</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 11-inch (4th generation)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_11_4G_WIFI</string>
+	</dict>
+	<key>iPad14,3-B</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 11-inch (1TB, 4th generation)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_11_3G_1TB_WIFI</string>
+	</dict>
+	<key>iPad14,4-A</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 11-inch (Wi-Fi + Cellular, 4th generation)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_11_4G_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad14,4-B</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 11-inch (1TB, Wi-Fi + Cellular, 4th generation)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_11_4G_1TB_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad14,5-A</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 12.9-inch (6th generation)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_6G_WIFI</string>
+	</dict>
+	<key>iPad14,5-B</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 12.9-inch (1TB, 6th generation)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_6G_1TB_WIFI</string>
+	</dict>
+	<key>iPad14,6-A</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 12.9-inch (WiFi + Cellular, 6th generation)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_6G_WIFI_CELLULAR</string>
+	</dict>
+	<key>iPad14,6-B</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 12.9-inch (1TB, WiFi + Cellular, 6th generation)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_6G_1TB_WIFI_CELLULAR</string>
 	</dict>
 	<key>AppleTV1,1</key>
 	<dict>
@@ -1261,6 +1345,13 @@
 		<string>Apple TV 4K</string>
 		<key>enum</key>
 		<string>APPLE_TV_4K</string>
+	</dict>
+	<key>AppleTV11,1</key>
+	<dict>
+		<key>name</key>
+		<string>Apple TV 4K (2nd generation)</string>
+		<key>enum</key>
+		<string>APPLE_TV_4K_2G</string>
 	</dict>
 	<key>Watch1,1</key>
 	<dict>

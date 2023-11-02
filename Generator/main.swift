@@ -6,7 +6,7 @@ import Foundation
 
 struct Model: Hashable {
 
-    let version: Double
+    let version: Version
     let enumCase: String
 
     func hash(into hasher: inout Hasher) {
@@ -18,16 +18,35 @@ struct Model: Hashable {
     }
 }
 
+struct Version: Comparable {
+    let major: Int
+    let minor: Int
+
+    static func < (lhs: Version, rhs: Version) -> Bool {
+        if lhs.major == rhs.major {
+            return lhs.minor < rhs.minor
+        } else {
+            return lhs.major < rhs.major
+        }
+    }
+
+    static func == (lhs: Version, rhs: Version) -> Bool {
+        lhs.major == rhs.major && lhs.minor == rhs.minor
+    }
+}
+
 func getUniqueSortedModels(havingPrefix: String, from deviceList: [String: [String: AnyObject]]) -> [Model] {
 
     let filteredDict = deviceList.filter { $0.key.hasPrefix(havingPrefix) }
-    let models: [Model] = filteredDict.values.compactMap {
+    let models: [Model] = filteredDict.compactMap { key, value in
 
-        guard let version = $0["version"] as? NSNumber, let enumCase = $0["enum"] as? String else {
-            print("Can't create model from this: \($0)")
+        guard let versionString = findMatch(for: "[\\d]*,[\\d]*", in: key),
+              let version =  getVersion(from: versionString),
+              let enumCase = value["enum"] as? String else {
+            print("Can't create model from this: \(value)")
             return nil
         }
-        return Model(version: version.doubleValue, enumCase: enumCase)
+        return Model(version: version, enumCase: enumCase)
     }
 
     // Get the unique models i.e. ignore models which has same enum, we don't want same enum twice in case that
@@ -57,6 +76,17 @@ func readPropertyList() -> [String: [String: AnyObject]]? {
     }
 }
 
+func normalizedEnum(_ enumCase: String) -> String {
+    let lowerCasedEnum = enumCase.lowercased()
+    if lowerCasedEnum == "iphone" || lowerCasedEnum == "ipad" || lowerCasedEnum == "ipod" {
+        return "iP" + lowerCasedEnum.dropFirst(2)
+    } else if lowerCasedEnum == "x86_64" || lowerCasedEnum == "i386" || lowerCasedEnum == "arm64" {
+        return lowerCasedEnum + "_simulator"
+    } else {
+        return lowerCasedEnum
+    }
+}
+
 func main() {
 
     guard let generatorDeviceList = readPropertyList() else { return }
@@ -74,7 +104,7 @@ func main() {
             print("Unable to get the enum case.")
             return
         }
-        var externConstant = hardwareKey.replacingOccurrences(of: ",", with: "_")
+        var externConstant = hardwareKey.replacingOccurrences(of: ",", with: "_").replacingOccurrences(of: "-", with: "_")
         if externConstant == "x86_64" || externConstant == "i386" {
             externConstant += "_Simulator"
         }
@@ -83,6 +113,17 @@ func main() {
         hardwareFuncContent +=  "\(tabSpacing)if ([hardware isEqualToString:\(externConstant)]) return \(enumCase);\n"
 
         valueDict?.removeValue(forKey: "enum")
+
+        guard let versionString = findMatch(for: "[\\d]*,[\\d]*", in: hardwareKey),
+            let version = getVersion(from: versionString) as Version?  else {
+            print("Unable to determine version: \(hardwareKey)")
+
+            valueDict?["version"] = "-1" as AnyObject
+            deviceList[hardwareKey] = valueDict
+            return
+        }
+       
+        valueDict?["version"] = "\(version.major).\(version.minor)" as AnyObject
         deviceList[hardwareKey] = valueDict
     }
 
@@ -170,6 +211,39 @@ func main() {
         return
     }
 
+}
+
+func findMatch(for regex: String, in text: String) -> String? {
+    do {
+        let regex = try NSRegularExpression(pattern: regex)
+        let results = regex.matches(in: text, range: NSRange(text.startIndex..., in: text))
+        return results.compactMap {
+            guard let range = Range($0.range, in: text) else {
+                print("Unable to create the range for: \(text)")
+                return nil
+            }
+            return String(text[range])
+        }.first
+    } catch let error {
+        print("invalid regex: \(error.localizedDescription)")
+        return nil
+    }
+}
+
+func getVersion(from string: String) -> Version? {
+    let components = string.components(separatedBy: ",")
+    guard components.count == 2 else {
+        print("Can't create components of string: \(string)")
+        return nil
+    }
+    let majorString = components[0].trimmingCharacters(in: .whitespacesAndNewlines)
+    let minorString = components[1].trimmingCharacters(in: .whitespacesAndNewlines)
+
+    guard let major = Int(majorString), let minor = Int(minorString) else {
+        print("Can't create major: \(majorString) and  minor: \(minorString)")
+        return nil
+    }
+    return Version(major: major, minor: minor)
 }
 
 // MARK: - Calling Main
